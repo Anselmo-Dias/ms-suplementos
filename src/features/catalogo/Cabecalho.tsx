@@ -1,10 +1,15 @@
 import { Link } from '@tanstack/react-router'
 import { Menu, Package, Search, ShoppingCart, X } from 'lucide-react'
 import { useEffect, useRef } from 'react'
+import { FreeMode, Mousewheel } from 'swiper/modules'
+import { Swiper, SwiperSlide } from 'swiper/react'
+import type { Swiper as SwiperClass } from 'swiper/types'
 import { CATEGORIAS_NAV } from './categorias'
 import { useCarrinho } from './carrinho-contexto'
 import type { FiltroCategoria } from '../../data/types'
 import { contarCategoria } from '../../data/catalogo'
+import 'swiper/css'
+import 'swiper/css/free-mode'
 
 type Props = {
   categoriaAtiva: FiltroCategoria
@@ -22,16 +27,14 @@ export function Cabecalho({
   onMenu,
 }: Props) {
   const { quantidade, abrir, atacado, alternarAtacado } = useCarrinho()
-  const trilho = useRef<HTMLDivElement>(null)
+  const trilho = useRef<SwiperClass | null>(null)
 
-  // Mantém a categoria ativa visível quando a barra rola no mobile.
+  const iAtiva = CATEGORIAS_NAV.findIndex((c) => c.id === categoriaAtiva)
+
+  // Traz a categoria ativa para a vista quando a rota muda.
   useEffect(() => {
-    const t = trilho.current
-    const ativo = t?.querySelector<HTMLElement>('.is-active')
-    if (t && ativo) {
-      t.scrollLeft = ativo.offsetLeft - t.clientWidth / 2 + ativo.offsetWidth / 2
-    }
-  }, [categoriaAtiva])
+    if (iAtiva >= 0) trilho.current?.slideTo(iAtiva)
+  }, [iAtiva])
 
   return (
     <div className="site-header">
@@ -120,29 +123,54 @@ export function Cabecalho({
             <X className="ico" />
           </button>
         </div>
-        <div className="container mainnav-inner" ref={trilho}>
-          <div className="mainnav-list">
-            {CATEGORIAS_NAV.map((c) => {
+        <div className="container mainnav-inner">
+          <Swiper
+            className="mainnav-swiper"
+            // `.mainnav-list` fica no wrapper: assim o layout em coluna do
+            // menu lateral no celular continua valendo sem regra nova.
+            wrapperClass="swiper-wrapper mainnav-list"
+            modules={[FreeMode, Mousewheel]}
+            // Abaixo de 768px esta nav vira um menu lateral vertical —
+            // arrastar na horizontal ali não faz sentido.
+            enabled={false}
+            breakpoints={{ 768: { enabled: true } }}
+            slidesPerView="auto"
+            spaceBetween={4}
+            freeMode={{ enabled: true, momentumBounce: false }}
+            grabCursor
+            watchOverflow
+            // forceToAxis: a roda do mouse na vertical continua rolando a
+            // página; só o gesto horizontal move a barra.
+            mousewheel={{ forceToAxis: true }}
+            onSwiper={(s) => {
+              trilho.current = s
+            }}
+          >
+            {CATEGORIAS_NAV.map((c, i) => {
               const ativo = c.id === categoriaAtiva
               return (
-                <Link
-                  key={c.id}
-                  to="/catalogo/$categoria"
-                  params={{ categoria: c.id }}
-                  className={`mainnav-item ${ativo ? 'is-active' : ''}`}
-                  aria-current={ativo ? 'true' : 'false'}
-                  onClick={() => onMenu(false)}
-                >
-                  {c.nome}
-                  {/* "Mais Vendidos" é uma vitrine (top 5 de cada categoria),
-                      não uma lista filtrada — um número ali enganaria. */}
-                  {c.id !== 'mais-vendidos' && (
-                    <span className="mainnav-count">{contarCategoria(c.id)}</span>
-                  )}
-                </Link>
+                <SwiperSlide className="mainnav-slide" key={c.id}>
+                  <Link
+                    to="/catalogo/$categoria"
+                    params={{ categoria: c.id }}
+                    className={`mainnav-item ${ativo ? 'is-active' : ''}`}
+                    aria-current={ativo ? 'true' : 'false'}
+                    onClick={() => onMenu(false)}
+                    // Com o Swiper a barra anda por transform, e o navegador
+                    // não consegue rolar sozinho até um link focado pelo Tab.
+                    onFocus={() => trilho.current?.slideTo(i)}
+                  >
+                    {c.nome}
+                    {/* "Mais Vendidos" é uma vitrine (top 5 de cada categoria),
+                        não uma lista filtrada — um número ali enganaria. */}
+                    {c.id !== 'mais-vendidos' && (
+                      <span className="mainnav-count">{contarCategoria(c.id)}</span>
+                    )}
+                  </Link>
+                </SwiperSlide>
               )
             })}
-          </div>
+          </Swiper>
         </div>
       </nav>
     </div>

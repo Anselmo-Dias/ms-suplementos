@@ -1666,34 +1666,10 @@ i.ico {
   margin: 0 -10px;
   padding: 0 10px;
 }
-.product-carousel-track {
-  display: flex;
-  gap: var(--gutter);
-  overflow-x: auto;
-  scroll-behavior: smooth;
-  scroll-snap-type: x mandatory;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-  width: 100%;
-  padding-bottom: 10px;
-}
-.product-carousel-track::-webkit-scrollbar {
-  display: none;
-}
-.product-carousel-track .card {
-  flex: 0 0 calc(75% - var(--gutter));
-  scroll-snap-align: start;
-}
-@media (min-width: 768px) {
-  .product-carousel-track .card {
-    flex: 0 0 calc(33.333% - var(--gutter));
-  }
-}
-@media (min-width: 1024px) {
-  .product-carousel-track .card {
-    flex: 0 0 calc(20% - var(--gutter));
-  }
-}
+/* O antigo `.product-carousel-track` (trilho com scroll nativo e snap) saiu
+   junto com a troca pelo Swiper — a largura dos cards agora vem de
+   `.product-carousel .product-slide`. */
+
 .carousel-nav {
   position: absolute;
   top: 50%;
@@ -2137,6 +2113,57 @@ i.ico {
 @media (max-width: 720px) {
   .product-carousel .product-slide {
     width: 165px;
+  }
+}
+
+/* --- Barra de categorias --- */
+/* O Swiper cuida do arrastar; no celular ele fica desligado e o menu
+   lateral continua sendo uma lista vertical comum. */
+.mainnav-swiper {
+  width: 100%;
+}
+
+/* Dois seletores de propósito: o `.swiper-slide { width: 100% }` do Swiper
+   entra depois no bundle e venceria uma regra de classe única. */
+.mainnav-swiper .mainnav-slide {
+  /* largura pelo texto da categoria */
+  width: auto;
+  height: auto;
+}
+
+/* `min-width: max-content` no wrapper brigaria com a largura que o Swiper
+   calcula para o trilho.
+   O `gap` também sai: o Swiper não o enxerga no cálculo do trilho e
+   somaria ao `spaceBetween`, deixando o último item inalcançável. */
+.mainnav-swiper .mainnav-list {
+  min-width: 0;
+  gap: 0;
+}
+
+/* Só onde o arrastar existe — no menu lateral do celular é uma lista. */
+@media (min-width: 768px) {
+  .mainnav-swiper {
+    cursor: grab;
+  }
+  .mainnav-swiper:active {
+    cursor: grabbing;
+  }
+}
+
+@media (max-width: 767px) {
+  /* Swiper desligado: o wrapper volta a ser uma coluna e cada item ocupa
+     a largura toda do menu lateral. */
+  .mainnav-swiper .mainnav-list {
+    flex-direction: column;
+  }
+
+  .mainnav-swiper .mainnav-slide {
+    width: 100%;
+  }
+
+  .mainnav-slide .mainnav-item {
+    display: block;
+    width: 100%;
   }
 }
 
