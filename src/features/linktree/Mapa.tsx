@@ -8,9 +8,17 @@ import { mapaEmbedLink, rotaLink } from '../../lib/whatsapp'
 /**
  * O iframe do Google Maps só é criado depois que o visitante toca na fachada —
  * até lá a página não paga o custo de carregar o mapa.
+ *
+ * A unidade selecionada vem de fora porque o badge de horário do topo segue
+ * a mesma escolha.
  */
-export function Mapa() {
-  const [atual, setAtual] = useState(0)
+export function Mapa({
+  unidade: atual,
+  onUnidade: setAtual,
+}: {
+  unidade: number
+  onUnidade: (i: number) => void
+}) {
   const [carregado, setCarregado] = useState(false)
 
   const loja = SITE.lojas[atual]

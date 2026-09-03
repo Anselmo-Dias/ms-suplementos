@@ -1,4 +1,4 @@
-import { SITE, type Horario, type Loja, type Turno } from '../config/site'
+import type { Horario, Loja, Turno } from '../config/site'
 
 const DIAS = ['Dom', 'Seg', 'Ter', 'Qua', 'Qui', 'Sex', 'Sáb']
 const DIA_EM_MINUTOS = 24 * 60
@@ -126,26 +126,4 @@ export function textoDoStatus(status: StatusLoja): string {
     return status.fechaAs ? `Aberto agora • até ${status.fechaAs}` : 'Aberto agora'
   }
   return status.abreEm ? `Fechado • abre ${status.abreEm}` : 'Fechado'
-}
-
-/**
- * Status do topo da página: como as duas unidades têm horários diferentes,
- * o que interessa ali é se dá para comprar agora em alguma delas.
- */
-export function statusGeral(agora = new Date()): StatusLoja {
-  const todas = SITE.lojas.map((l) => statusDaLoja(l, agora))
-
-  // Aberta em alguma: mostra a que fica aberta por mais tempo.
-  const abertas = todas.filter((s) => s.aberto)
-  if (abertas.length) {
-    return abertas.reduce((a, b) => ((b.minutos ?? 0) > (a.minutos ?? 0) ? b : a))
-  }
-
-  // Todas fechadas: anuncia a que abre primeiro.
-  const proximas = todas.filter((s) => s.minutos !== undefined)
-  if (proximas.length) {
-    return proximas.reduce((a, b) => ((b.minutos ?? 0) < (a.minutos ?? 0) ? b : a))
-  }
-
-  return { aberto: false }
 }

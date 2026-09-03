@@ -1,12 +1,13 @@
 import { useMemo } from 'react'
-import { SITE } from '../../config/site'
-import { statusGeral, textoDoStatus } from '../../lib/horario'
+import { SITE, loja as lojaPor } from '../../config/site'
+import { statusDaLoja, textoDoStatus } from '../../lib/horario'
 
-export function Perfil() {
-  // As duas unidades têm horários diferentes; aqui no topo o que importa é
-  // se dá para comprar agora em alguma delas. O detalhe por loja fica na
-  // seção "Onde estamos".
-  const status = useMemo(() => statusGeral(), [])
+/** `unidade`: índice da loja selecionada nas abas de "Onde estamos". */
+export function Perfil({ unidade }: { unidade: number }) {
+  const loja = lojaPor(unidade)
+
+  // O badge acompanha a aba: o horário aqui é sempre o da unidade escolhida.
+  const status = useMemo(() => statusDaLoja(loja), [loja])
 
   return (
     <section className="profile">
@@ -21,7 +22,7 @@ export function Perfil() {
       <h1 className="profile__name">{SITE.nome}</h1>
       <p className="profile__handle">{SITE.handle}</p>
       <p className="profile__bio">{SITE.bio}</p>
-      <p className={`status ${status.aberto ? 'is-open' : ''}`}>
+      <p className={`status ${status.aberto ? 'is-open' : ''}`} aria-live="polite">
         <span className="status__dot" />
         <span className="status__text">{textoDoStatus(status)}</span>
       </p>
