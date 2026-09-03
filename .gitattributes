@@ -1,0 +1,12 @@
+# Fim de linha LF em todo o repositório, inclusive no Windows.
+# Sem isto, o routeTree.gen.ts (que o gerador escreve com LF) aparece como
+# modificado depois de cada build só por causa da conversão para CRLF.
+* text=auto eol=lf
+
+# Binários — nunca passam por conversão de fim de linha
+*.webp binary
+*.jpg binary
+*.jpeg binary
+*.png binary
+*.avif binary
+*.ico binary
