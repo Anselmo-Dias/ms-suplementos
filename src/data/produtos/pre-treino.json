@@ -471,7 +471,7 @@
     "doses": "13 a 20 por embalagem"
   },
   {
-    "id": "insane-clown-350g-",
+    "id": "insane-clown-350g",
     "nome": "Insane Clown 350G ",
     "categoria": "pre-treino",
     "precoCentavos": 13900,
@@ -516,7 +516,7 @@
     "doses": "10 a 15 por embalagem"
   },
   {
-    "id": "maltodextrin-tangerina-",
+    "id": "maltodextrin-tangerina",
     "nome": "maltodextrin absolut",
     "categoria": "pre-treino",
     "precoCentavos": 3500,
@@ -834,7 +834,7 @@
     "doses": "10 a 15 por embalagem"
   },
   {
-    "id": "pré-treino-termogênico-forza-max-300g-bio-sport-usa",
+    "id": "pre-treino-termogenico-forza-max-300g-bio-sport-usa",
     "nome": "Pré Treino Termogênico Forza Max 300G Bio Sport Usa",
     "categoria": "pre-treino",
     "precoCentavos": 7500,

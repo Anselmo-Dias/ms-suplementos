@@ -9,6 +9,7 @@
     "typecheck": "tsr generate && tsc -b",
     "lint": "eslint .",
     "preview": "vite preview",
+    "checar": "node scripts/checar-catalogo.mjs",
     "migrar:catalogo": "node scripts/migrar-catalogo.mjs",
     "migrar:banners": "node scripts/migrar-banners.mjs"
   },

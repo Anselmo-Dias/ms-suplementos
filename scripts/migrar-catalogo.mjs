@@ -171,8 +171,10 @@ async function normalizar(p) {
   if (p.indisponivel) relatorio.indisponiveis.push(p.id)
   if (!campos.marca) relatorio.semMarca.push(p.id)
 
-  // O id vem do catálogo antigo e alguns têm acento; o nome do arquivo passa
-  // pelo slug para não virar caminho com caractere fora do ASCII.
+  // O id do catálogo antigo entra no slug antes de qualquer uso: alguns têm
+  // acento e um deles tinha `%`, que num caminho de URL abre uma sequência de
+  // escape e faz a imagem nunca carregar. O id também vai para a URL, em
+  // ?produto=<id>, então precisa ser seguro pelos dois motivos.
   const pasta = slug(p.categoria)
   const base = slug(p.id)
   const imagem = await migrarImagem(p.imagem, `${pasta}/${base}.webp`, p.id)
@@ -188,7 +190,7 @@ async function normalizar(p) {
   }
 
   return {
-    id: p.id,
+    id: base,
     nome: p.nome,
     categoria: p.categoria,
     precoCentavos: preco,

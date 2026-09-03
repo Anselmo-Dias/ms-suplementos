@@ -683,23 +683,23 @@
     "doses": "22 a 30 por embalagem"
   },
   {
-    "id": "nutrata-n-pro-100%-whey-900g",
+    "id": "nutrata-n-pro-100-whey-900g",
     "nome": "Nutrata N Pro 100% Whey 900G",
     "categoria": "whey",
     "precoCentavos": 11900,
-    "imagem": "/img/whey/nutrata-n-pro-100%-whey-900g.webp",
+    "imagem": "/img/whey/nutrata-n-pro-100-whey-900g.webp",
     "variacoes": [
       {
         "nome": "Baunilha",
-        "imagem": "/img/whey/nutrata-n-pro-100%-whey-900g--baunilha.webp"
+        "imagem": "/img/whey/nutrata-n-pro-100-whey-900g-baunilha.webp"
       },
       {
         "nome": "Chocolate",
-        "imagem": "/img/whey/nutrata-n-pro-100%-whey-900g--chocolate.webp"
+        "imagem": "/img/whey/nutrata-n-pro-100-whey-900g-chocolate.webp"
       },
       {
         "nome": "Morango",
-        "imagem": "/img/whey/nutrata-n-pro-100%-whey-900g--morango.webp"
+        "imagem": "/img/whey/nutrata-n-pro-100-whey-900g-morango.webp"
       }
     ],
     "spec": "900G • Whey Protein",
