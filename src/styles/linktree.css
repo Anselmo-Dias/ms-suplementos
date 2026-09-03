@@ -1,0 +1,337 @@
+/* ==========================================================================
+   MS Suplementos — tela do link na bio
+   Coluna única, minimalista, dourado como acento.
+   ========================================================================== */
+
+/* --- Perfil --------------------------------------------------------------- */
+.profile {
+  display: grid;
+  justify-items: center;
+  text-align: center;
+  margin-bottom: clamp(1.5rem, 5vw, 2rem);
+}
+
+.profile__avatar {
+  width: clamp(96px, 26vw, 122px);
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 26px;
+  background: #0a0a0a;              /* o logo é dourado sobre preto */
+  border: 1px solid var(--gold-line);
+  box-shadow: var(--sh-2);
+  padding: 6px;
+}
+
+.profile__name {
+  margin-top: 1rem;
+  font-size: clamp(1.5rem, 6vw, 1.9rem);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+}
+
+.profile__handle {
+  margin-top: 0.3rem;
+  font-size: 0.85rem;
+  color: var(--gold);
+  font-weight: 500;
+  letter-spacing: 0.01em;
+}
+
+.profile__bio {
+  margin-top: 0.75rem;
+  font-size: 0.94rem;
+  color: var(--ink-soft);
+  max-width: 32ch;
+  text-wrap: balance;
+}
+
+/* Pílula aberto/fechado */
+.status {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  margin-top: 1rem;
+  padding: 0.38rem 0.85rem 0.38rem 0.7rem;
+  border: 1px solid var(--line);
+  border-radius: var(--r-full);
+  background: var(--card);
+  box-shadow: var(--sh-1);
+  font-size: 0.74rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  color: var(--ink-soft);
+}
+.status__dot {
+  width: 7px; height: 7px;
+  border-radius: 50%;
+  background: var(--ink-faint);
+  flex: none;
+}
+.status.is-open .status__dot {
+  background: var(--ok);
+  animation: pulse 2.6s infinite;
+}
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgba(26, 138, 74, 0.45); }
+  70% { box-shadow: 0 0 0 7px rgba(26, 138, 74, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(26, 138, 74, 0); }
+}
+
+/* --- Links (o coração da página) ------------------------------------------ */
+.links {
+  display: grid;
+  gap: var(--gap);
+}
+
+.link {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  width: 100%;
+  min-height: 66px;
+  padding: 0.8rem 1rem;
+  border: 1px solid var(--line);
+  border-radius: var(--r-md);
+  background: var(--card);
+  box-shadow: var(--sh-1);
+  text-align: left;
+  transition: transform 0.3s var(--ease), box-shadow 0.3s var(--ease),
+              border-color 0.3s var(--ease),
+              opacity 0.6s var(--ease);
+}
+.link:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--sh-2);
+  border-color: var(--gold-line);
+}
+.link:active { transform: translateY(0) scale(0.995); }
+
+.link__icon {
+  width: 40px; height: 40px;
+  flex: none;
+  display: grid;
+  place-items: center;
+  border-radius: 12px;
+  background: var(--gold-soft);
+  color: var(--gold);
+}
+.link__icon svg { width: 19px; height: 19px; }
+
+.link__txt { display: grid; gap: 0.1rem; min-width: 0; flex: 1; }
+.link__title { font-size: 0.98rem; font-weight: 600; letter-spacing: -0.01em; }
+.link__sub {
+  font-size: 0.79rem;
+  color: var(--ink-faint);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.link__go {
+  flex: none;
+  width: 22px; height: 22px;
+  color: var(--ink-faint);
+  transition: transform 0.3s var(--ease), color 0.3s var(--ease);
+}
+.link:hover .link__go { transform: translateX(3px); color: var(--gold); }
+
+/* Destaque: o CTA principal */
+.link--primary {
+  background: var(--gold-grad);
+  border-color: transparent;
+  box-shadow: var(--sh-gold);
+}
+.link--primary .link__icon { background: rgba(20, 19, 15, 0.12); color: #14130f; }
+.link--primary .link__title { color: #14130f; }
+.link--primary .link__sub { color: rgba(20, 19, 15, 0.62); }
+.link--primary .link__go { color: rgba(20, 19, 15, 0.6); }
+.link--primary:hover { box-shadow: 0 16px 34px -12px rgba(176, 132, 26, 0.7); border-color: transparent; }
+
+/* Destaque secundário: catálogo (preto, alto contraste no tema claro) */
+.link--dark {
+  background: var(--ink);
+  border-color: var(--ink);
+  box-shadow: 0 12px 28px -14px rgba(20, 19, 15, 0.6);
+}
+.link--dark .link__icon { background: rgba(255, 255, 255, 0.1); color: #e2c063; }
+.link--dark .link__title { color: #fdfcfa; }
+.link--dark .link__sub { color: rgba(253, 252, 250, 0.55); }
+.link--dark .link__go { color: rgba(253, 252, 250, 0.5); }
+.link--dark:hover { border-color: var(--ink); }
+
+/* Etiqueta opcional no canto do link */
+.link__badge {
+  position: absolute;
+  top: -7px; right: 12px;
+  font-size: 0.58rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #14130f;
+  background: var(--gold-grad);
+  border-radius: var(--r-full);
+  padding: 0.16rem 0.5rem;
+  box-shadow: var(--sh-1);
+}
+
+/* --- Divisor de bloco ------------------------------------------------------ */
+.block { margin-top: var(--block); }
+
+.block__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.block__title {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+}
+.block__title::before {
+  content: '';
+  width: 18px; height: 1px;
+  background: var(--gold);
+  flex: none;
+}
+
+/* --- Mapa ------------------------------------------------------------------ */
+.map-tabs { display: flex; gap: 0.4rem; margin-bottom: 0.7rem; }
+.tab {
+  flex: 1;
+  padding: 0.55rem 0.7rem;
+  border: 1px solid var(--line);
+  border-radius: var(--r-full);
+  background: var(--card);
+  font-size: 0.79rem;
+  font-weight: 500;
+  color: var(--ink-soft);
+  box-shadow: var(--sh-1);
+  transition: color 0.25s, border-color 0.25s, background 0.25s;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.tab:hover { border-color: var(--gold-line); color: var(--ink); }
+.tab[aria-selected='true'] {
+  background: var(--ink);
+  border-color: var(--ink);
+  color: #fdfcfa;
+  font-weight: 600;
+}
+
+.map {
+  position: relative;
+  aspect-ratio: 16 / 11;
+  border: 1px solid var(--line);
+  border-radius: var(--r-md);
+  overflow: hidden;
+  background: #eeece7;
+  box-shadow: var(--sh-1);
+}
+.map iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+.map__facade {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  display: grid;
+  place-items: center;
+  align-content: center;
+  gap: 0.65rem;
+  padding: 1.25rem;
+  text-align: center;
+  background:
+    radial-gradient(70% 60% at 50% 45%, rgba(200, 158, 52, 0.16), transparent 70%),
+    #f3f1ec;
+  cursor: pointer;
+  transition: opacity 0.45s var(--ease);
+}
+.map__facade.is-hidden { opacity: 0; pointer-events: none; }
+.map__facade svg { width: 26px; height: 26px; color: var(--gold); }
+.map__facade span {
+  font-size: 0.74rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+
+.map__addr {
+  margin-top: 0.7rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+.map__addr p { font-size: 0.82rem; color: var(--ink-soft); line-height: 1.45; }
+.map__route {
+  flex: none;
+  height: 34px;
+  padding: 0 0.85rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  border: 1px solid var(--line);
+  border-radius: var(--r-full);
+  background: var(--card);
+  box-shadow: var(--sh-1);
+  font-size: 0.78rem;
+  font-weight: 600;
+  transition: border-color 0.25s, transform 0.25s;
+}
+.map__route:hover { border-color: var(--gold-line); transform: translateY(-1px); }
+.map__route svg { width: 14px; height: 14px; color: var(--gold); }
+
+/* --- Rodapé ---------------------------------------------------------------- */
+.info {
+  margin-top: 1.75rem;
+  display: grid;
+  gap: 0.4rem;
+  text-align: center;
+}
+.info p { font-size: 0.82rem; color: var(--ink-soft); }
+.info b { font-weight: 600; color: var(--ink); }
+
+.credit {
+  margin-top: 1.75rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--line-soft);
+  text-align: center;
+  font-size: 0.72rem;
+  color: var(--ink-faint);
+}
+
+/* --- Barra fixa de pedido -------------------------------------------------- */
+.dock {
+  position: fixed;
+  left: 50%;
+  bottom: max(0.85rem, env(safe-area-inset-bottom));
+  z-index: 50;
+  transform: translate(-50%, 150%);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  height: 50px;
+  padding: 0 1.25rem 0 0.9rem;
+  border-radius: var(--r-full);
+  background: var(--gold-grad);
+  color: #14130f;
+  font-size: 0.9rem;
+  font-weight: 600;
+  box-shadow: 0 16px 34px -12px rgba(176, 132, 26, 0.75);
+  transition: transform 0.5s var(--ease);
+}
+.dock.is-visible { transform: translate(-50%, 0); }
+.dock svg { width: 18px; height: 18px; }
+
+@media print {
+  .dock, .map { display: none; }
+}

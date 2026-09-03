@@ -1,0 +1,226 @@
+[
+  {
+    "id": "creamass-hypercaloric",
+    "nome": "CreaMass Hypercaloric Integralmédica Refil 3kg",
+    "categoria": "hipercalorico",
+    "precoCentavos": 11000,
+    "imagem": "/img/hipercalorico/creamass-hypercaloric.webp",
+    "variacoes": [
+      {
+        "nome": "Baunilha",
+        "imagem": "/img/hipercalorico/creamass-hypercaloric--baunilha.webp"
+      },
+      {
+        "nome": "Chocolate",
+        "imagem": "/img/hipercalorico/creamass-hypercaloric--chocolate.webp"
+      },
+      {
+        "nome": "Cookies & Cream",
+        "imagem": "/img/hipercalorico/creamass-hypercaloric--cookies-cream.webp"
+      },
+      {
+        "nome": "Morango",
+        "imagem": "/img/hipercalorico/creamass-hypercaloric--morango.webp"
+      }
+    ],
+    "spec": "3kg • Refil • Com Creatina Adicionada",
+    "tags": [
+      "Hipercalórico + Creatina",
+      "Refil"
+    ],
+    "descricao": "CreaMass une energia calórica densa com o poder da creatina na mesma fórmula para evolução de carga e peso corporal rápido.",
+    "paraQueServe": "Ideal para o ganho de peso e massa bruta. Fornece um alto aporte de calorias, carboidratos e proteínas para quem tem dificuldade de ganhar peso.",
+    "modoDeUso": "Consumir entre as refeições ou após o treino.",
+    "marca": "Integralmédica",
+    "porcao": "90g a 150g",
+    "embalagem": "3kg",
+    "extras": {
+      "Sabores": "Baunilha, Chocolate, Cookies & Cream, Morango",
+      "Creatina": "3g por porção"
+    }
+  },
+  {
+    "id": "hipercalorico-max-zero-lactose-2-4kg",
+    "nome": "Hipercalórico Max Zero Lactose 2.4kg",
+    "categoria": "hipercalorico",
+    "precoCentavos": 12500,
+    "imagem": "/img/hipercalorico/hipercalorico-max-zero-lactose-2-4kg.webp",
+    "variacoes": [
+      {
+        "nome": "Chocolate",
+        "imagem": "/img/hipercalorico/hipercalorico-max-zero-lactose-2-4kg--chocolate.webp"
+      },
+      {
+        "nome": "Morango",
+        "imagem": "/img/hipercalorico/hipercalorico-max-zero-lactose-2-4kg--morango.webp"
+      }
+    ],
+    "spec": "2.4kg • Zero Lactose",
+    "tags": [
+      "Hipercalórico",
+      "Zero Lactose"
+    ],
+    "descricao": "Hipercalórico da Max Titanium especialmente desenvolvido para intolerantes à lactose. Ideal para ganho de peso e massa muscular sem desconforto gástrico.",
+    "paraQueServe": "Ideal para o ganho de peso e massa bruta. Fornece um alto aporte de calorias, carboidratos e proteínas para quem tem dificuldade de ganhar peso.",
+    "modoDeUso": "Consulte a tabela nutricional na embalagem.",
+    "marca": "Max Titanium",
+    "porcao": "90g a 150g por dia",
+    "embalagem": "2,4kg",
+    "doses": "16 a 26 por embalagem"
+  },
+  {
+    "id": "mass-titanium-17500",
+    "nome": "Mass Titanium 17500 Max Titanium 3kg",
+    "categoria": "hipercalorico",
+    "precoCentavos": 11500,
+    "imagem": "/img/hipercalorico/mass-titanium-17500.webp",
+    "variacoes": [
+      {
+        "nome": "Baunilha",
+        "imagem": "/img/hipercalorico/mass-titanium-17500--baunilha.webp"
+      },
+      {
+        "nome": "Chocolate",
+        "imagem": "/img/hipercalorico/mass-titanium-17500--chocolate.webp"
+      },
+      {
+        "nome": "Leite Condensado",
+        "imagem": "/img/hipercalorico/mass-titanium-17500--leite-condensado.webp"
+      },
+      {
+        "nome": "Morango",
+        "imagem": "/img/hipercalorico/mass-titanium-17500--morango.webp"
+      },
+      {
+        "nome": "Vitamina de Frutas",
+        "imagem": "/img/hipercalorico/mass-titanium-17500--vitamina-de-frutas.webp"
+      }
+    ],
+    "spec": "3kg • 17.500 Cal/Dose*",
+    "tags": [
+      "Ganho de Peso",
+      "Massa Bruta",
+      "Proteínas + Carboidratos"
+    ],
+    "badge": "Mais Vendido",
+    "destaque": true,
+    "descricao": "O hipercalórico mais premiado do Brasil. Combina 3 fontes de proteínas (Whey, Colágeno e Albumina) com carboidratos complexos para ganho acelerado de massa muscular.",
+    "paraQueServe": "Ideal para o ganho de peso e massa bruta. Fornece um alto aporte de calorias, carboidratos e proteínas para quem tem dificuldade de ganhar peso.",
+    "modoDeUso": "Bater 160g (5 dosadores) no liquidificador com 250ml de leite.",
+    "marca": "Max Titanium",
+    "porcao": "90g a 150g",
+    "embalagem": "3kg",
+    "extras": {
+      "Sabores": "Baunilha, Chocolate, Leite Condensado, Morango, Vitamina de Frutas",
+      "Calorias": "609 kcal por porção",
+      "Proteínas": "17g por porção"
+    }
+  },
+  {
+    "id": "hipercalorico-mass-zero-lac-mk-2-5kg",
+    "nome": "Mass Zero Lac MK Supplements 2,5kg",
+    "categoria": "hipercalorico",
+    "precoCentavos": 9999,
+    "imagem": "/img/hipercalorico/hipercalorico-mass-zero-lac-mk-2-5kg.webp",
+    "spec": "2,5kg • Zero Lactose • 589kcal por porção",
+    "tags": [
+      "Zero Lactose",
+      "Com Creatina",
+      "BCAA"
+    ],
+    "badge": "Novo",
+    "descricao": "Mass Zero Lac da MK Supplements, hipercalórico zero lactose com creatina, maltodextrina, colágeno hidrolisado e BCAA para ganho de massa.",
+    "paraQueServe": "Ideal para o ganho de peso e massa bruta. Fornece um alto aporte de calorias, carboidratos e proteínas para quem tem dificuldade de ganhar peso.",
+    "modoDeUso": "Consumir entre as refeições ou após o treino.",
+    "marca": "MK Supplements",
+    "porcao": "90g a 150g por dia",
+    "embalagem": "2,5kg",
+    "doses": "16 a 27 por embalagem",
+    "extras": {
+      "Calorias": "589 kcal por porção",
+      "Proteínas": "19g por porção",
+      "Carboidratos": "126g por porção",
+      "Creatina": "3g por porção"
+    }
+  },
+  {
+    "id": "super-gainers-refil-3kg-max-chocolate",
+    "nome": "Super Gainers Refil 3Kg Max",
+    "categoria": "hipercalorico",
+    "precoCentavos": 13500,
+    "imagem": "/img/hipercalorico/super-gainers-refil-3kg-max-chocolate.webp",
+    "variacoes": [
+      {
+        "nome": "Baunilha",
+        "imagem": "/img/hipercalorico/super-gainers-refil-3kg-max-chocolate--baunilha.webp"
+      },
+      {
+        "nome": "Chocolate",
+        "imagem": "/img/hipercalorico/super-gainers-refil-3kg-max-chocolate--chocolate.webp"
+      },
+      {
+        "nome": "Morango",
+        "imagem": "/img/hipercalorico/super-gainers-refil-3kg-max-chocolate--morango.webp"
+      },
+      {
+        "nome": "Vitamina de Frutas",
+        "imagem": "/img/hipercalorico/super-gainers-refil-3kg-max-chocolate--vitamina-de-frutas.webp"
+      }
+    ],
+    "spec": "Unidade",
+    "tags": [],
+    "descricao": "Novo produto adicionado.",
+    "paraQueServe": "Ideal para o ganho de peso e massa bruta. Fornece um alto aporte de calorias, carboidratos e proteínas para quem tem dificuldade de ganhar peso.",
+    "modoDeUso": "Consulte a tabela nutricional na embalagem.",
+    "marca": "Max Titanium",
+    "porcao": "90g a 150g por dia",
+    "embalagem": "3kg",
+    "doses": "20 a 33 por embalagem"
+  },
+  {
+    "id": "ultra-mass-bluster-3kg",
+    "nome": "Ultra Mass Bluster 3kg",
+    "categoria": "hipercalorico",
+    "precoCentavos": 8000,
+    "imagem": "/img/hipercalorico/ultra-mass-bluster-3kg.webp",
+    "variacoes": [
+      {
+        "nome": "Baunilha",
+        "imagem": "/img/hipercalorico/ultra-mass-bluster-3kg--baunilha.webp"
+      },
+      {
+        "nome": "Chocolate",
+        "imagem": "/img/hipercalorico/ultra-mass-bluster-3kg--chocolate.webp"
+      },
+      {
+        "nome": "Morango",
+        "imagem": "/img/hipercalorico/ultra-mass-bluster-3kg--morango.webp"
+      }
+    ],
+    "spec": "Unidade",
+    "tags": [],
+    "descricao": "Novo produto adicionado.",
+    "paraQueServe": "Ideal para o ganho de peso e massa bruta. Fornece um alto aporte de calorias, carboidratos e proteínas para quem tem dificuldade de ganhar peso.",
+    "modoDeUso": "Consulte a tabela nutricional na embalagem.",
+    "marca": "Bluster",
+    "porcao": "90g a 150g por dia",
+    "embalagem": "3kg",
+    "doses": "20 a 33 por embalagem"
+  },
+  {
+    "id": "xpro-waxy-maize-800g-hipercalorico",
+    "nome": "Xpro Waxy Maize 800g Hipercalorico",
+    "categoria": "hipercalorico",
+    "precoCentavos": 4000,
+    "imagem": "/img/hipercalorico/xpro-waxy-maize-800g-hipercalorico.webp",
+    "spec": "Unidade",
+    "tags": [],
+    "descricao": "Novo produto adicionado.",
+    "paraQueServe": "Ideal para o ganho de peso e massa bruta. Fornece um alto aporte de calorias, carboidratos e proteínas para quem tem dificuldade de ganhar peso.",
+    "modoDeUso": "Consulte a tabela nutricional na embalagem.",
+    "marca": "Xpro Nutrition",
+    "porcao": "90g a 150g por dia",
+    "embalagem": "800g",
+    "doses": "5 a 8 por embalagem"
+  }
+]

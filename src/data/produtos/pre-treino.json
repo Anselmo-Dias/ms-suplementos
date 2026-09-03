@@ -1,0 +1,1247 @@
+[
+  {
+    "id": "adaptogen-panic-300g",
+    "nome": "Adaptogen Panic 300g",
+    "categoria": "pre-treino",
+    "precoCentavos": 11800,
+    "imagem": "/img/pre-treino/adaptogen-panic-300g.webp",
+    "variacoes": [
+      {
+        "nome": "Fruit Punch",
+        "imagem": "/img/pre-treino/adaptogen-panic-300g--fruit-punch.webp"
+      },
+      {
+        "nome": "Limonada",
+        "imagem": "/img/pre-treino/adaptogen-panic-300g--limonada.webp"
+      },
+      {
+        "nome": "Maçã Verde",
+        "imagem": "/img/pre-treino/adaptogen-panic-300g--maca-verde.webp"
+      },
+      {
+        "nome": "Uva",
+        "imagem": "/img/pre-treino/adaptogen-panic-300g--uva.webp"
+      }
+    ],
+    "spec": "Unidade",
+    "tags": [],
+    "descricao": "Novo produto adicionado.",
+    "paraQueServe": "Fornece energia intensa, foco mental e resistência. Combate a fadiga e melhora o desempenho geral nos treinos.",
+    "modoDeUso": "Consulte a tabela nutricional na embalagem.",
+    "marca": "Adaptogen",
+    "porcao": "1 scoop (20g a 30g) 1h antes do treino",
+    "embalagem": "300g",
+    "doses": "10 a 15 por embalagem"
+  },
+  {
+    "id": "agent-orange-pre-workout-studio",
+    "nome": "Agent Orange Pre Workout Studio",
+    "categoria": "pre-treino",
+    "precoCentavos": 8000,
+    "imagem": "/img/pre-treino/agent-orange-pre-workout-studio.webp",
+    "spec": "A definir • Pré-Treino",
+    "tags": [
+      "Energia",
+      "Foco",
+      "Resistência"
+    ],
+    "descricao": "Suplemento pré-treino para máxima energia, foco e desempenho nos seus treinos.",
+    "paraQueServe": "Fornece energia intensa, foco mental e resistência. Combate a fadiga e melhora o desempenho geral nos treinos.",
+    "modoDeUso": "Consulte a embalagem.",
+    "porcao": "15g a 30g"
+  },
+  {
+    "id": "armagedom-studio",
+    "nome": "Armagedom Studio",
+    "categoria": "pre-treino",
+    "precoCentavos": null,
+    "imagem": "/img/pre-treino/armagedom-studio.webp",
+    "spec": "A definir • Pré-Treino",
+    "tags": [
+      "Energia",
+      "Foco",
+      "Resistência"
+    ],
+    "indisponivel": true,
+    "descricao": "Suplemento pré-treino para máxima energia, foco e desempenho nos seus treinos.",
+    "paraQueServe": "Fornece energia intensa, foco mental e resistência. Combate a fadiga e melhora o desempenho geral nos treinos.",
+    "modoDeUso": "Consulte a embalagem.",
+    "porcao": "15g a 30g"
+  },
+  {
+    "id": "bixo-doido-asv-cx",
+    "nome": "Bixo Doido Asv Caixa 15uni",
+    "categoria": "pre-treino",
+    "precoCentavos": 5500,
+    "imagem": "/img/pre-treino/bixo-doido-asv-cx.webp",
+    "variacoes": [
+      {
+        "nome": "Framboesa",
+        "imagem": "/img/pre-treino/bixo-doido-asv-cx--framboesa.webp"
+      },
+      {
+        "nome": "Frutas Amarelas",
+        "imagem": "/img/pre-treino/bixo-doido-asv-cx--frutas-amarelas.webp"
+      },
+      {
+        "nome": "Frutas Vermelhas",
+        "imagem": "/img/pre-treino/bixo-doido-asv-cx--frutas-vermelhas.webp"
+      }
+    ],
+    "spec": "A definir",
+    "tags": [],
+    "descricao": "Bixo Doido Asv Cx",
+    "paraQueServe": "Fornece energia intensa, foco mental e resistência. Combate a fadiga e melhora o desempenho geral nos treinos.",
+    "modoDeUso": "Consulte a embalagem.",
+    "marca": "ASV",
+    "porcao": "1 uni",
+    "embalagem": "Caixa com 15 unidades"
+  },
+  {
+    "id": "bixo-doido-asv-uni",
+    "nome": "Bixo Doido Asv Uni",
+    "categoria": "pre-treino",
+    "precoCentavos": 500,
+    "imagem": "/img/pre-treino/bixo-doido-asv-uni.webp",
+    "variacoes": [
+      {
+        "nome": "Framboesa",
+        "imagem": "/img/pre-treino/bixo-doido-asv-uni--framboesa.webp"
+      },
+      {
+        "nome": "Frutas Amarelas",
+        "imagem": "/img/pre-treino/bixo-doido-asv-uni--frutas-amarelas.webp"
+      },
+      {
+        "nome": "Frutas Vermelhas",
+        "imagem": "/img/pre-treino/bixo-doido-asv-uni--frutas-vermelhas.webp"
+      }
+    ],
+    "spec": "A definir",
+    "tags": [],
+    "descricao": "Bixo Doido Asv Uni",
+    "paraQueServe": "Fornece energia intensa, foco mental e resistência. Combate a fadiga e melhora o desempenho geral nos treinos.",
+    "modoDeUso": "Consulte a embalagem.",
+    "marca": "ASV",
+    "porcao": "Dose única por embalagem",
+    "embalagem": "Unidade"
+  },
+  {
+    "id": "darkness-evora-300g-xtreme-traning",
+    "nome": "Darkness Evora 300G Xtreme Traning",
+    "categoria": "pre-treino",
+    "precoCentavos": 11000,
+    "imagem": "/img/pre-treino/darkness-evora-300g-xtreme-traning.webp",
+    "variacoes": [
+      {
+        "nome": "Bloody Berry",
+        "imagem": "/img/pre-treino/darkness-evora-300g-xtreme-traning--bloody-berry.webp"
+      },
+      {
+        "nome": "Neon Berry",
+        "imagem": "/img/pre-treino/darkness-evora-300g-xtreme-traning--neon-berry.webp"
+      },
+      {
+        "nome": "Orange Storm",
+        "imagem": "/img/pre-treino/darkness-evora-300g-xtreme-traning--orange-storm.webp"
+      }
+    ],
+    "spec": "300G • Pré-Treino",
+    "tags": [
+      "Energia",
+      "Foco",
+      "Resistência"
+    ],
+    "descricao": "Suplemento pré-treino para máxima energia, foco e desempenho nos seus treinos.",
+    "paraQueServe": "Fornece energia intensa, foco mental e resistência. Combate a fadiga e melhora o desempenho geral nos treinos.",
+    "modoDeUso": "Consulte a embalagem.",
+    "marca": "Darkness",
+    "porcao": "1 scoop (20g a 30g) 1h antes do treino",
+    "embalagem": "300g",
+    "doses": "10 a 15 por embalagem"
+  },
+  {
+    "id": "darkness-evora-vulcan-300g",
+    "nome": "Darkness Evora Vulcan 300g",
+    "categoria": "pre-treino",
+    "precoCentavos": 12000,
+    "imagem": "/img/pre-treino/darkness-evora-vulcan-300g.webp",
+    "spec": "Unidade",
+    "tags": [],
+    "descricao": "Novo produto adicionado.",
+    "paraQueServe": "Fornece energia intensa, foco mental e resistência. Combate a fadiga e melhora o desempenho geral nos treinos.",
+    "modoDeUso": "Consulte a tabela nutricional na embalagem.",
+    "marca": "Darkness",
+    "porcao": "1 scoop (20g a 30g) 1h antes do treino",
+    "embalagem": "300g",
+    "doses": "10 a 15 por embalagem"
+  },
+  {
+    "id": "dcx-nutrition-apocalypse-450g",
+    "nome": "Dcx Nutrition Apocalypse 450g",
+    "categoria": "pre-treino",
+    "precoCentavos": 11999,
+    "imagem": "/img/pre-treino/dcx-nutrition-apocalypse-450g.webp",
+    "variacoes": [
+      {
+        "nome": "Frutas Amarelas",
+        "imagem": "/img/pre-treino/dcx-nutrition-apocalypse-450g--frutas-amarelas.webp"
+      },
+      {
+        "nome": "Maçã Verde",
+        "imagem": "/img/pre-treino/dcx-nutrition-apocalypse-450g--maca-verde.webp"
+      }
+    ],
+    "spec": "Unidade",
+    "tags": [],
+    "descricao": "Novo produto adicionado.",
+    "paraQueServe": "Fornece energia intensa, foco mental e resistência. Combate a fadiga e melhora o desempenho geral nos treinos.",
+    "modoDeUso": "Consulte a tabela nutricional na embalagem.",
+    "marca": "DC-X Nutrition",
+    "porcao": "1 scoop (20g a 30g) 1h antes do treino",
+    "embalagem": "450g",
+    "doses": "15 a 22 por embalagem"
+  },
+  {
+    "id": "demons-lab-psichotic-demon-black-300g",
+    "nome": "Demons Lab Psichotic Demon Black 300g",
+    "categoria": "pre-treino",
+    "precoCentavos": 14000,
+    "imagem": "/img/pre-treino/demons-lab-psichotic-demon-black-300g.webp",
+    "spec": "Unidade",
+    "tags": [],
+    "descricao": "Novo produto adicionado.",
+    "paraQueServe": "Fornece energia intensa, foco mental e resistência. Combate a fadiga e melhora o desempenho geral nos treinos.",
+    "modoDeUso": "Consulte a tabela nutricional na embalagem.",
+    "marca": "Demons Lab",
+    "porcao": "1 scoop (20g a 30g) 1h antes do treino",
+    "embalagem": "300g",
+    "doses": "10 a 15 por embalagem"
+  },
+  {
+    "id": "energy-gel-cx",
+    "nome": "Energy Gel Caixa com 10uni",
+    "categoria": "pre-treino",
+    "precoCentavos": 4000,
+    "imagem": "/img/pre-treino/energy-gel-cx.webp",
+    "variacoes": [
+      {
+        "nome": "Açaí com Guaraná",
+        "imagem": "/img/pre-treino/energy-gel-cx--acai-com-guarana.webp"
+      },
+      {
+        "nome": "Frutas Vermelhas",
+        "imagem": "/img/pre-treino/energy-gel-cx--frutas-vermelhas.webp"
+      },
+      {
+        "nome": "Tangerina",
+        "imagem": "/img/pre-treino/energy-gel-cx--tangerina.webp"
+      }
+    ],
+    "spec": "A definir • Pré-Treino",
+    "tags": [
+      "Energia",
+      "Foco",
+      "Resistência"
+    ],
+    "descricao": "Suplemento pré-treino para máxima energia, foco e desempenho nos seus treinos.",
+    "paraQueServe": "Fornece energia intensa, foco mental e resistência. Combate a fadiga e melhora o desempenho geral nos treinos.",
+    "modoDeUso": "Consulte a embalagem.",
+    "marca": "New Millen",
+    "porcao": "1 uni",
+    "embalagem": "Caixa com 10 unidades"
+  },
+  {
+    "id": "energy-gel-uni",
+    "nome": "Energy Gel Uni",
+    "categoria": "pre-treino",
+    "precoCentavos": 400,
+    "imagem": "/img/pre-treino/energy-gel-uni.webp",
+    "variacoes": [
+      {
+        "nome": "Açaí com Guaraná",
+        "imagem": "/img/pre-treino/energy-gel-uni--acai-com-guarana.webp"
+      },
+      {
+        "nome": "Frutas Vermelhas",
+        "imagem": "/img/pre-treino/energy-gel-uni--frutas-vermelhas.webp"
+      },
+      {
+        "nome": "Tangerina",
+        "imagem": "/img/pre-treino/energy-gel-uni--tangerina.webp"
+      }
+    ],
+    "spec": "A definir • Pré-Treino",
+    "tags": [
+      "Energia",
+      "Foco",
+      "Resistência"
+    ],
+    "descricao": "Suplemento pré-treino para máxima energia, foco e desempenho nos seus treinos.",
+    "paraQueServe": "Fornece energia intensa, foco mental e resistência. Combate a fadiga e melhora o desempenho geral nos treinos.",
+    "modoDeUso": "Consulte a embalagem.",
+    "marca": "New Millen",
+    "porcao": "Embalagem única",
+    "embalagem": "Unidade"
+  },
+  {
+    "id": "evorapw-studio",
+    "nome": "Evorapw Studio",
+    "categoria": "pre-treino",
+    "precoCentavos": null,
+    "imagem": "/img/pre-treino/evorapw-studio.webp",
+    "spec": "A definir • Pré-Treino",
+    "tags": [
+      "Energia",
+      "Foco",
+      "Resistência"
+    ],
+    "indisponivel": true,
+    "descricao": "Suplemento pré-treino para máxima energia, foco e desempenho nos seus treinos.",
+    "paraQueServe": "Fornece energia intensa, foco mental e resistência. Combate a fadiga e melhora o desempenho geral nos treinos.",
+    "modoDeUso": "Consulte a embalagem.",
+    "marca": "Darkness",
+    "porcao": "15g a 30g"
+  },
+  {
+    "id": "fckng-booster-psycho-red-studio",
+    "nome": "Fckng Booster Psycho Red Studio",
+    "categoria": "pre-treino",
+    "precoCentavos": null,
+    "imagem": "/img/pre-treino/fckng-booster-psycho-red-studio.webp",
+    "spec": "A definir • Pré-Treino",
+    "tags": [
+      "Energia",
+      "Foco",
+      "Resistência"
+    ],
+    "indisponivel": true,
+    "descricao": "Suplemento pré-treino para máxima energia, foco e desempenho nos seus treinos.",
+    "paraQueServe": "Fornece energia intensa, foco mental e resistência. Combate a fadiga e melhora o desempenho geral nos treinos.",
+    "modoDeUso": "Consulte a embalagem.",
+    "porcao": "15g a 30g"
+  },
+  {
+    "id": "hidro-carb-laranja-monster-body-caixa",
+    "nome": "hidro carb monster body caixa com 15uni",
+    "categoria": "pre-treino",
+    "precoCentavos": 8000,
+    "imagem": "/img/pre-treino/hidro-carb-laranja-monster-body-caixa.webp",
+    "variacoes": [
+      {
+        "nome": "Chiclete",
+        "imagem": "/img/pre-treino/hidro-carb-laranja-monster-body-caixa--chiclete.webp"
+      },
+      {
+        "nome": "Laranja",
+        "imagem": "/img/pre-treino/hidro-carb-laranja-monster-body-caixa--laranja.webp"
+      },
+      {
+        "nome": "Limão",
+        "imagem": "/img/pre-treino/hidro-carb-laranja-monster-body-caixa--limao.webp"
+      }
+    ],
+    "spec": "A definir • Pré-Treino",
+    "tags": [
+      "Energia",
+      "Foco",
+      "Resistência"
+    ],
+    "descricao": "Suplemento pré-treino para máxima energia, foco e desempenho nos seus treinos.",
+    "paraQueServe": "Fornece energia intensa, foco mental e resistência. Combate a fadiga e melhora o desempenho geral nos treinos.",
+    "modoDeUso": "Consulte a embalagem.",
+    "marca": "Monster Body",
+    "porcao": "1 uni",
+    "embalagem": "Caixa com 15 unidades"
+  },
+  {
+    "id": "hidrocarb-monster-body-uni",
+    "nome": "Hidrocarb Monster Body Uni",
+    "categoria": "pre-treino",
+    "precoCentavos": 700,
+    "imagem": "/img/pre-treino/hidrocarb-monster-body-uni.webp",
+    "variacoes": [
+      {
+        "nome": "Chiclete",
+        "imagem": "/img/pre-treino/hidrocarb-monster-body-uni--chiclete.webp"
+      },
+      {
+        "nome": "Laranja",
+        "imagem": "/img/pre-treino/hidrocarb-monster-body-uni--laranja.webp"
+      },
+      {
+        "nome": "Limão",
+        "imagem": "/img/pre-treino/hidrocarb-monster-body-uni--limao.webp"
+      }
+    ],
+    "spec": "A definir",
+    "tags": [],
+    "descricao": "Hidrocarb Monster Body Uni",
+    "paraQueServe": "Fornece energia intensa, foco mental e resistência. Combate a fadiga e melhora o desempenho geral nos treinos.",
+    "modoDeUso": "Consulte a embalagem.",
+    "marca": "Monster Body",
+    "porcao": "Dose única por embalagem",
+    "embalagem": "Unidade"
+  },
+  {
+    "id": "hop-cyber-pump-300g",
+    "nome": "Hop Cyber Pump 300G",
+    "categoria": "pre-treino",
+    "precoCentavos": 8500,
+    "imagem": "/img/pre-treino/hop-cyber-pump-300g.webp",
+    "variacoes": [
+      {
+        "nome": "Atomic Apple",
+        "imagem": "/img/pre-treino/hop-cyber-pump-300g--atomic-apple.webp"
+      },
+      {
+        "nome": "Grape Storm",
+        "imagem": "/img/pre-treino/hop-cyber-pump-300g--grape-storm.webp"
+      }
+    ],
+    "spec": "300G • Pré-Treino",
+    "tags": [
+      "Energia",
+      "Foco",
+      "Resistência"
+    ],
+    "descricao": "Suplemento pré-treino para máxima energia, foco e desempenho nos seus treinos.",
+    "paraQueServe": "Fornece energia intensa, foco mental e resistência. Combate a fadiga e melhora o desempenho geral nos treinos.",
+    "modoDeUso": "Consulte a embalagem.",
+    "marca": "Hop Nutrition",
+    "porcao": "1 scoop (20g a 30g) 1h antes do treino",
+    "embalagem": "300g",
+    "doses": "10 a 15 por embalagem"
+  },
+  {
+    "id": "horse-dry-cranberry-studio",
+    "nome": "Horse Dry Cranberry Studio",
+    "categoria": "pre-treino",
+    "precoCentavos": null,
+    "imagem": "/img/pre-treino/horse-dry-cranberry-studio.webp",
+    "spec": "A definir • Pré-Treino",
+    "tags": [
+      "Energia",
+      "Foco",
+      "Resistência"
+    ],
+    "indisponivel": true,
+    "descricao": "Suplemento pré-treino para máxima energia, foco e desempenho nos seus treinos.",
+    "paraQueServe": "Fornece energia intensa, foco mental e resistência. Combate a fadiga e melhora o desempenho geral nos treinos.",
+    "modoDeUso": "Consulte a embalagem.",
+    "marca": "Vitamin Horse",
+    "porcao": "15g a 30g"
+  },
+  {
+    "id": "hyper-endurance-xtr-for-life-400g",
+    "nome": "Hyper Endurance Xtr For Life 400G",
+    "categoria": "pre-treino",
+    "precoCentavos": 7500,
+    "imagem": "/img/pre-treino/hyper-endurance-xtr-for-life-400g.webp",
+    "variacoes": [
+      {
+        "nome": "Frutas Amarelas",
+        "imagem": "/img/pre-treino/hyper-endurance-xtr-for-life-400g--frutas-amarelas.webp"
+      },
+      {
+        "nome": "Frutas Azuis",
+        "imagem": "/img/pre-treino/hyper-endurance-xtr-for-life-400g--frutas-azuis.webp"
+      },
+      {
+        "nome": "Frutas Vermelhas",
+        "imagem": "/img/pre-treino/hyper-endurance-xtr-for-life-400g--frutas-vermelhas.webp"
+      },
+      {
+        "nome": "Limão",
+        "imagem": "/img/pre-treino/hyper-endurance-xtr-for-life-400g--limao.webp"
+      }
+    ],
+    "spec": "400G • Pré-Treino",
+    "tags": [
+      "Energia",
+      "Foco",
+      "Resistência"
+    ],
+    "descricao": "Suplemento pré-treino para máxima energia, foco e desempenho nos seus treinos.",
+    "paraQueServe": "Fornece energia intensa, foco mental e resistência. Combate a fadiga e melhora o desempenho geral nos treinos.",
+    "modoDeUso": "Consulte a embalagem.",
+    "marca": "For Life",
+    "porcao": "1 scoop (20g a 30g) 1h antes do treino",
+    "embalagem": "400g",
+    "doses": "13 a 20 por embalagem"
+  },
+  {
+    "id": "insane-clown-350g-",
+    "nome": "Insane Clown 350G ",
+    "categoria": "pre-treino",
+    "precoCentavos": 13900,
+    "imagem": "/img/pre-treino/insane-clown-350g-.webp",
+    "spec": "350G • Pré-Treino",
+    "tags": [
+      "Energia",
+      "Foco",
+      "Resistência"
+    ],
+    "descricao": "Suplemento pré-treino para máxima energia, foco e desempenho nos seus treinos.",
+    "paraQueServe": "Fornece energia intensa, foco mental e resistência. Combate a fadiga e melhora o desempenho geral nos treinos.",
+    "modoDeUso": "Consulte a embalagem.",
+    "porcao": "1 scoop (20g a 30g) 1h antes do treino",
+    "embalagem": "350g",
+    "doses": "11 a 17 por embalagem"
+  },
+  {
+    "id": "integral-prime-300g",
+    "nome": "Integral Prime 300g",
+    "categoria": "pre-treino",
+    "precoCentavos": 10000,
+    "imagem": "/img/pre-treino/integral-prime-300g.webp",
+    "variacoes": [
+      {
+        "nome": "Fúria Vermelha",
+        "imagem": "/img/pre-treino/integral-prime-300g--furia-vermelha.webp"
+      },
+      {
+        "nome": "Vermelho Sangue",
+        "imagem": "/img/pre-treino/integral-prime-300g--vermelho-sangue.webp"
+      }
+    ],
+    "spec": "Unidade",
+    "tags": [],
+    "descricao": "Novo produto adicionado.",
+    "paraQueServe": "Fornece energia intensa, foco mental e resistência. Combate a fadiga e melhora o desempenho geral nos treinos.",
+    "modoDeUso": "Consulte a tabela nutricional na embalagem.",
+    "marca": "Integralmédica",
+    "porcao": "1 scoop (20g a 30g) 1h antes do treino",
+    "embalagem": "300g",
+    "doses": "10 a 15 por embalagem"
+  },
+  {
+    "id": "maltodextrin-tangerina-",
+    "nome": "maltodextrin absolut",
+    "categoria": "pre-treino",
+    "precoCentavos": 3500,
+    "imagem": "/img/pre-treino/maltodextrin-tangerina-.webp",
+    "variacoes": [
+      {
+        "nome": "Açaí com Guaraná",
+        "imagem": "/img/pre-treino/maltodextrin-tangerina---acai-com-guarana.webp"
+      },
+      {
+        "nome": "Limão",
+        "imagem": "/img/pre-treino/maltodextrin-tangerina---limao.webp"
+      },
+      {
+        "nome": "Tangerina",
+        "imagem": "/img/pre-treino/maltodextrin-tangerina---tangerina.webp"
+      }
+    ],
+    "spec": "A definir • Pré-Treino",
+    "tags": [
+      "Energia",
+      "Foco",
+      "Resistência"
+    ],
+    "descricao": "Suplemento pré-treino para máxima energia, foco e desempenho nos seus treinos.",
+    "paraQueServe": "Fornece energia intensa, foco mental e resistência. Combate a fadiga e melhora o desempenho geral nos treinos.",
+    "modoDeUso": "Consulte a embalagem.",
+    "marca": "Absolut Nutrition",
+    "porcao": "15g a 30g"
+  },
+  {
+    "id": "max-shook-brand-o-300g",
+    "nome": "Max Shook Brandão 300g",
+    "categoria": "pre-treino",
+    "precoCentavos": 10900,
+    "imagem": "/img/pre-treino/max-shook-brand-o-300g.webp",
+    "variacoes": [
+      {
+        "nome": "Manga e Pêssego",
+        "imagem": "/img/pre-treino/max-shook-brand-o-300g--manga-e-pessego.webp"
+      },
+      {
+        "nome": "Uva",
+        "imagem": "/img/pre-treino/max-shook-brand-o-300g--uva.webp"
+      }
+    ],
+    "spec": "Unidade",
+    "tags": [],
+    "descricao": "Novo produto adicionado.",
+    "paraQueServe": "Fornece energia intensa, foco mental e resistência. Combate a fadiga e melhora o desempenho geral nos treinos.",
+    "modoDeUso": "Consulte a tabela nutricional na embalagem.",
+    "marca": "Max Titanium",
+    "porcao": "1 scoop (20g a 30g) 1h antes do treino",
+    "embalagem": "300g",
+    "doses": "10 a 15 por embalagem"
+  },
+  {
+    "id": "max-tropa-tenente-breno-300g",
+    "nome": "Max Tropa Tenente Breno 300g",
+    "categoria": "pre-treino",
+    "precoCentavos": 10900,
+    "imagem": "/img/pre-treino/max-tropa-tenente-breno-300g.webp",
+    "spec": "Unidade",
+    "tags": [],
+    "descricao": "Novo produto adicionado.",
+    "paraQueServe": "Fornece energia intensa, foco mental e resistência. Combate a fadiga e melhora o desempenho geral nos treinos.",
+    "modoDeUso": "Consulte a tabela nutricional na embalagem.",
+    "marca": "Max Titanium",
+    "porcao": "1 scoop (20g a 30g) 1h antes do treino",
+    "embalagem": "300g",
+    "doses": "10 a 15 por embalagem"
+  },
+  {
+    "id": "megaton-pre-treino-300g-mk-supplements",
+    "nome": "Megaton Pre Treino 300G Mk Supplements",
+    "categoria": "pre-treino",
+    "precoCentavos": 7500,
+    "imagem": "/img/pre-treino/megaton-pre-treino-300g-mk-supplements.webp",
+    "variacoes": [
+      {
+        "nome": "Limão",
+        "imagem": "/img/pre-treino/megaton-pre-treino-300g-mk-supplements--limao.webp"
+      },
+      {
+        "nome": "Manga",
+        "imagem": "/img/pre-treino/megaton-pre-treino-300g-mk-supplements--manga.webp"
+      }
+    ],
+    "spec": "300G • Pré-Treino",
+    "tags": [
+      "Energia",
+      "Foco",
+      "Resistência"
+    ],
+    "descricao": "Suplemento pré-treino para máxima energia, foco e desempenho nos seus treinos.",
+    "paraQueServe": "Fornece energia intensa, foco mental e resistência. Combate a fadiga e melhora o desempenho geral nos treinos.",
+    "modoDeUso": "Consulte a embalagem.",
+    "marca": "MK Supplements",
+    "porcao": "1 scoop (20g a 30g) 1h antes do treino",
+    "embalagem": "300g",
+    "doses": "10 a 15 por embalagem"
+  },
+  {
+    "id": "metamorfose-monster-body-night-training-sem-cafeina-300g",
+    "nome": "Metamorfose Monster Body Night Training Sem Cafeina 300g",
+    "categoria": "pre-treino",
+    "precoCentavos": 7500,
+    "imagem": "/img/pre-treino/metamorfose-monster-body-night-training-sem-cafeina-300g.webp",
+    "spec": "Unidade",
+    "tags": [],
+    "descricao": "Novo produto adicionado.",
+    "paraQueServe": "Fornece energia intensa, foco mental e resistência. Combate a fadiga e melhora o desempenho geral nos treinos.",
+    "modoDeUso": "Consulte a tabela nutricional na embalagem.",
+    "marca": "Monster Body",
+    "porcao": "1 scoop (20g a 30g) 1h antes do treino",
+    "embalagem": "300g",
+    "doses": "10 a 15 por embalagem"
+  },
+  {
+    "id": "monster-body-metamorfose-hard-training-300g",
+    "nome": "Monster Body Metamorfose Hard Training 300g",
+    "categoria": "pre-treino",
+    "precoCentavos": 7500,
+    "imagem": "/img/pre-treino/monster-body-metamorfose-hard-training-300g.webp",
+    "variacoes": [
+      {
+        "nome": "Laranja",
+        "imagem": "/img/pre-treino/monster-body-metamorfose-hard-training-300g--laranja.webp"
+      },
+      {
+        "nome": "Melancia com Limão",
+        "imagem": "/img/pre-treino/monster-body-metamorfose-hard-training-300g--melancia-com-limao.webp"
+      }
+    ],
+    "spec": "Unidade",
+    "tags": [],
+    "descricao": "Novo produto adicionado.",
+    "paraQueServe": "Fornece energia intensa, foco mental e resistência. Combate a fadiga e melhora o desempenho geral nos treinos.",
+    "modoDeUso": "Consulte a tabela nutricional na embalagem.",
+    "marca": "Monster Body",
+    "porcao": "1 scoop (20g a 30g) 1h antes do treino",
+    "embalagem": "300g",
+    "doses": "10 a 15 por embalagem"
+  },
+  {
+    "id": "nuclear-rush",
+    "nome": "Nuclear Rush",
+    "categoria": "pre-treino",
+    "precoCentavos": null,
+    "imagem": "/img/pre-treino/nuclear-rush.webp",
+    "spec": "A definir • Pré-Treino",
+    "tags": [
+      "Energia",
+      "Foco",
+      "Resistência"
+    ],
+    "indisponivel": true,
+    "descricao": "Suplemento pré-treino para máxima energia, foco e desempenho nos seus treinos.",
+    "paraQueServe": "Fornece energia intensa, foco mental e resistência. Combate a fadiga e melhora o desempenho geral nos treinos.",
+    "modoDeUso": "Consulte a embalagem.",
+    "porcao": "15g a 30g"
+  },
+  {
+    "id": "o-pretreino-neuro-shock-insano",
+    "nome": "O Pretreino Neuro Shock Insano",
+    "categoria": "pre-treino",
+    "precoCentavos": null,
+    "imagem": "/img/pre-treino/o-pretreino-neuro-shock-insano.webp",
+    "spec": "A definir • Pré-Treino",
+    "tags": [
+      "Energia",
+      "Foco",
+      "Resistência"
+    ],
+    "indisponivel": true,
+    "descricao": "Suplemento pré-treino para máxima energia, foco e desempenho nos seus treinos.",
+    "paraQueServe": "Fornece energia intensa, foco mental e resistência. Combate a fadiga e melhora o desempenho geral nos treinos.",
+    "modoDeUso": "Consulte a embalagem.",
+    "porcao": "15g a 30g"
+  },
+  {
+    "id": "pre-treino-2hot-200g-uva-max-titanium-275",
+    "nome": "Pre Treino 2Hot 200G Uva Max Titanium 275",
+    "categoria": "pre-treino",
+    "precoCentavos": 7500,
+    "imagem": "/img/pre-treino/pre-treino-2hot-200g-uva-max-titanium-275.webp",
+    "spec": "200G • Pré-Treino",
+    "tags": [
+      "Energia",
+      "Foco",
+      "Resistência"
+    ],
+    "indisponivel": true,
+    "descricao": "Suplemento pré-treino para máxima energia, foco e desempenho nos seus treinos.",
+    "paraQueServe": "Fornece energia intensa, foco mental e resistência. Combate a fadiga e melhora o desempenho geral nos treinos.",
+    "modoDeUso": "Consulte a embalagem.",
+    "marca": "Max Titanium",
+    "porcao": "1 scoop (20g a 30g) 1h antes do treino",
+    "embalagem": "200g",
+    "doses": "6 a 10 por embalagem"
+  },
+  {
+    "id": "pre-treino-falcon-raptor-nanogen-450g",
+    "nome": "Pre Treino Falcon Raptor Nanogen 450G",
+    "categoria": "pre-treino",
+    "precoCentavos": 9900,
+    "imagem": "/img/pre-treino/pre-treino-falcon-raptor-nanogen-450g.webp",
+    "spec": "450G • Pré-Treino",
+    "tags": [
+      "Energia",
+      "Foco",
+      "Resistência"
+    ],
+    "descricao": "Suplemento pré-treino para máxima energia, foco e desempenho nos seus treinos.",
+    "paraQueServe": "Fornece energia intensa, foco mental e resistência. Combate a fadiga e melhora o desempenho geral nos treinos.",
+    "modoDeUso": "Consulte a embalagem.",
+    "marca": "Nanogen",
+    "porcao": "1 scoop (20g a 30g) 1h antes do treino",
+    "embalagem": "450g",
+    "doses": "15 a 22 por embalagem"
+  },
+  {
+    "id": "pre-treino-horus-7-belo-300g",
+    "nome": "Pre Treino Horus 7 Belo 300G",
+    "categoria": "pre-treino",
+    "precoCentavos": 9000,
+    "imagem": "/img/pre-treino/pre-treino-horus-7-belo-300g.webp",
+    "spec": "300G • Pré-Treino",
+    "tags": [
+      "Energia",
+      "Foco",
+      "Resistência"
+    ],
+    "descricao": "Suplemento pré-treino para máxima energia, foco e desempenho nos seus treinos.",
+    "paraQueServe": "Fornece energia intensa, foco mental e resistência. Combate a fadiga e melhora o desempenho geral nos treinos.",
+    "modoDeUso": "Consulte a embalagem.",
+    "marca": "7 Belo",
+    "porcao": "1 scoop (20g a 30g) 1h antes do treino",
+    "embalagem": "300g",
+    "doses": "10 a 15 por embalagem"
+  },
+  {
+    "id": "pre-treino-metamorfose-light-taining-300g",
+    "nome": "Pre Treino Metamorfose Light Training 300G",
+    "categoria": "pre-treino",
+    "precoCentavos": 7500,
+    "imagem": "/img/pre-treino/pre-treino-metamorfose-light-taining-300g.webp",
+    "variacoes": [
+      {
+        "nome": "Chiclete",
+        "imagem": "/img/pre-treino/pre-treino-metamorfose-light-taining-300g--chiclete.webp"
+      },
+      {
+        "nome": "Limão",
+        "imagem": "/img/pre-treino/pre-treino-metamorfose-light-taining-300g--limao.webp"
+      },
+      {
+        "nome": "Uva",
+        "imagem": "/img/pre-treino/pre-treino-metamorfose-light-taining-300g--uva.webp"
+      }
+    ],
+    "spec": "300G • Pré-Treino",
+    "tags": [
+      "Energia",
+      "Foco",
+      "Resistência"
+    ],
+    "descricao": "Suplemento pré-treino para máxima energia, foco e desempenho nos seus treinos.",
+    "paraQueServe": "Fornece energia intensa, foco mental e resistência. Combate a fadiga e melhora o desempenho geral nos treinos.",
+    "modoDeUso": "Consulte a embalagem.",
+    "marca": "Monster Body",
+    "porcao": "1 scoop (20g a 30g) 1h antes do treino",
+    "embalagem": "300g",
+    "doses": "10 a 15 por embalagem"
+  },
+  {
+    "id": "pre-treino-metamorfose-noturno-300gjpg",
+    "nome": "Pre Treino Metamorfose Noturno 300G",
+    "categoria": "pre-treino",
+    "precoCentavos": 7500,
+    "imagem": "/img/pre-treino/pre-treino-metamorfose-noturno-300gjpg.webp",
+    "spec": "A definir • Pré-Treino",
+    "tags": [
+      "Energia",
+      "Foco",
+      "Resistência"
+    ],
+    "descricao": "Suplemento pré-treino para máxima energia, foco e desempenho nos seus treinos.",
+    "paraQueServe": "Fornece energia intensa, foco mental e resistência. Combate a fadiga e melhora o desempenho geral nos treinos.",
+    "modoDeUso": "Consulte a embalagem.",
+    "marca": "Monster Body",
+    "porcao": "1 scoop (20g a 30g) 1h antes do treino",
+    "embalagem": "300g",
+    "doses": "10 a 15 por embalagem"
+  },
+  {
+    "id": "pre-treino-muscle-hd-furia-hd-frutas-vermelhas-300g-jpg",
+    "nome": "Pre Treino Muscle Hd Furia Hd Frutas Vermelhas 300G Jpg",
+    "categoria": "pre-treino",
+    "precoCentavos": null,
+    "imagem": "/img/pre-treino/pre-treino-muscle-hd-furia-hd-frutas-vermelhas-300g-jpg.webp",
+    "spec": "300G • Pré-Treino",
+    "tags": [
+      "Energia",
+      "Foco",
+      "Resistência"
+    ],
+    "indisponivel": true,
+    "descricao": "Suplemento pré-treino para máxima energia, foco e desempenho nos seus treinos.",
+    "paraQueServe": "Fornece energia intensa, foco mental e resistência. Combate a fadiga e melhora o desempenho geral nos treinos.",
+    "modoDeUso": "Consulte a embalagem.",
+    "marca": "Muscle HD",
+    "porcao": "1 scoop (20g a 30g) 1h antes do treino",
+    "embalagem": "300g",
+    "doses": "10 a 15 por embalagem"
+  },
+  {
+    "id": "pré-treino-termogênico-forza-max-300g-bio-sport-usa",
+    "nome": "Pré Treino Termogênico Forza Max 300G Bio Sport Usa",
+    "categoria": "pre-treino",
+    "precoCentavos": 7500,
+    "imagem": "/img/pre-treino/pre-treino-termogenico-forza-max-300g-bio-sport-usa.webp",
+    "variacoes": [
+      {
+        "nome": "Maçã Verde",
+        "imagem": "/img/pre-treino/pre-treino-termogenico-forza-max-300g-bio-sport-usa-maca-verde.webp"
+      },
+      {
+        "nome": "Uva",
+        "imagem": "/img/pre-treino/pre-treino-termogenico-forza-max-300g-bio-sport-usa-uva.webp"
+      }
+    ],
+    "spec": "300G • Pré-Treino",
+    "tags": [
+      "Energia",
+      "Foco",
+      "Resistência"
+    ],
+    "descricao": "Suplemento pré-treino para máxima energia, foco e desempenho nos seus treinos.",
+    "paraQueServe": "Fornece energia intensa, foco mental e resistência. Combate a fadiga e melhora o desempenho geral nos treinos.",
+    "modoDeUso": "Consulte a embalagem.",
+    "marca": "Bio Sport USA",
+    "porcao": "1 scoop (20g a 30g) 1h antes do treino",
+    "embalagem": "300g",
+    "doses": "10 a 15 por embalagem"
+  },
+  {
+    "id": "pre-treino-xtreme-power-edition-xpro",
+    "nome": "Pre Treino Xtreme Power Edition Xpro",
+    "categoria": "pre-treino",
+    "precoCentavos": 7500,
+    "imagem": "/img/pre-treino/pre-treino-xtreme-power-edition-xpro.webp",
+    "spec": "A definir • Pré-Treino",
+    "tags": [
+      "Energia",
+      "Foco",
+      "Resistência"
+    ],
+    "descricao": "Suplemento pré-treino para máxima energia, foco e desempenho nos seus treinos.",
+    "paraQueServe": "Fornece energia intensa, foco mental e resistência. Combate a fadiga e melhora o desempenho geral nos treinos.",
+    "modoDeUso": "Consulte a embalagem.",
+    "marca": "Xpro Nutrition",
+    "porcao": "15g a 30g"
+  },
+  {
+    "id": "pre-work-pote-300g-blue-ice-us-nutrition-pre-treino",
+    "nome": "Pre Work   Pote   300G   Blue Ice   Us Nutrition   Pre Treino",
+    "categoria": "pre-treino",
+    "precoCentavos": null,
+    "imagem": "/img/pre-treino/pre-work-pote-300g-blue-ice-us-nutrition-pre-treino.webp",
+    "spec": "300G • Pré-Treino",
+    "tags": [
+      "Energia",
+      "Foco",
+      "Resistência"
+    ],
+    "indisponivel": true,
+    "descricao": "Suplemento pré-treino para máxima energia, foco e desempenho nos seus treinos.",
+    "paraQueServe": "Fornece energia intensa, foco mental e resistência. Combate a fadiga e melhora o desempenho geral nos treinos.",
+    "modoDeUso": "Consulte a embalagem.",
+    "marca": "US Nutrition",
+    "porcao": "1 scoop (20g a 30g) 1h antes do treino",
+    "embalagem": "300g",
+    "doses": "10 a 15 por embalagem"
+  },
+  {
+    "id": "horus-frutas-vermelhas-150g-frente",
+    "nome": "Pré-Treino Hórus Max Titanium 150g",
+    "categoria": "pre-treino",
+    "precoCentavos": 5000,
+    "imagem": "/img/pre-treino/horus-frutas-vermelhas-150g-frente.webp",
+    "variacoes": [
+      {
+        "nome": "Amora",
+        "imagem": "/img/pre-treino/horus-frutas-vermelhas-150g-frente--amora.webp"
+      },
+      {
+        "nome": "Blue Ice",
+        "imagem": "/img/pre-treino/horus-frutas-vermelhas-150g-frente--blue-ice.webp"
+      },
+      {
+        "nome": "Citrus",
+        "imagem": "/img/pre-treino/horus-frutas-vermelhas-150g-frente--citrus.webp"
+      },
+      {
+        "nome": "Frutas Vermelhas",
+        "imagem": "/img/pre-treino/horus-frutas-vermelhas-150g-frente--frutas-vermelhas.webp"
+      },
+      {
+        "nome": "Limão Yuzu",
+        "imagem": "/img/pre-treino/horus-frutas-vermelhas-150g-frente--limao-yuzu.webp"
+      },
+      {
+        "nome": "Maçã Verde",
+        "imagem": "/img/pre-treino/horus-frutas-vermelhas-150g-frente--maca-verde.webp"
+      }
+    ],
+    "spec": "150G • Pré-Treino",
+    "tags": [
+      "Energia",
+      "Foco",
+      "Resistência"
+    ],
+    "descricao": "Suplemento pré-treino para máxima energia, foco e desempenho nos seus treinos.",
+    "paraQueServe": "Fornece energia intensa, foco mental e resistência. Combate a fadiga e melhora o desempenho geral nos treinos.",
+    "modoDeUso": "Consulte a embalagem.",
+    "marca": "Max Titanium",
+    "porcao": "1 scoop (20g a 30g) 1h antes do treino",
+    "embalagem": "150g",
+    "doses": "5 a 7 por embalagem"
+  },
+  {
+    "id": "pre-treino-horus-300g",
+    "nome": "Pré-Treino Hórus Max Titanium 300g",
+    "categoria": "pre-treino",
+    "precoCentavos": 9000,
+    "imagem": "/img/pre-treino/pre-treino-horus-300g.webp",
+    "variacoes": [
+      {
+        "nome": "Amora",
+        "imagem": "/img/pre-treino/pre-treino-horus-300g--amora.webp"
+      },
+      {
+        "nome": "Blue Ice",
+        "imagem": "/img/pre-treino/pre-treino-horus-300g--blue-ice.webp"
+      },
+      {
+        "nome": "Citrus",
+        "imagem": "/img/pre-treino/pre-treino-horus-300g--citrus.webp"
+      },
+      {
+        "nome": "Frutas Vermelhas",
+        "imagem": "/img/pre-treino/pre-treino-horus-300g--frutas-vermelhas.webp"
+      },
+      {
+        "nome": "Limão Yuzu",
+        "imagem": "/img/pre-treino/pre-treino-horus-300g--limao-yuzu.webp"
+      },
+      {
+        "nome": "Maçã Verde",
+        "imagem": "/img/pre-treino/pre-treino-horus-300g--maca-verde.webp"
+      }
+    ],
+    "spec": "300g • Beta-Alanina + Cafeína + Taurina",
+    "tags": [
+      "Foco Extremo",
+      "Resistência",
+      "Vasodilatação"
+    ],
+    "badge": "Mais Vendido",
+    "destaque": true,
+    "descricao": "Hórus é o pré-treino campeão de vendas da Max Titanium. Com beta-alanina, cafeína, taurina e arginina para quem busca rendimento acima da média.",
+    "paraQueServe": "Fornece energia intensa, foco mental e resistência. Combate a fadiga e melhora o desempenho geral nos treinos.",
+    "modoDeUso": "Tomar 1 dose 20 a 30 minutos antes do treino.",
+    "marca": "Max Titanium",
+    "porcao": "8.4g (1 scoop)",
+    "embalagem": "300g",
+    "doses": "35 por embalagem",
+    "extras": {
+      "Sabores": "Frutas Vermelhas, Citrus, Maçã Verde"
+    }
+  },
+  {
+    "id": "psychotic-studio",
+    "nome": "Psychotic Studio",
+    "categoria": "pre-treino",
+    "precoCentavos": null,
+    "imagem": "/img/pre-treino/psychotic-studio.webp",
+    "spec": "A definir • Pré-Treino",
+    "tags": [
+      "Energia",
+      "Foco",
+      "Resistência"
+    ],
+    "indisponivel": true,
+    "descricao": "Suplemento pré-treino para máxima energia, foco e desempenho nos seus treinos.",
+    "paraQueServe": "Fornece energia intensa, foco mental e resistência. Combate a fadiga e melhora o desempenho geral nos treinos.",
+    "modoDeUso": "Consulte a embalagem.",
+    "porcao": "15g a 30g"
+  },
+  {
+    "id": "punk-pump",
+    "nome": "Punk Pump euronutry",
+    "categoria": "pre-treino",
+    "precoCentavos": 8900,
+    "imagem": "/img/pre-treino/punk-pump.webp",
+    "variacoes": [
+      {
+        "nome": "Cranberry",
+        "imagem": "/img/pre-treino/punk-pump--cranberry.webp"
+      },
+      {
+        "nome": "Mango",
+        "imagem": "/img/pre-treino/punk-pump--mango.webp"
+      },
+      {
+        "nome": "Strawberry Peach",
+        "imagem": "/img/pre-treino/punk-pump--strawberry-peach.webp"
+      }
+    ],
+    "spec": "A definir • Pré-Treino",
+    "tags": [
+      "Energia",
+      "Foco",
+      "Resistência"
+    ],
+    "descricao": "Suplemento pré-treino para máxima energia, foco e desempenho nos seus treinos.",
+    "paraQueServe": "Fornece energia intensa, foco mental e resistência. Combate a fadiga e melhora o desempenho geral nos treinos.",
+    "modoDeUso": "Consulte a embalagem.",
+    "marca": "Euronutry",
+    "porcao": "15g a 30g"
+  },
+  {
+    "id": "pure-pre-workout",
+    "nome": "Pure Pre Workout",
+    "categoria": "pre-treino",
+    "precoCentavos": null,
+    "imagem": "/img/pre-treino/pure-pre-workout.webp",
+    "spec": "A definir • Pré-Treino",
+    "tags": [
+      "Energia",
+      "Foco",
+      "Resistência"
+    ],
+    "indisponivel": true,
+    "descricao": "Suplemento pré-treino para máxima energia, foco e desempenho nos seus treinos.",
+    "paraQueServe": "Fornece energia intensa, foco mental e resistência. Combate a fadiga e melhora o desempenho geral nos treinos.",
+    "modoDeUso": "Consulte a embalagem.",
+    "porcao": "15g a 30g"
+  },
+  {
+    "id": "shark-up-black-carbo-gel-caixa",
+    "nome": "Shark Up Black Carbo Gel Caixa com 10uni",
+    "categoria": "pre-treino",
+    "precoCentavos": 3800,
+    "imagem": "/img/pre-treino/shark-up-black-carbo-gel-caixa.webp",
+    "variacoes": [
+      {
+        "nome": "Açaí com Banana",
+        "imagem": "/img/pre-treino/shark-up-black-carbo-gel-caixa--acai-com-banana.webp"
+      },
+      {
+        "nome": "Caramelo",
+        "imagem": "/img/pre-treino/shark-up-black-carbo-gel-caixa--caramelo.webp"
+      },
+      {
+        "nome": "Morango",
+        "imagem": "/img/pre-treino/shark-up-black-carbo-gel-caixa--morango.webp"
+      },
+      {
+        "nome": "Tutti Fruit",
+        "imagem": "/img/pre-treino/shark-up-black-carbo-gel-caixa--tutti-fruit.webp"
+      }
+    ],
+    "spec": "A definir • Pré-Treino",
+    "tags": [
+      "Energia",
+      "Foco",
+      "Resistência"
+    ],
+    "descricao": "Suplemento pré-treino para máxima energia, foco e desempenho nos seus treinos.",
+    "paraQueServe": "Fornece energia intensa, foco mental e resistência. Combate a fadiga e melhora o desempenho geral nos treinos.",
+    "modoDeUso": "Consulte a embalagem.",
+    "marca": "Shark Pro",
+    "porcao": "1 uni",
+    "embalagem": "Caixa com 10 unidades"
+  },
+  {
+    "id": "shark-up-black-gel-uni",
+    "nome": "Shark Up Black Carbo Gel Uni",
+    "categoria": "pre-treino",
+    "precoCentavos": 400,
+    "imagem": "/img/pre-treino/shark-up-black-gel-uni.webp",
+    "variacoes": [
+      {
+        "nome": "Açaí com Banana",
+        "imagem": "/img/pre-treino/shark-up-black-gel-uni--acai-com-banana.webp"
+      },
+      {
+        "nome": "Caramelo",
+        "imagem": "/img/pre-treino/shark-up-black-gel-uni--caramelo.webp"
+      },
+      {
+        "nome": "Morango",
+        "imagem": "/img/pre-treino/shark-up-black-gel-uni--morango.webp"
+      },
+      {
+        "nome": "Tutti Fruit",
+        "imagem": "/img/pre-treino/shark-up-black-gel-uni--tutti-fruit.webp"
+      }
+    ],
+    "spec": "A definir • Pré-Treino",
+    "tags": [
+      "Energia",
+      "Foco",
+      "Resistência"
+    ],
+    "descricao": "Suplemento pré-treino para máxima energia, foco e desempenho nos seus treinos.",
+    "paraQueServe": "Fornece energia intensa, foco mental e resistência. Combate a fadiga e melhora o desempenho geral nos treinos.",
+    "modoDeUso": "Consulte a embalagem.",
+    "marca": "Shark Pro",
+    "porcao": "Dose única por embalagem",
+    "embalagem": "Unidade"
+  },
+  {
+    "id": "start-game-300g-hop",
+    "nome": "Start Game 300g Hop!",
+    "categoria": "pre-treino",
+    "precoCentavos": 11000,
+    "imagem": "/img/pre-treino/start-game-300g-hop.webp",
+    "spec": "Unidade",
+    "tags": [],
+    "descricao": "Novo produto adicionado.",
+    "paraQueServe": "Fornece energia intensa, foco mental e resistência. Combate a fadiga e melhora o desempenho geral nos treinos.",
+    "modoDeUso": "Consulte a tabela nutricional na embalagem.",
+    "marca": "Hop Nutrition",
+    "porcao": "1 scoop (20g a 30g) 1h antes do treino",
+    "embalagem": "300g",
+    "doses": "10 a 15 por embalagem"
+  },
+  {
+    "id": "tomahawk-studio",
+    "nome": "Tomahawk Studio",
+    "categoria": "pre-treino",
+    "precoCentavos": null,
+    "imagem": "/img/pre-treino/tomahawk-studio.webp",
+    "spec": "A definir • Pré-Treino",
+    "tags": [
+      "Energia",
+      "Foco",
+      "Resistência"
+    ],
+    "indisponivel": true,
+    "descricao": "Suplemento pré-treino para máxima energia, foco e desempenho nos seus treinos.",
+    "paraQueServe": "Fornece energia intensa, foco mental e resistência. Combate a fadiga e melhora o desempenho geral nos treinos.",
+    "modoDeUso": "Consulte a embalagem.",
+    "porcao": "15g a 30g"
+  },
+  {
+    "id": "v9-pump-drink-pre-treino-lata-269ml-energetico-shark-pro",
+    "nome": "V9 Pump Drink Pre Treino Lata 269Ml Energetico Shark Pro",
+    "categoria": "pre-treino",
+    "precoCentavos": 800,
+    "imagem": "/img/pre-treino/v9-pump-drink-pre-treino-lata-269ml-energetico-shark-pro.webp",
+    "spec": "269Ml • Pré-Treino",
+    "tags": [
+      "Energia",
+      "Foco",
+      "Resistência"
+    ],
+    "descricao": "Suplemento pré-treino para máxima energia, foco e desempenho nos seus treinos.",
+    "paraQueServe": "Fornece energia intensa, foco mental e resistência. Combate a fadiga e melhora o desempenho geral nos treinos.",
+    "modoDeUso": "Consulte a embalagem.",
+    "marca": "Shark Pro",
+    "porcao": "Dose única",
+    "embalagem": "269ml"
+  },
+  {
+    "id": "v9-pump-shakpro-300g-cola",
+    "nome": "V9 Pump Shakpro 300g",
+    "categoria": "pre-treino",
+    "precoCentavos": 9500,
+    "imagem": "/img/pre-treino/v9-pump-shakpro-300g-cola.webp",
+    "variacoes": [
+      {
+        "nome": "Cola",
+        "imagem": "/img/pre-treino/v9-pump-shakpro-300g-cola--cola.webp"
+      },
+      {
+        "nome": "Special Edition",
+        "imagem": "/img/pre-treino/v9-pump-shakpro-300g-cola--special-edition.webp"
+      }
+    ],
+    "spec": "300G • Pré-Treino",
+    "tags": [
+      "Energia",
+      "Foco",
+      "Resistência"
+    ],
+    "descricao": "Suplemento pré-treino para máxima energia, foco e desempenho nos seus treinos.",
+    "paraQueServe": "Fornece energia intensa, foco mental e resistência. Combate a fadiga e melhora o desempenho geral nos treinos.",
+    "modoDeUso": "Consulte a embalagem.",
+    "marca": "Shark Pro",
+    "porcao": "1 scoop (20g a 30g) 1h antes do treino",
+    "embalagem": "300g",
+    "doses": "10 a 15 por embalagem"
+  },
+  {
+    "id": "xpro-4-pump-100g",
+    "nome": "Xpro 4 Pump 100G",
+    "categoria": "pre-treino",
+    "precoCentavos": 2800,
+    "imagem": "/img/pre-treino/xpro-4-pump-100g.webp",
+    "spec": "100G • Pré-Treino",
+    "tags": [
+      "Energia",
+      "Foco",
+      "Resistência"
+    ],
+    "descricao": "Suplemento pré-treino para máxima energia, foco e desempenho nos seus treinos.",
+    "paraQueServe": "Fornece energia intensa, foco mental e resistência. Combate a fadiga e melhora o desempenho geral nos treinos.",
+    "modoDeUso": "Consulte a embalagem.",
+    "marca": "Xpro Nutrition",
+    "porcao": "1 scoop (20g a 30g) 1h antes do treino",
+    "embalagem": "100g",
+    "doses": "3 a 5 por embalagem"
+  }
+]

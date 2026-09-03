@@ -1,0 +1,2179 @@
+/* ==========================================================================
+   MS Suplementos — tela do catálogo
+   Portado de public_html/catalogo-deploy/styles.css.
+
+   Os tokens vivem em `.catalogo`, não em `:root`: este catálogo usa
+   `--ink` como fundo branco e o linktree usa `--ink` como cor do texto.
+   Escopar evita que um sobrescreva o outro.
+   ========================================================================== */
+
+/* ===== Design Tokens (Tema Claro / Fundo Branco) ===== */
+.catalogo {
+  /* Superfícies */
+  --ink: #FFFFFF;                  /* Fundo principal branco puro */
+  --surface: #F8F7F4;              /* Superfície sutil dos cards */
+  --surface-2: #F0EEE9;            /* Superfície secundária (busca, campos, hovers) */
+  --line: rgba(180, 140, 60, 0.22); /* Linhas de borda sutis */
+  --line-strong: rgba(180, 140, 60, 0.45);
+
+  /* Ouro — acento com alto contraste */
+  --gold: #A3741E;                 /* Dourado rico e legível */
+  --gold-light: #C99A2C;
+
+  /* Texto */
+  --text: #171614;                 /* Texto principal bem nítido */
+  --cream: #332F28;                /* Texto de apoio */
+  --muted: #6B6255;                /* Rótulos e metadados */
+  --dim: #948A7C;
+
+  /* Tipografia — Poppins em todo o catálogo.
+     As duas variáveis continuam existindo para separar o texto corrido
+     dos rótulos/botões (que usam caixa alta e letter-spacing próprios);
+     hoje as duas apontam para a mesma família. */
+  --font-sans: "Poppins", "Segoe UI", system-ui, -apple-system, sans-serif;
+  --font-mono: "Poppins", "Segoe UI", system-ui, -apple-system, sans-serif;
+
+  /* Ritmo */
+  --container: 1080px;
+  --gutter: 24px;
+
+  /* Raios */
+  --r-inner: 12px;
+  --r: 18px;
+  --r-lg: 26px;
+  --r-pill: 999px;
+}
+
+/* ===== Reset ===== */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Compensa o header sticky (barra principal + barra de categorias) —
+   só enquanto a tela do catálogo está montada. */
+:root:has(.catalogo) {
+  scroll-padding-top: 128px;
+}
+
+.catalogo {
+  font-family: var(--font-sans);
+  background: var(--ink);
+  color: var(--text);
+  line-height: 1.6;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+:focus-visible {
+  outline: 1px solid var(--gold);
+  outline-offset: 3px;
+  border-radius: var(--r-inner);
+}
+
+/* ===== Ícones (Lucide — SVG minimalista) =====
+   O <i data-lucide> é trocado por um <svg> herdando as classes.
+   width/height em 1em faz o ícone acompanhar o font-size do contexto. */
+.ico,
+svg.ico {
+  width: 1em;
+  height: 1em;
+  stroke-width: 1.75;
+  stroke: currentColor;
+  fill: none;
+  display: inline-block;
+  vertical-align: -0.125em;
+  flex: none;
+}
+
+/* Enquanto o CDN não substitui o <i>, evita "pulo" de layout */
+i.ico {
+  min-width: 1em;
+}
+
+/* Tamanhos por contexto (o texto ao redor é bem pequeno) */
+.cart-icon { font-size: 1.05rem; }
+.cart-float-icon { font-size: 1.1rem; }
+
+/* ===== Layout ===== */
+.container {
+  width: 100%;
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 0 var(--gutter);
+}
+
+.section {
+  padding: 88px 0;
+}
+
+/* ===== Micro-rótulo (registro de rótulo de suplemento) ===== */
+.label {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+/* =====================================================
+   TOPO DO SITE — .site-header, sticky: header principal
+   (logo, busca, carrinho) + barra de categorias logo abaixo.
+   ===================================================== */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 30;
+  background: var(--ink);
+  border-bottom: 1px solid var(--line);
+  box-shadow: 0 2px 14px rgba(23, 22, 20, 0.05);
+}
+
+/* =====================================================
+   BANNERS — carrossel centralizado, largura do container.
+   Os banners são 16:9, então esticar na largura toda deixaria a
+   seção alta demais: fica contido, centrado e com cantos arredondados.
+   ===================================================== */
+.promo {
+  position: relative;
+  width: 100%;
+  /* Além do teto fixo, a largura também é limitada pela altura livre da
+     janela: (altura disponível x proporção 2752/1536) garante que o banner
+     inteiro caiba na tela sem precisar rolar. */
+  max-width: min(880px, calc((100svh - 240px) * 1.792 + 2 * var(--gutter)));
+  margin: 24px auto 8px;
+  padding: 0 var(--gutter);
+}
+
+/* O trilho e o loop são do Swiper; aqui fica só a aparência do slide. */
+.promo-slide {
+  min-width: 0;
+}
+
+.promo-slide img {
+  display: block;
+  width: 100%;
+  height: auto;
+  /* proporção nativa dos banners (2752x1536) — nada de corte ou distorção */
+  aspect-ratio: 2752 / 1536;
+  object-fit: cover;
+}
+
+.promo-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.85);
+  border: 0;
+  border-radius: 50%;
+  color: var(--text);
+  font-size: 1.25rem;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+
+.promo-nav:hover {
+  background: #FFFFFF;
+}
+
+.promo-prev { left: calc(var(--gutter) + 14px); }
+.promo-next { right: calc(var(--gutter) + 14px); }
+
+.promo-dots {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 14px;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.promo-dot {
+  width: 8px;
+  height: 8px;
+  padding: 0;
+  background: rgba(255, 255, 255, 0.55);
+  border: 0;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.15s ease, width 0.15s ease;
+}
+
+.promo-dot.is-active {
+  width: 22px;
+  border-radius: var(--r-pill);
+  background: #FFFFFF;
+}
+
+.card-installment {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  color: var(--muted);
+  margin-top: 2px;
+}
+
+/* No mobile as setas saem — os pontos já dão conta. */
+@media (max-width: 720px) {
+  .promo-nav {
+    display: none;
+  }
+
+  .promo-dots {
+    bottom: 8px;
+  }
+}
+
+/* ===== Header ===== */
+.header-inner {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  min-height: 76px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: none;
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text);
+}
+
+.logo-img {
+  height: 38px;
+  width: 38px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 1px solid var(--line-strong);
+  box-shadow: 0 0 8px rgba(203, 155, 74, 0.25);
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.logo:hover .logo-img {
+  transform: scale(1.05);
+  border-color: var(--gold);
+}
+
+.logo-dot {
+  color: var(--gold);
+}
+
+/* ----- Busca central do header ----- */
+.header-search {
+  position: relative;
+  flex: 1 1 auto;
+  min-width: 0;
+  display: flex;
+  align-items: center;
+}
+
+/* Só uma linha de base: sem fundo, sem caixa, sem pílula.
+   A lupa fica à esquerda, como marcador do campo. */
+.header-search-input {
+  width: 100%;
+  padding: 10px 4px 10px 30px;
+  background: none;
+  border: 0;
+  border-bottom: 1px solid var(--line);
+  border-radius: 0;
+  font-family: var(--font-sans);
+  font-size: 0.86rem;
+  color: var(--text);
+  transition: border-color 0.15s ease;
+}
+
+.header-search-input::placeholder {
+  color: var(--dim);
+}
+
+.header-search-input:focus {
+  outline: none;
+  border-bottom-color: var(--gold);
+}
+
+.header-search-btn {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  padding: 0;
+  background: none;
+  border: 0;
+  color: var(--dim);
+  font-size: 1rem;
+  cursor: pointer;
+  transition: color 0.15s ease;
+}
+
+.header-search-btn:hover,
+.header-search-input:focus ~ .header-search-btn {
+  color: var(--text);
+}
+
+/* ----- Ações da direita (atendimento / carrinho) ----- */
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex: none;
+}
+
+/* Botão só de ícone — quadrado, para o alvo de toque não encolher */
+.header-action {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  background: none;
+  border: 0;
+  color: var(--text);
+  font-family: inherit;
+  cursor: pointer;
+}
+
+/* Hover: só o ícone escurece. Sem fundo, sem borda, sem movimento. */
+.header-action-ico {
+  font-size: 1.35rem;
+  color: var(--gold);
+  transition: color 0.15s ease;
+}
+
+.header-action:hover .header-action-ico {
+  color: var(--text);
+}
+
+/* Alternador de atacado — pílula discreta; vira sólido dourado quando ativo */
+.btn-atacado {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  height: 38px;
+  padding: 0 14px;
+  background: transparent;
+  border: 1px solid var(--line);
+  border-radius: var(--r-pill);
+  color: var(--muted);
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: background-color 0.18s ease, border-color 0.18s ease, color 0.18s ease;
+}
+
+.btn-atacado .ico,
+.btn-atacado svg.ico {
+  font-size: 1rem;
+}
+
+.btn-atacado:hover {
+  border-color: var(--line-strong);
+  color: var(--gold);
+}
+
+.btn-atacado.is-active {
+  background: var(--gold);
+  border-color: var(--gold);
+  color: #FFFFFF;
+}
+
+.btn-atacado:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 2px;
+}
+
+/* Preço de varejo riscado, exibido acima do preço de atacado */
+.preco-antigo {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--dim);
+  text-decoration: line-through;
+}
+
+.preco-nota {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  font-weight: 600;
+  color: var(--gold);
+}
+
+.modal-preco-box {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+/* Aviso no topo da lista do carrinho quando o atacado está ligado */
+.cart-atacado-note {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 14px;
+  padding: 9px 12px;
+  background: rgba(163, 116, 30, 0.08);
+  border: 1px solid var(--line);
+  border-radius: var(--r-inner);
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: var(--gold);
+}
+
+/* Contador sobreposto ao ícone do carrinho */
+.header-action-badge-wrap {
+  position: relative;
+  display: inline-flex;
+}
+
+.header-action-badge-wrap .cart-count {
+  position: absolute;
+  top: -5px;
+  right: -8px;
+  min-width: 17px;
+  height: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 4px;
+  font-size: 0.62rem;
+}
+
+/* ----- 2b. Barra de categorias ----- */
+.mainnav {
+  border-top: 1px solid var(--line);
+  background: var(--ink);
+}
+
+.mainnav-inner {
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.mainnav-inner::-webkit-scrollbar {
+  display: none;
+}
+
+.mainnav-list {
+  display: flex;
+  align-items: stretch;
+  gap: 4px;
+  min-width: max-content;
+}
+
+.mainnav-item {
+  position: relative;
+  background: none;
+  border: 0;
+  padding: 13px 14px;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--muted);
+  white-space: nowrap;
+  cursor: pointer;
+  transition: color 0.15s;
+}
+
+.mainnav-item::after {
+  content: "";
+  position: absolute;
+  left: 14px;
+  right: 14px;
+  bottom: 0;
+  height: 2px;
+  background: var(--gold);
+  transform: scaleX(0);
+  transition: transform 0.18s ease;
+}
+
+.mainnav-item:hover {
+  color: var(--text);
+}
+
+.mainnav-item:hover::after,
+.mainnav-item.is-active::after {
+  transform: scaleX(1);
+}
+
+.mainnav-item.is-active {
+  color: var(--text);
+  font-weight: 600;
+}
+
+/* Destaque da categoria "Mais Vendidos", como no site de referência */
+.mainnav-item[data-cat="mais-vendidos"] {
+  color: var(--gold);
+  font-weight: 600;
+}
+
+/* ----- 3. Régua de frete grátis ----- */
+/* ===== Cabeçalho de seção ===== */
+.section-head {
+  margin-bottom: 44px;
+}
+
+.section-title {
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 500;
+  letter-spacing: -0.03em;
+  line-height: 1.05;
+  margin: 14px 0 16px;
+}
+
+.section-sub {
+  color: var(--muted);
+  font-size: 0.95rem;
+  max-width: 38ch;
+}
+
+/* ===== Grade — malha de fios de 1px ===== */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 16px;
+}
+
+.empty {
+  grid-column: 1 / -1;
+  padding: 64px 0;
+  color: var(--muted);
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+/* ===== Card de produto ===== */
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--r);
+  padding: 16px 16px 20px;
+  cursor: pointer;
+  transition: background-color 0.15s, border-color 0.15s;
+}
+
+.card:hover {
+  background: var(--surface-2);
+  border-color: var(--line-strong);
+}
+
+.card:focus-visible {
+  border-radius: var(--r);
+}
+
+.card-media {
+  position: relative;
+  aspect-ratio: 1 / 1;
+  background: #F2EFE8;
+  border-radius: var(--r-inner);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 18px;
+  overflow: hidden;
+}
+
+.card-media img,
+.modal-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.placeholder {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--dim);
+}
+
+/* Selo — pastilha discreta, legível também sobre foto */
+.badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(4px);
+  border: 1px solid var(--line);
+  border-radius: var(--r-pill);
+  padding: 4px 11px;
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--gold);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+}
+
+.card-name {
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  line-height: 1.3;
+  margin-bottom: 8px;
+}
+
+/* Bloco de preço */
+.card-price-block {
+  margin-top: auto;
+  padding-top: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.card-price {
+  font-family: var(--font-mono);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--gold);
+  font-variant-numeric: tabular-nums;
+}
+
+/* Botões de ação no card — uma única linha:
+   ação primária (Adicionar) + ação secundária só com ícone (Detalhes). */
+.card-btns {
+  display: flex;
+  align-items: stretch;
+  gap: 8px;
+  margin-top: 14px;
+}
+
+/* Botão Detalhes — ícone puro, discreto, ganha ouro só no hover */
+.btn-detalhes {
+  flex: none;
+  width: 42px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: 1px solid var(--line);
+  border-radius: var(--r-inner);
+  color: var(--muted);
+  font-size: 1.05rem;
+  cursor: pointer;
+  transition: color 0.18s ease, border-color 0.18s ease, background-color 0.18s ease;
+}
+
+.btn-detalhes:hover {
+  background: var(--surface-2);
+  border-color: var(--line-strong);
+  color: var(--gold);
+}
+
+.btn-detalhes:active {
+  transform: translateY(1px);
+}
+
+/* Botão Adicionar — sólido, tipografia calma, ícone leve */
+.btn-add-card {
+  flex: 1;
+  min-width: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 11px 14px;
+  background: var(--text);
+  border: 1px solid var(--text);
+  border-radius: var(--r-inner);
+  color: #FFFFFF;
+  font-family: var(--font-mono);
+  font-size: 0.74rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  transition: background-color 0.18s ease, border-color 0.18s ease, transform 0.18s ease;
+}
+
+.btn-add-card .ico,
+.btn-add-card svg.ico {
+  font-size: 0.95rem;
+  opacity: 0.85;
+}
+
+.btn-add-card:hover {
+  background: var(--gold);
+  border-color: var(--gold);
+  transform: translateY(-1px);
+}
+
+.btn-add-card:active {
+  transform: translateY(0);
+}
+
+/* Confirmação curta no lugar do drawer, para adições silenciosas */
+.btn-add-card.is-added {
+  background: var(--gold);
+  border-color: var(--gold);
+  transform: none;
+}
+
+.btn-add-card.is-added .ico,
+.btn-add-card.is-added svg.ico {
+  opacity: 1;
+}
+
+.btn-detalhes:focus-visible,
+.btn-add-card:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .btn-add-card,
+  .btn-detalhes {
+    transition: background-color 0.18s ease, color 0.18s ease;
+  }
+
+  .btn-add-card:hover,
+  .btn-detalhes:active {
+    transform: none;
+  }
+}
+
+/* ===== Botão ===== */
+.btn {
+  display: inline-block;
+  background: var(--gold);
+  color: var(--ink);
+  border: 0;
+  border-radius: var(--r-pill);
+  padding: 15px 28px;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.15s;
+}
+
+.btn:hover {
+  background: var(--gold-light);
+}
+
+.btn:focus-visible {
+  border-radius: var(--r-pill);
+}
+
+/* ===== Modal ===== */
+.modal {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  display: none;
+  align-items: flex-start;
+  justify-content: center;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  padding: 0;
+}
+
+.modal.is-open {
+  display: flex;
+}
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(18, 16, 12, 0.65);
+  backdrop-filter: blur(4px);
+}
+
+.modal-box {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 860px;
+  min-height: 100%;
+  background: #FFFFFF;
+  border-radius: var(--r-lg) var(--r-lg) 0 0;
+  margin-top: 40px; /* folha deslizante: o topo arredondado fica visível */
+  padding: 24px var(--gutter) 40px;
+  overflow-wrap: break-word;
+  box-shadow: 0 -8px 32px rgba(0, 0, 0, 0.15);
+  animation: modal-in 0.18s ease-out;
+}
+
+@keyframes modal-in {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.modal-close {
+  position: absolute;
+  top: 10px;
+  right: 14px;
+  z-index: 3;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: 0;
+  color: var(--muted);
+  font-size: 1.3rem;
+  line-height: 1;
+  cursor: pointer;
+  transition: color 0.15s;
+}
+
+.modal-close:hover {
+  color: var(--text);
+}
+
+.modal-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.modal-media {
+  position: relative;
+  aspect-ratio: 4 / 3;
+  background: #F2EFE8;
+  border-radius: var(--r);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 24px;
+  overflow: hidden;
+}
+
+.modal-info {
+  min-width: 0;
+}
+
+.modal-nome {
+  font-size: 1.5rem;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+  margin: 12px 0 10px;
+}
+
+.modal-dose {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: var(--cream);
+  font-variant-numeric: tabular-nums;
+}
+
+.modal-desc {
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.75;
+  margin: 16px 0 20px;
+  max-width: 52ch;
+}
+
+/* Variações de Sabores no Modal */
+.variacao-box {
+  margin-bottom: 24px;
+}
+
+.variacao-title {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 10px;
+}
+
+.variacao-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.variacao-btn {
+  background: var(--surface-2);
+  border: 1px solid var(--line);
+  border-radius: var(--r-pill);
+  padding: 6px 14px;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--cream);
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.variacao-btn:hover {
+  border-color: var(--line-strong);
+  color: var(--text);
+}
+
+.variacao-btn.is-active {
+  background: var(--gold);
+  border-color: var(--gold);
+  color: var(--ink);
+  font-weight: 500;
+}
+
+/* Painel de especificações — rótulo de suplemento, em bloco arredondado */
+.spec-list {
+  background: var(--surface-2);
+  border-radius: var(--r);
+  padding: 4px 18px;
+}
+
+.spec-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 16px;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--line);
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+}
+
+.spec-row:last-child {
+  border-bottom: 0;
+}
+
+.spec-key {
+  color: var(--muted);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  flex-shrink: 0;
+}
+
+.spec-val {
+  color: var(--cream);
+  text-align: right;
+  min-width: 0;
+  overflow-wrap: break-word;
+  font-variant-numeric: tabular-nums;
+}
+
+.modal-foot {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 16px;
+  margin-top: 32px;
+}
+
+.modal-preco {
+  font-family: var(--font-mono);
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--gold);
+  font-variant-numeric: tabular-nums;
+}
+
+/* ===== Tablet / desktop ===== */
+@media (min-width: 720px) {
+  .modal {
+    align-items: center;
+    padding: 32px;
+  }
+
+  .modal-box {
+    min-height: 0;
+    margin-top: 0;
+    border: 1px solid var(--line);
+    border-radius: var(--r-lg);
+    padding: 40px;
+  }
+
+  .modal-close {
+    top: 20px;
+    right: 22px;
+  }
+
+  .modal-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.15fr;
+    gap: 40px;
+    align-items: start;
+  }
+
+  .modal-media {
+    aspect-ratio: 1 / 1;
+    margin-top: 0;
+  }
+
+  .modal-nome {
+    margin-top: 0;
+    font-size: 1.75rem;
+  }
+
+  .modal-foot {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+/* ===== Footer (Estilo E-Commerce) ===== */
+.footer {
+  background: var(--surface);
+  border-top: 1px solid var(--line);
+  padding: 48px 0 32px;
+  font-family: var(--font-sans);
+  color: var(--muted);
+}
+
+.footer-grid-box {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 32px;
+  margin-bottom: 36px;
+}
+
+.footer-col {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--text);
+  font-size: 1.05rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.footer-logo-img {
+  height: 32px;
+  width: 32px;
+}
+
+.footer-desc {
+  font-size: 0.85rem;
+  line-height: 1.5;
+  color: var(--muted);
+  max-width: 32ch;
+}
+
+.footer-heading {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text);
+  margin-bottom: 4px;
+}
+
+.footer-wa-link {
+  font-family: var(--font-mono);
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--gold);
+  transition: color 0.15s;
+}
+
+.footer-wa-link:hover {
+  color: var(--text);
+}
+
+.footer-time {
+  font-size: 0.78rem;
+  color: var(--dim);
+}
+
+.payment-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.pay-badge {
+  background: #FFFFFF;
+  border: 1px solid var(--line);
+  border-radius: var(--r-pill);
+  padding: 5px 12px;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--cream);
+}
+
+.footer-bottom {
+  border-top: 1px solid var(--line);
+  padding-top: 24px;
+  text-align: center;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--dim);
+}
+
+.footer-year {
+  margin-left: auto;
+  color: var(--dim);
+}
+
+/* ===== Mobile ===== */
+@media (max-width: 720px) {
+  .section {
+    padding: 56px 0;
+  }
+
+  /* Header: logo + ações na primeira linha, busca ocupando a segunda */
+  .header-inner {
+    flex-wrap: wrap;
+    gap: 10px 12px;
+    min-height: 0;
+  }
+
+  .logo {
+    flex: 1 1 auto;
+    font-size: 0.8rem;
+    letter-spacing: 0.1em;
+  }
+
+  .header-search {
+    order: 3;
+    flex-basis: 100%;
+  }
+
+  .header-search-input {
+    padding: 8px 4px 8px 28px;
+    font-size: 0.82rem;
+  }
+
+  .header-action {
+    width: 38px;
+    height: 38px;
+  }
+
+  /* Espaço curto no header: o atacado fica só com o ícone */
+  .btn-atacado {
+    height: 34px;
+    width: 34px;
+    padding: 0;
+    justify-content: center;
+  }
+
+  .btn-atacado .atacado-label {
+    /* escondido só visualmente: o botão continua tendo nome acessível */
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+  }
+
+  .mainnav-item {
+    padding: 11px 11px;
+    font-size: 0.68rem;
+  }
+
+  .grid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+  }
+
+  .card {
+    padding: 10px 10px 14px;
+  }
+
+  .card-media {
+    /* raio interno acompanha o recuo menor do card no mobile */
+    border-radius: 9px;
+    margin-bottom: 14px;
+  }
+
+  .card-foot {
+    padding-top: 14px;
+  }
+
+  /* O card inteiro já abre o detalhe — o rótulo só ocuparia espaço */
+  .card-link {
+    display: none;
+  }
+
+  .footer-year {
+    margin-left: 0;
+    width: 100%;
+  }
+}
+
+/* ===== Botões de Ação nos Cards ===== */
+.card-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn-add-quick {
+  background: #FFFFFF;
+  border: 1px solid var(--line-strong);
+  color: var(--gold);
+  border-radius: var(--r-pill);
+  padding: 6px 12px;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+}
+
+.btn-add-quick:hover {
+  background: var(--gold);
+  border-color: var(--gold);
+  color: #FFFFFF;
+}
+
+/* ===== Gatilho do Carrinho (Header) =====
+   Layout e hover vêm inteiramente de .header-action. */
+.cart-count {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  background: var(--gold);
+  color: #FFFFFF;
+  font-weight: 600;
+  font-size: 0.7rem;
+  padding: 1px 7px;
+  border-radius: var(--r-pill);
+}
+
+/* ===== Painel Gaveta do Carrinho (Drawer) ===== */
+.cart-drawer {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  display: none;
+}
+
+.cart-drawer.is-open {
+  display: block;
+}
+
+.cart-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(18, 16, 12, 0.65);
+  backdrop-filter: blur(4px);
+}
+
+.cart-box {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  max-width: 440px;
+  background: #FFFFFF;
+  border-left: 1px solid var(--line);
+  display: flex;
+  flex-direction: column;
+  z-index: 101;
+  box-shadow: -8px 0 32px rgba(0, 0, 0, 0.15);
+  animation: drawer-in 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes drawer-in {
+  from { transform: translateX(100%); }
+  to { transform: translateX(0); }
+}
+
+.cart-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 24px;
+  border-bottom: 1px solid var(--line);
+}
+
+.cart-header-title {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.cart-header-title h3 {
+  font-size: 1.15rem;
+  font-weight: 500;
+  color: var(--text);
+}
+
+.cart-header-count {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--muted);
+}
+
+.cart-close {
+  background: none;
+  border: 0;
+  color: var(--muted);
+  font-size: 1.3rem;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  line-height: 1;
+  transition: color 0.15s;
+}
+
+.cart-close:hover {
+  color: var(--text);
+}
+
+/* Progresso do Frete Grátis */
+.frete-progress-container {
+  padding: 14px 24px;
+  background: var(--surface-2);
+  border-bottom: 1px solid var(--line);
+}
+
+.frete-msg {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--cream);
+  margin-bottom: 8px;
+}
+
+.frete-msg strong {
+  color: var(--gold);
+}
+
+.frete-track {
+  height: 6px;
+  background: #E8E5DD;
+  border-radius: var(--r-pill);
+  overflow: hidden;
+}
+
+.frete-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #A3741E 0%, #D4A747 100%);
+  border-radius: var(--r-pill);
+  transition: width 0.3s ease;
+}
+
+/* Lista de Itens no Carrinho */
+.cart-items {
+  flex: 1;
+  overflow-y: auto;
+  padding: 16px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.cart-empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
+  color: var(--muted);
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+}
+
+.cart-empty-icon {
+  font-size: 2.5rem;
+  margin-bottom: 12px;
+  opacity: 0.4;
+}
+
+.cart-item {
+  display: grid;
+  grid-template-columns: 60px 1fr auto;
+  gap: 14px;
+  align-items: center;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--r);
+  padding: 12px;
+}
+
+.cart-item-thumb {
+  width: 60px;
+  height: 60px;
+  border-radius: var(--r-inner);
+  overflow: hidden;
+  background: #F2EFE8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cart-item-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cart-item-info {
+  min-width: 0;
+}
+
+.cart-item-title {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--text);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.cart-item-flavor {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  color: var(--gold-light);
+  margin-top: 2px;
+}
+
+.cart-item-price {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--gold);
+  margin-top: 4px;
+}
+
+.cart-item-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 8px;
+}
+
+.cart-qty-ctrl {
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--line);
+  border-radius: var(--r-pill);
+  background: var(--surface);
+  overflow: hidden;
+}
+
+.cart-qty-btn {
+  background: none;
+  border: 0;
+  color: var(--cream);
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  transition: background 0.15s;
+}
+
+.cart-qty-btn:hover {
+  background: var(--surface-2);
+  color: var(--text);
+}
+
+.cart-qty-val {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--text);
+  width: 24px;
+  text-align: center;
+}
+
+.cart-item-remove {
+  background: none;
+  border: 0;
+  color: var(--dim);
+  font-size: 1rem;
+  cursor: pointer;
+  transition: color 0.15s;
+}
+
+.cart-item-remove:hover {
+  color: #E57373;
+}
+
+/* Rodapé do Carrinho */
+.cart-footer {
+  padding: 20px 24px;
+  border-top: 1px solid var(--line);
+  background: var(--surface-2);
+}
+
+.cart-summary-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: var(--font-mono);
+  font-size: 0.95rem;
+  margin-bottom: 16px;
+  color: var(--cream);
+}
+
+.cart-summary-val {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: var(--gold);
+}
+
+.btn-whatsapp-checkout {
+  width: 100%;
+  padding: 16px;
+  font-size: 0.82rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.btn-whatsapp-checkout:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.btn-clear-cart {
+  background: none;
+  border: 0;
+  color: var(--muted);
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  width: 100%;
+  margin-top: 12px;
+  cursor: pointer;
+  transition: color 0.15s;
+}
+
+.btn-clear-cart:hover {
+  color: var(--text);
+}
+
+/* Botão Flutuante de Carrinho no Mobile */
+.cart-float-btn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 40;
+  background: var(--gold);
+  color: var(--ink);
+  border: 0;
+  border-radius: var(--r-pill);
+  padding: 12px 20px;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  font-weight: 600;
+  box-shadow: 0 8px 24px rgba(203, 155, 74, 0.4);
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: transform 0.15s ease;
+}
+
+.cart-float-btn:active {
+  transform: scale(0.96);
+}
+
+.cart-float-count {
+  background: var(--ink);
+  color: var(--gold);
+  border-radius: 50%;
+  width: 22px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.72rem;
+}
+
+@media (max-width: 720px) {
+  .cart-float-btn {
+    display: flex;
+  }
+}
+
+/* ===== Movimento reduzido ===== */
+@media (prefers-reduced-motion: reduce) {
+  :root:has(.catalogo) {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* --- Product Carousel --- */
+.category-section {
+  margin-bottom: 2.5rem;
+}
+.category-section-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: var(--cinza-900);
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--marca);
+  display: inline-block;
+}
+.product-carousel-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin: 0 -10px;
+  padding: 0 10px;
+}
+.product-carousel-track {
+  display: flex;
+  gap: var(--gutter);
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  width: 100%;
+  padding-bottom: 10px;
+}
+.product-carousel-track::-webkit-scrollbar {
+  display: none;
+}
+.product-carousel-track .card {
+  flex: 0 0 calc(75% - var(--gutter));
+  scroll-snap-align: start;
+}
+@media (min-width: 768px) {
+  .product-carousel-track .card {
+    flex: 0 0 calc(33.333% - var(--gutter));
+  }
+}
+@media (min-width: 1024px) {
+  .product-carousel-track .card {
+    flex: 0 0 calc(20% - var(--gutter));
+  }
+}
+.carousel-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  background: var(--branco);
+  border: 1px solid var(--border);
+  color: var(--cinza-900);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+.carousel-nav.carousel-prev { left: -15px; }
+.carousel-nav.carousel-next { right: -15px; }
+.carousel-nav:hover { background: var(--cinza-100); }
+@media (max-width: 767px) {
+  .carousel-nav { display: none; }
+}
+
+/* --- Mobile Menu Drawer --- */
+.mobile-menu-trigger {
+  display: none; /* Hide on desktop */
+  background: none;
+  border: none;
+  color: var(--text);
+  cursor: pointer;
+  padding: 8px;
+}
+.mobile-menu-trigger .ico {
+  width: 24px;
+  height: 24px;
+}
+.mobile-menu-overlay {
+  display: none;
+}
+.mainnav-header {
+  display: none; /* Hide on desktop */
+}
+
+@media (max-width: 767px) {
+  .mobile-menu-trigger {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Transform mainnav into a sidebar */
+  .mainnav {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 220px; /* Reduzido, minimalista */
+    height: 100vh;
+    background: #171614; /* Escuro sofisticado (var(--text)) */
+    z-index: 1000;
+    transition: left 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    flex-direction: column;
+    box-shadow: 4px 0 20px rgba(0,0,0,0.5);
+    overflow-y: auto;
+    border-top: none;
+  }
+  .mainnav.is-open {
+    left: 0;
+  }
+  
+  .mainnav-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 24px;
+    border-bottom: 1px solid rgba(180, 140, 60, 0.2); /* Linha sutil dourada */
+    background: #171614;
+  }
+  .mainnav-title {
+    font-size: 0.9rem;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #E5D9C5; /* Bege elegante */
+  }
+  .mobile-menu-close {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #E5D9C5;
+    padding: 4px;
+  }
+  
+  .mainnav-inner {
+    padding: 10px 0;
+    width: 100%;
+  }
+  
+  .mainnav-list {
+    flex-direction: column;
+    width: 100%;
+    gap: 0;
+  }
+  
+  .mainnav-item {
+    width: 100%;
+    text-align: left;
+    padding: 14px 24px;
+    border-bottom: none;
+    color: #E5D9C5; /* Bege elegante */
+    font-size: 0.8rem;
+    font-weight: 300;
+    letter-spacing: 0.05em;
+    transition: all 0.2s ease;
+  }
+  .mainnav-item:hover, .mainnav-item.is-active {
+    background: transparent;
+    color: var(--gold);
+    padding-left: 30px; /* Efeito minimalista de deslocamento */
+  }
+  .mainnav-item::after {
+    display: none; /* Hide the bottom underline */
+  }
+  
+  .mobile-menu-overlay {
+    display: none;
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.6);
+    backdrop-filter: blur(2px);
+    z-index: 999;
+  }
+  .mobile-menu-overlay.is-active {
+    display: block;
+  }
+}
+
+/* ==========================================================================
+   Ajustes da versão React
+   O catálogo antigo resolvia estes casos com `style=""` inline dentro de
+   strings de HTML; aqui viram classes.
+   ========================================================================== */
+
+/* Produto esgotado: mídia dessaturada no card e no modal. */
+.card-media.is-esgotado,
+.modal-media.is-esgotado {
+  filter: grayscale(100%);
+  opacity: 0.7;
+}
+
+/* Setas de variação sobre a imagem — menores que as do carrossel de banners. */
+.card-media-nav {
+  width: 28px;
+  height: 28px;
+}
+.card-media-nav.promo-prev { left: 4px; }
+.card-media-nav.promo-next { right: 4px; }
+
+.modal-media-nav {
+  width: 32px;
+  height: 32px;
+}
+.modal-media-nav.promo-prev { left: 8px; }
+.modal-media-nav.promo-next { right: 8px; }
+
+/* Contador ao lado do nome da categoria na barra do topo. */
+.mainnav-count {
+  margin-left: 6px;
+  font-size: 0.72em;
+  color: var(--dim);
+  font-variant-numeric: tabular-nums;
+}
+.mainnav-item.is-active .mainnav-count { color: inherit; opacity: 0.7; }
+
+.cart-empty-hint {
+  font-size: 0.72rem;
+  margin-top: 6px;
+  color: var(--dim);
+}
+
+/* O checkout virou <a> (abre o WhatsApp), então precisa do estado desabilitado. */
+.btn-whatsapp-checkout.is-disabled {
+  pointer-events: none;
+  opacity: 0.45;
+}
+
+/* A busca agora é controlada pelo React; o botão virou só o ícone. */
+.header-search-btn {
+  display: grid;
+  place-items: center;
+  pointer-events: none;
+}
+
+/* ==========================================================================
+   Modal de detalhes — três zonas
+   O desenho antigo era uma folha com `min-height: 100%`: por construção
+   sempre passava da altura da tela, e quem rolava era o `.modal` inteiro, o
+   que escondia o topo. Agora a caixa cabe na viewport e só o miolo rola.
+   ========================================================================== */
+.modal {
+  /* no celular sobe como folha, colada na base — mais perto do polegar */
+  align-items: flex-end;
+  padding: 0;
+  overflow: hidden;
+}
+
+.modal-box {
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  /* svh acompanha a barra de endereço do navegador móvel */
+  max-height: 88svh;
+  margin-top: 0;
+  padding: 0;
+  overflow: hidden;
+  /* Sobe da base, como uma folha — a de cima empurrava o rodapé
+     para fora da tela enquanto durava. */
+  animation: folha-in 0.22s cubic-bezier(0.32, 0.72, 0, 1);
+}
+
+@keyframes folha-in {
+  from { transform: translateY(100%); }
+  to { transform: translateY(0); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .modal-box {
+    animation: none;
+  }
+}
+
+.modal-corpo {
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
+  padding: 22px var(--gutter) 10px;
+}
+
+/* Preço e ação ficam fora da área que rola: sempre visíveis. */
+.modal-foot {
+  flex: none;
+  align-items: center;
+  gap: 14px;
+  margin-top: 0;
+  padding: 12px var(--gutter);
+  padding-bottom: max(12px, env(safe-area-inset-bottom));
+  border-top: 1px solid var(--line);
+  background: #ffffff;
+}
+
+.modal-close {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 50%;
+}
+
+/* Um pouco mais enxuto que o original — é o que tira o modal do "alto demais" */
+.modal-nome {
+  font-size: 1.3rem;
+  margin: 10px 0 8px;
+}
+
+.modal-desc {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin: 12px 0 16px;
+}
+
+.modal-grid {
+  gap: 20px;
+}
+
+/* Teto em unidades de tela: num notebook de tela baixa a foto quadrada
+   sozinha ocupava toda a área rolável e empurrava a ficha para fora. */
+.modal-media {
+  margin-top: 0;
+  aspect-ratio: 4 / 3;
+  max-height: 40svh;
+}
+
+.variacao-box {
+  margin-bottom: 18px;
+}
+
+.variacao-title {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+/* Nome do sabor em foco, ao lado do rótulo */
+.variacao-atual {
+  font-family: var(--font-sans);
+  font-size: 0.78rem;
+  letter-spacing: 0;
+  text-transform: none;
+  color: var(--gold);
+  font-weight: 600;
+}
+
+.spec-row {
+  padding: 9px 0;
+}
+
+@media (min-width: 720px) {
+  .modal {
+    align-items: center;
+    padding: 24px;
+  }
+
+  .modal-box {
+    max-height: min(88svh, 780px);
+    border-radius: var(--r-lg);
+    padding: 0;
+    /* no desktop a caixa é centrada: aparece no lugar, sem deslizar */
+    animation: modal-in 0.18s ease-out;
+  }
+
+  .modal-corpo {
+    padding: 32px 32px 12px;
+  }
+
+  .modal-foot {
+    padding: 14px 32px;
+  }
+
+  .modal-grid {
+    grid-template-columns: 0.95fr 1.05fr;
+    gap: 28px;
+  }
+
+  /* A foto acompanha a leitura da ficha em vez de sumir para cima. */
+  .modal-media {
+    position: sticky;
+    top: 0;
+    aspect-ratio: 1 / 1;
+    max-height: min(52svh, 420px);
+  }
+
+  .modal-nome {
+    font-size: 1.45rem;
+  }
+}
+
+/* ----- Ações do header -----
+   Quem cede espaço no header é a busca (flex: 1 1 auto), nunca os botões:
+   sem isso a pílula do atacado é comprimida e o conteúdo vaza da borda. */
+.header-actions > * {
+  flex: none;
+}
+
+/* Sem `width`: a largura vem do conteúdo (ícone + rótulo). As media queries
+   abaixo é que fixam o tamanho quando o botão vira só ícone — declarar
+   `width` aqui, no fim do arquivo, venceria as duas. */
+.btn-atacado {
+  position: relative;
+}
+
+/* Faixa intermediária: ainda é desktop, mas a busca já está espremida entre
+   a logo e as ações. O atacado vira só o ícone e devolve ~55px para ela. */
+@media (min-width: 721px) and (max-width: 900px) {
+  .btn-atacado {
+    width: 38px;
+    padding: 0;
+    justify-content: center;
+  }
+
+  .btn-atacado .atacado-label {
+    /* clip-path em vez de display:none — o leitor de tela continua lendo
+       "Atacado", que é o nome acessível do botão. */
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+  }
+}
+
+/* ==========================================================================
+   Swiper
+   O Swiper cuida do arrastar, do teclado e do a11y; a aparência continua
+   vindo das classes que já existiam (.promo-*, .carousel-nav, .card).
+   ========================================================================== */
+
+/* --- Banners --- */
+.promo-swiper {
+  border-radius: var(--r-lg);
+  overflow: hidden;
+}
+
+.promo-swiper .promo-slide {
+  /* o Swiper já dimensiona o slide; aqui só a proporção da arte */
+  height: auto;
+}
+
+.promo-swiper .promo-slide img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 2752 / 1536;
+  object-fit: cover;
+}
+
+/* Os pontos são desenhados pelo Swiper dentro de .promo-dots. */
+.promo-dots .promo-dot {
+  transition: background-color 0.15s ease, width 0.15s ease;
+}
+
+/* O `.swiper` traz `z-index: 1`: setas e pontos são irmãos dele e, sem uma
+   camada própria, ficariam por baixo do trilho. */
+.promo-nav,
+.promo-dots,
+.carousel-nav {
+  z-index: 2;
+}
+
+/* Setas desabilitadas nas pontas (sem loop) somem em vez de ficar mortas. */
+.promo-nav.swiper-button-disabled,
+.carousel-nav.swiper-button-disabled {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* --- Faixa de produtos (vitrine "Mais Vendidos") --- */
+.product-carousel {
+  /* respiro para a sombra do card não ser cortada pelo overflow do Swiper */
+  padding: 4px 2px 6px;
+}
+
+.product-carousel .product-slide {
+  width: 230px;
+  height: auto;      /* cards da mesma faixa terminam alinhados */
+}
+
+.product-carousel .product-slide > .card {
+  height: 100%;
+}
+
+@media (max-width: 720px) {
+  .product-carousel .product-slide {
+    width: 165px;
+  }
+}
+
+/* --- Galeria de sabores no modal --- */
+.modal-galeria {
+  width: 100%;
+  height: 100%;
+}
+
+.modal-galeria .swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* `contain`, não `cover`: numa ficha de produto a embalagem precisa aparecer
+   inteira — o rótulo e a gramatura são o que a pessoa veio conferir. */
+.modal-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 10px;
+}
+
+/* O Swiper cria contexto de empilhamento; sem isso o selo e as setas
+   ficam atrás dos slides. */
+.modal-media .badge,
+.modal-media .modal-media-nav {
+  z-index: 2;
+}
+
+/* O Swiper captura o arrasto; o cursor precisa dizer isso. */
+.modal-galeria,
+.product-carousel {
+  cursor: grab;
+}
+.modal-galeria:active,
+.product-carousel:active {
+  cursor: grabbing;
+}

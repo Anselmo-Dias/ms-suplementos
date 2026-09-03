@@ -1,0 +1,50 @@
+[
+  {
+    "id": "coqueteleira-euronutry",
+    "nome": "Coqueteleira Euronutry",
+    "categoria": "coqueteleira",
+    "precoCentavos": 2000,
+    "imagem": "/img/coqueteleira/coqueteleira-euronutry.webp",
+    "spec": "Unidade",
+    "tags": [],
+    "descricao": "Novo acessório adicionado.",
+    "paraQueServe": "Acessório prático e resistente para misturar e transportar seus suplementos com facilidade para qualquer lugar.",
+    "modoDeUso": "Consulte a tabela nutricional na embalagem.",
+    "marca": "Euronutry",
+    "embalagem": "Unidade"
+  },
+  {
+    "id": "coqueteleira-integralmedical-transparente-1-dose-600ml",
+    "nome": "Coqueteleira Integralmedical Transparente 1 Dose 600ml",
+    "categoria": "coqueteleira",
+    "precoCentavos": 2000,
+    "imagem": "/img/coqueteleira/coqueteleira-integralmedical-transparente-1-dose-600ml.webp",
+    "spec": "Unidade",
+    "tags": [],
+    "descricao": "Novo acessório adicionado.",
+    "paraQueServe": "Acessório prático e resistente para misturar e transportar seus suplementos com facilidade para qualquer lugar.",
+    "modoDeUso": "Consulte a tabela nutricional na embalagem.",
+    "marca": "Integralmédica",
+    "embalagem": "600ml"
+  },
+  {
+    "id": "coqueteleira-xpro-nutrition",
+    "nome": "Coqueteleira Xpro Nutrition",
+    "categoria": "coqueteleira",
+    "precoCentavos": 2000,
+    "imagem": "/img/coqueteleira/coqueteleira-xpro-nutrition.webp",
+    "spec": "Unidade",
+    "tags": [
+      "Xpro Nutrition"
+    ],
+    "badge": "Novo",
+    "descricao": "Coqueteleira Xpro Nutrition com tampa rosqueável e bico dosador, ideal para preparar whey, creatina e pré-treino.",
+    "paraQueServe": "Acessório prático e resistente para misturar e transportar seus suplementos com facilidade para qualquer lugar.",
+    "modoDeUso": "Lavar antes do primeiro uso. Não levar ao micro-ondas.",
+    "marca": "Xpro Nutrition",
+    "embalagem": "Unidade",
+    "extras": {
+      "Cor": "Preta"
+    }
+  }
+]

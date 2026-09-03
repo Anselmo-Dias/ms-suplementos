@@ -1,0 +1,417 @@
+[
+  {
+    "id": "barra-de-proteina-integral-medica-uni",
+    "nome": "Barra De Proteina Integral Medica Uni",
+    "categoria": "gourmet",
+    "precoCentavos": 800,
+    "imagem": "/img/gourmet/barra-de-proteina-integral-medica-uni.webp",
+    "variacoes": [
+      {
+        "nome": "Cookies",
+        "imagem": "/img/gourmet/barra-de-proteina-integral-medica-uni--cookies.webp"
+      },
+      {
+        "nome": "Duo Crunch",
+        "imagem": "/img/gourmet/barra-de-proteina-integral-medica-uni--duo-crunch.webp"
+      },
+      {
+        "nome": "Leite Ninho com Creme de Avelã",
+        "imagem": "/img/gourmet/barra-de-proteina-integral-medica-uni--leite-ninho-com-creme-de-avela.webp"
+      },
+      {
+        "nome": "Ovomaltine",
+        "imagem": "/img/gourmet/barra-de-proteina-integral-medica-uni--ovomaltine.webp"
+      }
+    ],
+    "spec": "A definir • Gourmet",
+    "tags": [
+      "Delicioso",
+      "Gourmet",
+      "Prático"
+    ],
+    "descricao": "Produto gourmet da melhor qualidade para complementar a sua dieta de forma deliciosa.",
+    "paraQueServe": "Auxilia na construção e recuperação muscular, fornecendo proteínas de alto valor biológico essenciais para o ganho de massa magra.",
+    "modoDeUso": "Consulte a embalagem.",
+    "marca": "Integralmédica",
+    "porcao": "1 barra",
+    "embalagem": "Unidade",
+    "doses": "1 por embalagem"
+  },
+  {
+    "id": "barra-de-proteina-nutrata-uni",
+    "nome": "Barra De Proteina Nutrata Uni",
+    "categoria": "gourmet",
+    "precoCentavos": 700,
+    "imagem": "/img/gourmet/barra-de-proteina-nutrata-uni.webp",
+    "variacoes": [
+      {
+        "nome": "Brigadeiro",
+        "imagem": "/img/gourmet/barra-de-proteina-nutrata-uni--brigadeiro.webp"
+      },
+      {
+        "nome": "Cookies and Cream",
+        "imagem": "/img/gourmet/barra-de-proteina-nutrata-uni--cookies-and-cream.webp"
+      },
+      {
+        "nome": "Mousse de Maracujá",
+        "imagem": "/img/gourmet/barra-de-proteina-nutrata-uni--mousse-de-maracuja.webp"
+      }
+    ],
+    "spec": "A definir • Gourmet",
+    "tags": [
+      "Delicioso",
+      "Gourmet",
+      "Prático"
+    ],
+    "descricao": "Produto gourmet da melhor qualidade para complementar a sua dieta de forma deliciosa.",
+    "paraQueServe": "Auxilia na construção e recuperação muscular, fornecendo proteínas de alto valor biológico essenciais para o ganho de massa magra.",
+    "modoDeUso": "Consulte a embalagem.",
+    "marca": "Nutrata",
+    "porcao": "1 barra",
+    "embalagem": "Unidade",
+    "doses": "1 por embalagem"
+  },
+  {
+    "id": "barra-de-proteina-sharkcrush-caixa",
+    "nome": "Barra De Proteina Sharkcrush Caixa",
+    "categoria": "gourmet",
+    "precoCentavos": 8800,
+    "imagem": "/img/gourmet/barra-de-proteina-sharkcrush-caixa.webp",
+    "variacoes": [
+      {
+        "nome": "Cookies e Cream",
+        "imagem": "/img/gourmet/barra-de-proteina-sharkcrush-caixa--cookies-e-cream.webp"
+      },
+      {
+        "nome": "Morango",
+        "imagem": "/img/gourmet/barra-de-proteina-sharkcrush-caixa--morango.webp"
+      },
+      {
+        "nome": "Paçoca",
+        "imagem": "/img/gourmet/barra-de-proteina-sharkcrush-caixa--pacoca.webp"
+      }
+    ],
+    "spec": "A definir • Gourmet",
+    "tags": [
+      "Delicioso",
+      "Gourmet",
+      "Prático"
+    ],
+    "descricao": "Produto gourmet da melhor qualidade para complementar a sua dieta de forma deliciosa.",
+    "paraQueServe": "Auxilia na construção e recuperação muscular, fornecendo proteínas de alto valor biológico essenciais para o ganho de massa magra.",
+    "modoDeUso": "Consulte a embalagem.",
+    "marca": "Shark Pro",
+    "porcao": "1 barra",
+    "embalagem": "Caixa"
+  },
+  {
+    "id": "barra-de-proteina-sharkcrush-uni",
+    "nome": "Barra De Proteina Sharkcrush Uni",
+    "categoria": "gourmet",
+    "precoCentavos": 700,
+    "imagem": "/img/gourmet/barra-de-proteina-sharkcrush-uni.webp",
+    "variacoes": [
+      {
+        "nome": "Cookies",
+        "imagem": "/img/gourmet/barra-de-proteina-sharkcrush-uni--cookies.webp"
+      },
+      {
+        "nome": "Morango",
+        "imagem": "/img/gourmet/barra-de-proteina-sharkcrush-uni--morango.webp"
+      },
+      {
+        "nome": "Paçoca",
+        "imagem": "/img/gourmet/barra-de-proteina-sharkcrush-uni--pacoca.webp"
+      }
+    ],
+    "spec": "A definir • Gourmet",
+    "tags": [
+      "Delicioso",
+      "Gourmet",
+      "Prático"
+    ],
+    "descricao": "Produto gourmet da melhor qualidade para complementar a sua dieta de forma deliciosa.",
+    "paraQueServe": "Auxilia na construção e recuperação muscular, fornecendo proteínas de alto valor biológico essenciais para o ganho de massa magra.",
+    "modoDeUso": "Consulte a embalagem.",
+    "marca": "Shark Pro",
+    "porcao": "1 barra",
+    "embalagem": "Unidade",
+    "doses": "1 por embalagem"
+  },
+  {
+    "id": "barra-de-proteina-sharkrisp-caixa",
+    "nome": "Barra De Proteina Sharkrisp Caixa",
+    "categoria": "gourmet",
+    "precoCentavos": 9800,
+    "imagem": "/img/gourmet/barra-de-proteina-sharkrisp-caixa.webp",
+    "variacoes": [
+      {
+        "nome": "Chocolate Maltado",
+        "imagem": "/img/gourmet/barra-de-proteina-sharkrisp-caixa--chocolate-maltado.webp"
+      },
+      {
+        "nome": "Doce de Leite",
+        "imagem": "/img/gourmet/barra-de-proteina-sharkrisp-caixa--doce-de-leite.webp"
+      },
+      {
+        "nome": "Frutas Vermelhas",
+        "imagem": "/img/gourmet/barra-de-proteina-sharkrisp-caixa--frutas-vermelhas.webp"
+      }
+    ],
+    "spec": "A definir • Gourmet",
+    "tags": [
+      "Delicioso",
+      "Gourmet",
+      "Prático"
+    ],
+    "descricao": "Produto gourmet da melhor qualidade para complementar a sua dieta de forma deliciosa.",
+    "paraQueServe": "Auxilia na construção e recuperação muscular, fornecendo proteínas de alto valor biológico essenciais para o ganho de massa magra.",
+    "modoDeUso": "Consulte a embalagem.",
+    "marca": "Shark Pro",
+    "porcao": "1 barra",
+    "embalagem": "Caixa"
+  },
+  {
+    "id": "barra-de-proteina-sharkrisp-uni",
+    "nome": "Barra De Proteina Sharkrisp Uni",
+    "categoria": "gourmet",
+    "precoCentavos": 800,
+    "imagem": "/img/gourmet/barra-de-proteina-sharkrisp-uni.webp",
+    "variacoes": [
+      {
+        "nome": "Chocolate Maltado",
+        "imagem": "/img/gourmet/barra-de-proteina-sharkrisp-uni--chocolate-maltado.webp"
+      },
+      {
+        "nome": "Doce de Leite",
+        "imagem": "/img/gourmet/barra-de-proteina-sharkrisp-uni--doce-de-leite.webp"
+      }
+    ],
+    "spec": "A definir • Gourmet",
+    "tags": [
+      "Delicioso",
+      "Gourmet",
+      "Prático"
+    ],
+    "descricao": "Produto gourmet da melhor qualidade para complementar a sua dieta de forma deliciosa.",
+    "paraQueServe": "Auxilia na construção e recuperação muscular, fornecendo proteínas de alto valor biológico essenciais para o ganho de massa magra.",
+    "modoDeUso": "Consulte a embalagem.",
+    "marca": "Shark Pro",
+    "porcao": "1 barra",
+    "embalagem": "Unidade",
+    "doses": "1 por embalagem"
+  },
+  {
+    "id": "delicious-whey-ftw-21g",
+    "nome": "Delicious Whey Ftw 21G",
+    "categoria": "gourmet",
+    "precoCentavos": 700,
+    "imagem": "/img/gourmet/delicious-whey-ftw-21g.webp",
+    "variacoes": [
+      {
+        "nome": "Chocolate Negro",
+        "imagem": "/img/gourmet/delicious-whey-ftw-21g--chocolate-negro.webp"
+      },
+      {
+        "nome": "Chocolate Supreme",
+        "imagem": "/img/gourmet/delicious-whey-ftw-21g--chocolate-supreme.webp"
+      },
+      {
+        "nome": "Cookies & Cream",
+        "imagem": "/img/gourmet/delicious-whey-ftw-21g--cookies-cream.webp"
+      },
+      {
+        "nome": "Doce de Leite Argentino",
+        "imagem": "/img/gourmet/delicious-whey-ftw-21g--doce-de-leite-argentino.webp"
+      }
+    ],
+    "spec": "21G • Gourmet",
+    "tags": [
+      "Delicioso",
+      "Gourmet",
+      "Prático"
+    ],
+    "descricao": "Produto gourmet da melhor qualidade para complementar a sua dieta de forma deliciosa.",
+    "paraQueServe": "Auxilia na construção e recuperação muscular, fornecendo proteínas de alto valor biológico essenciais para o ganho de massa magra.",
+    "modoDeUso": "Consulte a embalagem.",
+    "marca": "FTW",
+    "porcao": "1 sachê (21g)",
+    "embalagem": "21g",
+    "doses": "1 por embalagem"
+  },
+  {
+    "id": "nutrata-whey-grego-caixa",
+    "nome": "Nutrata Whey Grego Caixa",
+    "categoria": "gourmet",
+    "precoCentavos": 8500,
+    "imagem": "/img/gourmet/nutrata-whey-grego-caixa.webp",
+    "variacoes": [
+      {
+        "nome": "Beijinho",
+        "imagem": "/img/gourmet/nutrata-whey-grego-caixa--beijinho.webp"
+      },
+      {
+        "nome": "Brigadeiro",
+        "imagem": "/img/gourmet/nutrata-whey-grego-caixa--brigadeiro.webp"
+      },
+      {
+        "nome": "Cookies",
+        "imagem": "/img/gourmet/nutrata-whey-grego-caixa--cookies.webp"
+      },
+      {
+        "nome": "Mousse de Maracujá",
+        "imagem": "/img/gourmet/nutrata-whey-grego-caixa--mousse-de-maracuja.webp"
+      }
+    ],
+    "spec": "A definir • Gourmet",
+    "tags": [
+      "Delicioso",
+      "Gourmet",
+      "Prático"
+    ],
+    "descricao": "Produto gourmet da melhor qualidade para complementar a sua dieta de forma deliciosa.",
+    "paraQueServe": "Auxilia na construção e recuperação muscular, fornecendo proteínas de alto valor biológico essenciais para o ganho de massa magra.",
+    "modoDeUso": "Consulte a embalagem.",
+    "marca": "Nutrata",
+    "porcao": "1 barra",
+    "embalagem": "Caixa"
+  },
+  {
+    "id": "pasta-de-amendoim-mani-force-integral-1kg",
+    "nome": "Pasta De Amendoim   Mani Force   Integral 1Kg",
+    "categoria": "gourmet",
+    "precoCentavos": 2800,
+    "imagem": "/img/gourmet/pasta-de-amendoim-mani-force-integral-1kg.webp",
+    "variacoes": [
+      {
+        "nome": "Crocante",
+        "imagem": "/img/gourmet/pasta-de-amendoim-mani-force-integral-1kg--crocante.webp"
+      },
+      {
+        "nome": "Original",
+        "imagem": "/img/gourmet/pasta-de-amendoim-mani-force-integral-1kg--original.webp"
+      }
+    ],
+    "spec": "A definir • Gourmet",
+    "tags": [
+      "Delicioso",
+      "Gourmet",
+      "Prático"
+    ],
+    "descricao": "Produto gourmet da melhor qualidade para complementar a sua dieta de forma deliciosa.",
+    "paraQueServe": "Lanche prático, saudável e proteico. Ideal para saciar a fome no dia a dia e manter o aporte de proteínas com muito sabor.",
+    "modoDeUso": "Consulte a embalagem.",
+    "marca": "Mani Force",
+    "porcao": "30g",
+    "embalagem": "1kg",
+    "doses": "33 por embalagem"
+  },
+  {
+    "id": "pasta-de-amendoim-mani-force-500g",
+    "nome": "Pasta De Amendoim Mani Force 500G",
+    "categoria": "gourmet",
+    "precoCentavos": 2500,
+    "imagem": "/img/gourmet/pasta-de-amendoim-mani-force-500g.webp",
+    "variacoes": [
+      {
+        "nome": "Beijinho",
+        "imagem": "/img/gourmet/pasta-de-amendoim-mani-force-500g--beijinho.webp"
+      },
+      {
+        "nome": "Brigadeiro",
+        "imagem": "/img/gourmet/pasta-de-amendoim-mani-force-500g--brigadeiro.webp"
+      },
+      {
+        "nome": "Cacau",
+        "imagem": "/img/gourmet/pasta-de-amendoim-mani-force-500g--cacau.webp"
+      }
+    ],
+    "spec": "500G • Gourmet",
+    "tags": [
+      "Delicioso",
+      "Gourmet",
+      "Prático"
+    ],
+    "descricao": "Produto gourmet da melhor qualidade para complementar a sua dieta de forma deliciosa.",
+    "paraQueServe": "Lanche prático, saudável e proteico. Ideal para saciar a fome no dia a dia e manter o aporte de proteínas com muito sabor.",
+    "modoDeUso": "Consulte a embalagem.",
+    "marca": "Mani Force",
+    "porcao": "30g",
+    "embalagem": "500g",
+    "doses": "16 por embalagem"
+  },
+  {
+    "id": "protein-crisp-bar-ovomaltine-caixa",
+    "nome": "Protein Crisp Bar Caixa",
+    "categoria": "gourmet",
+    "precoCentavos": 9900,
+    "imagem": "/img/gourmet/protein-crisp-bar-ovomaltine-caixa.webp",
+    "variacoes": [
+      {
+        "nome": "Cookies",
+        "imagem": "/img/gourmet/protein-crisp-bar-ovomaltine-caixa--cookies.webp"
+      },
+      {
+        "nome": "Duo Crunch",
+        "imagem": "/img/gourmet/protein-crisp-bar-ovomaltine-caixa--duo-crunch.webp"
+      },
+      {
+        "nome": "Leite com Creme de Avelã",
+        "imagem": "/img/gourmet/protein-crisp-bar-ovomaltine-caixa--leite-com-creme-de-avela.webp"
+      },
+      {
+        "nome": "Ovomaltine",
+        "imagem": "/img/gourmet/protein-crisp-bar-ovomaltine-caixa--ovomaltine.webp"
+      }
+    ],
+    "spec": "A definir • Gourmet",
+    "tags": [
+      "Delicioso",
+      "Gourmet",
+      "Prático"
+    ],
+    "descricao": "Produto gourmet da melhor qualidade para complementar a sua dieta de forma deliciosa.",
+    "paraQueServe": "Auxilia na construção e recuperação muscular, fornecendo proteínas de alto valor biológico essenciais para o ganho de massa magra.",
+    "modoDeUso": "Consulte a embalagem.",
+    "marca": "Integralmédica",
+    "porcao": "1 barra",
+    "embalagem": "Caixa"
+  },
+  {
+    "id": "snackthat-supley",
+    "nome": "Snackthat Supley",
+    "categoria": "gourmet",
+    "precoCentavos": 1000,
+    "imagem": "/img/gourmet/snackthat-supley.webp",
+    "variacoes": [
+      {
+        "nome": "Cebola e Salsa",
+        "imagem": "/img/gourmet/snackthat-supley--cebola-e-salsa.webp"
+      },
+      {
+        "nome": "Cheeseburguer",
+        "imagem": "/img/gourmet/snackthat-supley--cheeseburguer.webp"
+      },
+      {
+        "nome": "Pesto e Parmesão",
+        "imagem": "/img/gourmet/snackthat-supley--pesto-e-parmesao.webp"
+      }
+    ],
+    "spec": "40g • 10g de proteína",
+    "tags": [
+      "Delicioso",
+      "Gourmet",
+      "Prático"
+    ],
+    "descricao": "Produto gourmet da melhor qualidade para complementar a sua dieta de forma deliciosa.",
+    "paraQueServe": "Lanche prático, saudável e proteico. Ideal para saciar a fome no dia a dia e manter o aporte de proteínas com muito sabor.",
+    "modoDeUso": "Consulte a embalagem.",
+    "marca": "Supley",
+    "porcao": "1 embalagem (40g)",
+    "embalagem": "40g",
+    "doses": "1 por embalagem",
+    "extras": {
+      "Proteínas": "10g por embalagem"
+    }
+  }
+]

@@ -1,0 +1,1323 @@
+[
+  {
+    "id": "100-whey-synther-size-refil-1-8kg",
+    "nome": "100 isoblend Whey Synther Size Refil 1,8kg",
+    "categoria": "whey",
+    "precoCentavos": 11000,
+    "imagem": "/img/whey/100-whey-synther-size-refil-1-8kg.webp",
+    "variacoes": [
+      {
+        "nome": "Baunilha",
+        "imagem": "/img/whey/100-whey-synther-size-refil-1-8kg--baunilha.webp"
+      },
+      {
+        "nome": "Chocolate",
+        "imagem": "/img/whey/100-whey-synther-size-refil-1-8kg--chocolate.webp"
+      },
+      {
+        "nome": "Cookies 'n Cream",
+        "imagem": "/img/whey/100-whey-synther-size-refil-1-8kg--cookies-n-cream.webp"
+      },
+      {
+        "nome": "Morango",
+        "imagem": "/img/whey/100-whey-synther-size-refil-1-8kg--morango.webp"
+      }
+    ],
+    "spec": "Unidade",
+    "tags": [],
+    "descricao": "Novo produto adicionado.",
+    "paraQueServe": "Auxilia na construção e recuperação muscular, fornecendo proteínas de alto valor biológico essenciais para o ganho de massa magra.",
+    "modoDeUso": "Consulte a tabela nutricional na embalagem.",
+    "marca": "Synthesize",
+    "porcao": "30g a 40g por dia, geralmente pós-treino",
+    "embalagem": "1,8kg",
+    "doses": "45 a 60 por embalagem"
+  },
+  {
+    "id": "100-energy-whey-euronutryjpg",
+    "nome": "100% Energy Whey Euronutry",
+    "categoria": "whey",
+    "precoCentavos": 12900,
+    "imagem": "/img/whey/100-energy-whey-euronutryjpg.webp",
+    "variacoes": [
+      {
+        "nome": "Baunilha",
+        "imagem": "/img/whey/100-energy-whey-euronutryjpg--baunilha.webp"
+      },
+      {
+        "nome": "Chocolate",
+        "imagem": "/img/whey/100-energy-whey-euronutryjpg--chocolate.webp"
+      },
+      {
+        "nome": "Choconinho",
+        "imagem": "/img/whey/100-energy-whey-euronutryjpg--choconinho.webp"
+      },
+      {
+        "nome": "Doce de Leite",
+        "imagem": "/img/whey/100-energy-whey-euronutryjpg--doce-de-leite.webp"
+      },
+      {
+        "nome": "Morango",
+        "imagem": "/img/whey/100-energy-whey-euronutryjpg--morango.webp"
+      }
+    ],
+    "spec": "900g • Whey Protein",
+    "tags": [],
+    "descricao": "Novo produto adicionado.",
+    "paraQueServe": "Auxilia na construção e recuperação muscular, fornecendo proteínas de alto valor biológico essenciais para o ganho de massa magra.",
+    "modoDeUso": "Consulte a tabela nutricional na embalagem.",
+    "marca": "Euronutry",
+    "porcao": "30g a 40g por dia, geralmente pós-treino",
+    "embalagem": "900g",
+    "doses": "22 a 30 por embalagem"
+  },
+  {
+    "id": "100-pure-whey-pure-tech",
+    "nome": "100% Pure Whey Pure Tech",
+    "categoria": "whey",
+    "precoCentavos": 10000,
+    "imagem": "/img/whey/100-pure-whey-pure-tech.webp",
+    "variacoes": [
+      {
+        "nome": "Baunilha Cream",
+        "imagem": "/img/whey/100-pure-whey-pure-tech--baunilha-cream.webp"
+      },
+      {
+        "nome": "Chocolate Cream",
+        "imagem": "/img/whey/100-pure-whey-pure-tech--chocolate-cream.webp"
+      },
+      {
+        "nome": "Cookies 'n Cream",
+        "imagem": "/img/whey/100-pure-whey-pure-tech--cookies-n-cream.webp"
+      },
+      {
+        "nome": "Morango",
+        "imagem": "/img/whey/100-pure-whey-pure-tech--morango.webp"
+      }
+    ],
+    "spec": "900g • Whey Protein",
+    "tags": [],
+    "descricao": "Novo produto adicionado.",
+    "paraQueServe": "Auxilia na construção e recuperação muscular, fornecendo proteínas de alto valor biológico essenciais para o ganho de massa magra.",
+    "modoDeUso": "Consulte a tabela nutricional na embalagem.",
+    "marca": "Puretech",
+    "porcao": "30g a 40g por dia, geralmente pós-treino",
+    "embalagem": "900g",
+    "doses": "22 a 30 por embalagem"
+  },
+  {
+    "id": "synthesize-100-whey-900g",
+    "nome": "100% Whey Protein Synthesize 900g",
+    "categoria": "whey",
+    "precoCentavos": 11000,
+    "imagem": "/img/whey/synthesize-100-whey-900g.webp",
+    "variacoes": [
+      {
+        "nome": "Chocolate",
+        "imagem": "/img/whey/synthesize-100-whey-900g--chocolate.webp"
+      },
+      {
+        "nome": "Cookies in Cream",
+        "imagem": "/img/whey/synthesize-100-whey-900g--cookies-in-cream.webp"
+      },
+      {
+        "nome": "Doce de Leite",
+        "imagem": "/img/whey/synthesize-100-whey-900g--doce-de-leite.webp"
+      },
+      {
+        "nome": "Leitinho",
+        "imagem": "/img/whey/synthesize-100-whey-900g--leitinho.webp"
+      },
+      {
+        "nome": "Morango",
+        "imagem": "/img/whey/synthesize-100-whey-900g--morango.webp"
+      }
+    ],
+    "spec": "900g • 100% Whey Protein Concentrado",
+    "tags": [
+      "100% Whey Pura"
+    ],
+    "descricao": "Proteína concentrada com rápida digestão e rica em BCAA e glutamina naturais.",
+    "paraQueServe": "Auxilia na construção e recuperação muscular, fornecendo proteínas de alto valor biológico essenciais para o ganho de massa magra.",
+    "modoDeUso": "Dissolver 30g em 200ml de água.",
+    "marca": "Synthesize",
+    "porcao": "30g a 40g por dia, geralmente pós-treino",
+    "embalagem": "900g",
+    "doses": "22 a 30 por embalagem"
+  },
+  {
+    "id": "3-whey-top-taste-900g-body-action",
+    "nome": "3 Whey Top Taste 900g Body Action",
+    "categoria": "whey",
+    "precoCentavos": 17000,
+    "imagem": "/img/whey/3-whey-top-taste-900g-body-action.webp",
+    "variacoes": [
+      {
+        "nome": "Baunilha",
+        "imagem": "/img/whey/3-whey-top-taste-900g-body-action--baunilha.webp"
+      },
+      {
+        "nome": "Chocolate",
+        "imagem": "/img/whey/3-whey-top-taste-900g-body-action--chocolate.webp"
+      },
+      {
+        "nome": "Leite Condensado",
+        "imagem": "/img/whey/3-whey-top-taste-900g-body-action--leite-condensado.webp"
+      },
+      {
+        "nome": "Morango",
+        "imagem": "/img/whey/3-whey-top-taste-900g-body-action--morango.webp"
+      }
+    ],
+    "spec": "Unidade",
+    "tags": [],
+    "descricao": "Novo produto adicionado.",
+    "paraQueServe": "Auxilia na construção e recuperação muscular, fornecendo proteínas de alto valor biológico essenciais para o ganho de massa magra.",
+    "modoDeUso": "Consulte a tabela nutricional na embalagem.",
+    "marca": "Body Action",
+    "porcao": "30g a 40g por dia, geralmente pós-treino",
+    "embalagem": "900g",
+    "doses": "22 a 30 por embalagem"
+  },
+  {
+    "id": "albomina-uevo-420g",
+    "nome": "Albomina Uevo 420g",
+    "categoria": "whey",
+    "precoCentavos": 3900,
+    "imagem": "/img/whey/albomina-uevo-420g.webp",
+    "variacoes": [
+      {
+        "nome": "Banoffe",
+        "imagem": "/img/whey/albomina-uevo-420g--banoffe.webp"
+      },
+      {
+        "nome": "Baunilha Incrível",
+        "imagem": "/img/whey/albomina-uevo-420g--baunilha-incrivel.webp"
+      },
+      {
+        "nome": "Café Macaccino",
+        "imagem": "/img/whey/albomina-uevo-420g--cafe-macaccino.webp"
+      },
+      {
+        "nome": "Caramelo Salgado",
+        "imagem": "/img/whey/albomina-uevo-420g--caramelo-salgado.webp"
+      },
+      {
+        "nome": "Cocada Cremosa",
+        "imagem": "/img/whey/albomina-uevo-420g--cocada-cremosa.webp"
+      },
+      {
+        "nome": "Cookies in Cream",
+        "imagem": "/img/whey/albomina-uevo-420g--cookies-in-cream.webp"
+      },
+      {
+        "nome": "Explosão de Chocolate",
+        "imagem": "/img/whey/albomina-uevo-420g--explosao-de-chocolate.webp"
+      },
+      {
+        "nome": "Morango",
+        "imagem": "/img/whey/albomina-uevo-420g--morango.webp"
+      }
+    ],
+    "spec": "Unidade",
+    "tags": [],
+    "descricao": "Novo produto adicionado.",
+    "paraQueServe": "Auxilia na construção e recuperação muscular, fornecendo proteínas de alto valor biológico essenciais para o ganho de massa magra.",
+    "modoDeUso": "Consulte a tabela nutricional na embalagem.",
+    "marca": "Uevo",
+    "porcao": "30g a 40g por dia, geralmente pós-treino",
+    "embalagem": "420g",
+    "doses": "10 a 14 por embalagem"
+  },
+  {
+    "id": "albumina-naturovos-420g",
+    "nome": "Albumina Naturovos 420g",
+    "categoria": "whey",
+    "precoCentavos": 3900,
+    "imagem": "/img/whey/albumina-naturovos-420g.webp",
+    "variacoes": [
+      {
+        "nome": "Chocolate",
+        "imagem": "/img/whey/albumina-naturovos-420g--chocolate.webp"
+      },
+      {
+        "nome": "Morango",
+        "imagem": "/img/whey/albumina-naturovos-420g--morango.webp"
+      },
+      {
+        "nome": "Natural",
+        "imagem": "/img/whey/albumina-naturovos-420g--natural.webp"
+      }
+    ],
+    "spec": "Unidade",
+    "tags": [],
+    "descricao": "Novo produto adicionado.",
+    "paraQueServe": "Auxilia na construção e recuperação muscular, fornecendo proteínas de alto valor biológico essenciais para o ganho de massa magra.",
+    "modoDeUso": "Consulte a tabela nutricional na embalagem.",
+    "marca": "Naturovos",
+    "porcao": "30g a 40g por dia, geralmente pós-treino",
+    "embalagem": "420g",
+    "doses": "10 a 14 por embalagem"
+  },
+  {
+    "id": "beef-protein-crush-910g-underlabzjpg",
+    "nome": "Beef Protein Crush 910g Underlabz",
+    "categoria": "whey",
+    "precoCentavos": 17500,
+    "imagem": "/img/whey/beef-protein-crush-910g-underlabzjpg.webp",
+    "variacoes": [
+      {
+        "nome": "Chocolate",
+        "imagem": "/img/whey/beef-protein-crush-910g-underlabzjpg--chocolate.webp"
+      },
+      {
+        "nome": "Morango & Kiwi",
+        "imagem": "/img/whey/beef-protein-crush-910g-underlabzjpg--morango-kiwi.webp"
+      },
+      {
+        "nome": "Pêssego e Manga",
+        "imagem": "/img/whey/beef-protein-crush-910g-underlabzjpg--pessego-e-manga.webp"
+      }
+    ],
+    "spec": "Unidade",
+    "tags": [],
+    "descricao": "Novo produto adicionado.",
+    "paraQueServe": "Auxilia na construção e recuperação muscular, fornecendo proteínas de alto valor biológico essenciais para o ganho de massa magra.",
+    "modoDeUso": "Consulte a tabela nutricional na embalagem.",
+    "marca": "Under Labz",
+    "porcao": "30g a 40g por dia, geralmente pós-treino",
+    "embalagem": "910g",
+    "doses": "22 a 30 por embalagem"
+  },
+  {
+    "id": "bestvegan-leite",
+    "nome": "BestVegan",
+    "categoria": "whey",
+    "precoCentavos": 13900,
+    "imagem": "/img/whey/bestvegan-leite.webp",
+    "variacoes": [
+      {
+        "nome": "Cacau",
+        "imagem": "/img/whey/bestvegan-leite--cacau.webp"
+      },
+      {
+        "nome": "Cocada",
+        "imagem": "/img/whey/bestvegan-leite--cocada.webp"
+      },
+      {
+        "nome": "Leite",
+        "imagem": "/img/whey/bestvegan-leite--leite.webp"
+      },
+      {
+        "nome": "Torta de Maçã com Canela",
+        "imagem": "/img/whey/bestvegan-leite--torta-de-maca-com-canela.webp"
+      }
+    ],
+    "spec": "500g • Whey Protein",
+    "tags": [
+      "Proteína",
+      "Recuperação Muscular"
+    ],
+    "descricao": "Suplemento de Whey Protein de alta qualidade para apoiar o ganho de massa muscular.",
+    "paraQueServe": "Auxilia na construção e recuperação muscular, fornecendo proteínas de alto valor biológico essenciais para o ganho de massa magra.",
+    "modoDeUso": "Consulte a embalagem.",
+    "porcao": "30g a 40g por dia, geralmente pós-treino",
+    "embalagem": "500g",
+    "doses": "12 a 16 por embalagem"
+  },
+  {
+    "id": "buck-whey-choko",
+    "nome": "Buck Whey Choko",
+    "categoria": "whey",
+    "precoCentavos": null,
+    "imagem": "/img/whey/buck-whey-choko.webp",
+    "spec": "A definir • Whey Protein",
+    "tags": [
+      "Proteína",
+      "Recuperação Muscular"
+    ],
+    "indisponivel": true,
+    "descricao": "Suplemento de Whey Protein de alta qualidade para apoiar o ganho de massa muscular.",
+    "paraQueServe": "Auxilia na construção e recuperação muscular, fornecendo proteínas de alto valor biológico essenciais para o ganho de massa magra.",
+    "modoDeUso": "Consulte a embalagem.",
+    "porcao": "30g"
+  },
+  {
+    "id": "canibol-900g-studio",
+    "nome": "Canibol 900G Studio",
+    "categoria": "whey",
+    "precoCentavos": null,
+    "imagem": "/img/whey/canibol-900g-studio.webp",
+    "spec": "900G • Whey Protein",
+    "tags": [
+      "Proteína",
+      "Recuperação Muscular"
+    ],
+    "indisponivel": true,
+    "descricao": "Suplemento de Whey Protein de alta qualidade para apoiar o ganho de massa muscular.",
+    "paraQueServe": "Auxilia na construção e recuperação muscular, fornecendo proteínas de alto valor biológico essenciais para o ganho de massa magra.",
+    "modoDeUso": "Consulte a embalagem.",
+    "porcao": "30g a 40g por dia, geralmente pós-treino",
+    "embalagem": "900g",
+    "doses": "22 a 30 por embalagem"
+  },
+  {
+    "id": "euronutry-beef-protein-isolate-pink-lemonade-900g",
+    "nome": "Euronutry Beef Protein Isolated 900g",
+    "categoria": "whey",
+    "precoCentavos": 16000,
+    "imagem": "/img/whey/euronutry-beef-protein-isolate-pink-lemonade-900g.webp",
+    "variacoes": [
+      {
+        "nome": "Dois Limões",
+        "imagem": "/img/whey/euronutry-beef-protein-isolate-pink-lemonade-900g--dois-limoes.webp"
+      },
+      {
+        "nome": "Pink Lemonade",
+        "imagem": "/img/whey/euronutry-beef-protein-isolate-pink-lemonade-900g--pink-lemonade.webp"
+      }
+    ],
+    "spec": "Unidade",
+    "tags": [],
+    "descricao": "Novo produto adicionado.",
+    "paraQueServe": "Auxilia na construção e recuperação muscular, fornecendo proteínas de alto valor biológico essenciais para o ganho de massa magra.",
+    "modoDeUso": "Consulte a tabela nutricional na embalagem.",
+    "marca": "Euronutry",
+    "porcao": "30g a 40g por dia, geralmente pós-treino",
+    "embalagem": "900g",
+    "doses": "22 a 30 por embalagem"
+  },
+  {
+    "id": "euronutry-whey-supreme-1kg-choconinho",
+    "nome": "Euronutry Whey Supreme 1kg",
+    "categoria": "whey",
+    "precoCentavos": 8900,
+    "imagem": "/img/whey/euronutry-whey-supreme-1kg-choconinho.webp",
+    "variacoes": [
+      {
+        "nome": "Choconinho",
+        "imagem": "/img/whey/euronutry-whey-supreme-1kg-choconinho--choconinho.webp"
+      },
+      {
+        "nome": "Creme de Pêssego",
+        "imagem": "/img/whey/euronutry-whey-supreme-1kg-choconinho--creme-de-pessego.webp"
+      },
+      {
+        "nome": "Mousse de Morango",
+        "imagem": "/img/whey/euronutry-whey-supreme-1kg-choconinho--mousse-de-morango.webp"
+      },
+      {
+        "nome": "Suflê de Baunilha",
+        "imagem": "/img/whey/euronutry-whey-supreme-1kg-choconinho--sufle-de-baunilha.webp"
+      }
+    ],
+    "spec": "Unidade",
+    "tags": [],
+    "descricao": "Novo produto adicionado.",
+    "paraQueServe": "Auxilia na construção e recuperação muscular, fornecendo proteínas de alto valor biológico essenciais para o ganho de massa magra.",
+    "modoDeUso": "Consulte a tabela nutricional na embalagem.",
+    "marca": "Euronutry",
+    "porcao": "30g a 40g por dia, geralmente pós-treino",
+    "embalagem": "1kg",
+    "doses": "25 a 33 por embalagem"
+  },
+  {
+    "id": "hit-protein-chocolate-2",
+    "nome": "Hit Protein adaptogen",
+    "categoria": "whey",
+    "precoCentavos": 11900,
+    "imagem": "/img/whey/hit-protein-chocolate-2.webp",
+    "variacoes": [
+      {
+        "nome": "Baunilha",
+        "imagem": "/img/whey/hit-protein-chocolate-2--baunilha.webp"
+      },
+      {
+        "nome": "Beijinho",
+        "imagem": "/img/whey/hit-protein-chocolate-2--beijinho.webp"
+      },
+      {
+        "nome": "Chocolate",
+        "imagem": "/img/whey/hit-protein-chocolate-2--chocolate.webp"
+      },
+      {
+        "nome": "Chocomaltine",
+        "imagem": "/img/whey/hit-protein-chocolate-2--chocomaltine.webp"
+      },
+      {
+        "nome": "Cookies & Cream",
+        "imagem": "/img/whey/hit-protein-chocolate-2--cookies-cream.webp"
+      },
+      {
+        "nome": "Doce de Leite",
+        "imagem": "/img/whey/hit-protein-chocolate-2--doce-de-leite.webp"
+      },
+      {
+        "nome": "Morango",
+        "imagem": "/img/whey/hit-protein-chocolate-2--morango.webp"
+      },
+      {
+        "nome": "Original",
+        "imagem": "/img/whey/hit-protein-chocolate-2--original.webp"
+      }
+    ],
+    "spec": "900g • Whey Protein",
+    "tags": [
+      "Proteína",
+      "Recuperação Muscular"
+    ],
+    "descricao": "Suplemento de Whey Protein de alta qualidade para apoiar o ganho de massa muscular.",
+    "paraQueServe": "Auxilia na construção e recuperação muscular, fornecendo proteínas de alto valor biológico essenciais para o ganho de massa magra.",
+    "modoDeUso": "Consulte a embalagem.",
+    "marca": "Adaptogen",
+    "porcao": "30g a 40g por dia, geralmente pós-treino",
+    "embalagem": "900g",
+    "doses": "22 a 30 por embalagem"
+  },
+  {
+    "id": "hyper-vegan-900g",
+    "nome": "Hyper Vegan 900G",
+    "categoria": "whey",
+    "precoCentavos": null,
+    "imagem": "/img/whey/hyper-vegan-900g.webp",
+    "spec": "900G • Whey Protein",
+    "tags": [
+      "Proteína",
+      "Recuperação Muscular"
+    ],
+    "indisponivel": true,
+    "descricao": "Suplemento de Whey Protein de alta qualidade para apoiar o ganho de massa muscular.",
+    "paraQueServe": "Auxilia na construção e recuperação muscular, fornecendo proteínas de alto valor biológico essenciais para o ganho de massa magra.",
+    "modoDeUso": "Consulte a embalagem.",
+    "porcao": "30g a 40g por dia, geralmente pós-treino",
+    "embalagem": "900g",
+    "doses": "22 a 30 por embalagem"
+  },
+  {
+    "id": "iso-size-900g-studio",
+    "nome": "Iso Size 900G Studio",
+    "categoria": "whey",
+    "precoCentavos": null,
+    "imagem": "/img/whey/iso-size-900g-studio.webp",
+    "spec": "900G • Whey Protein",
+    "tags": [
+      "Proteína",
+      "Recuperação Muscular"
+    ],
+    "indisponivel": true,
+    "descricao": "Suplemento de Whey Protein de alta qualidade para apoiar o ganho de massa muscular.",
+    "paraQueServe": "Auxilia na construção e recuperação muscular, fornecendo proteínas de alto valor biológico essenciais para o ganho de massa magra.",
+    "modoDeUso": "Consulte a embalagem.",
+    "porcao": "30g a 40g por dia, geralmente pós-treino",
+    "embalagem": "900g",
+    "doses": "22 a 30 por embalagem"
+  },
+  {
+    "id": "iso-whey-vitafor-900g-frutas-vermelhas",
+    "nome": "Iso Whey Vitafor 900g Frutas Vermelhas",
+    "categoria": "whey",
+    "precoCentavos": null,
+    "imagem": "/img/whey/iso-whey-vitafor-900g-frutas-vermelhas.webp",
+    "spec": "900g • Whey Protein",
+    "tags": [
+      "Proteína",
+      "Recuperação Muscular"
+    ],
+    "indisponivel": true,
+    "descricao": "Suplemento de Whey Protein de alta qualidade para apoiar o ganho de massa muscular.",
+    "paraQueServe": "Auxilia na construção e recuperação muscular, fornecendo proteínas de alto valor biológico essenciais para o ganho de massa magra.",
+    "modoDeUso": "Consulte a embalagem.",
+    "marca": "Vitafor",
+    "porcao": "30g a 40g por dia, geralmente pós-treino",
+    "embalagem": "900g",
+    "doses": "22 a 30 por embalagem"
+  },
+  {
+    "id": "isolate-prime-whey-body-action-900g",
+    "nome": "Isolate Prime Whey Body Action 900g",
+    "categoria": "whey",
+    "precoCentavos": 23000,
+    "imagem": "/img/whey/isolate-prime-whey-body-action-900g.webp",
+    "variacoes": [
+      {
+        "nome": "Baunilha Natural",
+        "imagem": "/img/whey/isolate-prime-whey-body-action-900g--baunilha-natural.webp"
+      },
+      {
+        "nome": "Chocolate",
+        "imagem": "/img/whey/isolate-prime-whey-body-action-900g--chocolate.webp"
+      },
+      {
+        "nome": "Morango Natural",
+        "imagem": "/img/whey/isolate-prime-whey-body-action-900g--morango-natural.webp"
+      }
+    ],
+    "spec": "Unidade",
+    "tags": [],
+    "descricao": "Novo produto adicionado.",
+    "paraQueServe": "Auxilia na construção e recuperação muscular, fornecendo proteínas de alto valor biológico essenciais para o ganho de massa magra.",
+    "modoDeUso": "Consulte a tabela nutricional na embalagem.",
+    "marca": "Body Action",
+    "porcao": "30g a 40g por dia, geralmente pós-treino",
+    "embalagem": "900g",
+    "doses": "22 a 30 por embalagem"
+  },
+  {
+    "id": "isolate-protein-new-millen-900g",
+    "nome": "Isolate Protein New Millen 900g",
+    "categoria": "whey",
+    "precoCentavos": 17500,
+    "imagem": "/img/whey/isolate-protein-new-millen-900g.webp",
+    "variacoes": [
+      {
+        "nome": "Chocolate",
+        "imagem": "/img/whey/isolate-protein-new-millen-900g--chocolate.webp"
+      },
+      {
+        "nome": "Morango",
+        "imagem": "/img/whey/isolate-protein-new-millen-900g--morango.webp"
+      }
+    ],
+    "spec": "Unidade",
+    "tags": [],
+    "descricao": "Novo produto adicionado.",
+    "paraQueServe": "Auxilia na construção e recuperação muscular, fornecendo proteínas de alto valor biológico essenciais para o ganho de massa magra.",
+    "modoDeUso": "Consulte a tabela nutricional na embalagem.",
+    "marca": "New Millen",
+    "porcao": "30g a 40g por dia, geralmente pós-treino",
+    "embalagem": "900g",
+    "doses": "22 a 30 por embalagem"
+  },
+  {
+    "id": "mk-pure-beef-900g",
+    "nome": "MK Pure Beef 900g",
+    "categoria": "whey",
+    "precoCentavos": 17500,
+    "imagem": "/img/whey/mk-pure-beef-900g.webp",
+    "variacoes": [
+      {
+        "nome": "Frutas Vermelhas",
+        "imagem": "/img/whey/mk-pure-beef-900g--frutas-vermelhas.webp"
+      },
+      {
+        "nome": "Morango com Maracujá",
+        "imagem": "/img/whey/mk-pure-beef-900g--morango-com-maracuja.webp"
+      }
+    ],
+    "spec": "900g • Proteína animal em pó",
+    "tags": [
+      "Proteína da Carne",
+      "Zero Carbo",
+      "Zero Lactose"
+    ],
+    "descricao": "Suplemento proteico à base de proteína animal, sem adição de açúcares.",
+    "paraQueServe": "Auxilia na construção e recuperação muscular, fornecendo proteínas de alto valor biológico essenciais para o ganho de massa magra.",
+    "modoDeUso": "Consulte a embalagem.",
+    "marca": "MK Supplements",
+    "porcao": "30g a 40g por dia, geralmente pós-treino",
+    "embalagem": "900g",
+    "doses": "22 a 30 por embalagem"
+  },
+  {
+    "id": "muscle-hd-100-whey-900g",
+    "nome": "Muscle HD 100% Whey 900g",
+    "categoria": "whey",
+    "precoCentavos": 11500,
+    "imagem": "/img/whey/muscle-hd-100-whey-900g.webp",
+    "variacoes": [
+      {
+        "nome": "Chocolate Belga",
+        "imagem": "/img/whey/muscle-hd-100-whey-900g--chocolate-belga.webp"
+      },
+      {
+        "nome": "Leitinho",
+        "imagem": "/img/whey/muscle-hd-100-whey-900g--leitinho.webp"
+      }
+    ],
+    "spec": "Unidade",
+    "tags": [],
+    "descricao": "Novo produto adicionado.",
+    "paraQueServe": "Auxilia na construção e recuperação muscular, fornecendo proteínas de alto valor biológico essenciais para o ganho de massa magra.",
+    "modoDeUso": "Consulte a tabela nutricional na embalagem.",
+    "marca": "Muscle HD",
+    "porcao": "30g a 40g por dia, geralmente pós-treino",
+    "embalagem": "900g",
+    "doses": "22 a 30 por embalagem"
+  },
+  {
+    "id": "nano-protein-hydro-pure-chocolate-branco-900g",
+    "nome": "Nano Protein Hydro Pure Chocolate Branco 900G",
+    "categoria": "whey",
+    "precoCentavos": null,
+    "imagem": "/img/whey/nano-protein-hydro-pure-chocolate-branco-900g.webp",
+    "spec": "900G • Whey Protein",
+    "tags": [
+      "Proteína",
+      "Recuperação Muscular"
+    ],
+    "indisponivel": true,
+    "descricao": "Suplemento de Whey Protein de alta qualidade para apoiar o ganho de massa muscular.",
+    "paraQueServe": "Auxilia na construção e recuperação muscular, fornecendo proteínas de alto valor biológico essenciais para o ganho de massa magra.",
+    "modoDeUso": "Consulte a embalagem.",
+    "porcao": "30g a 40g por dia, geralmente pós-treino",
+    "embalagem": "900g",
+    "doses": "22 a 30 por embalagem"
+  },
+  {
+    "id": "nanowhey-morango-studio",
+    "nome": "Nanowhey Morango Studio",
+    "categoria": "whey",
+    "precoCentavos": null,
+    "imagem": "/img/whey/nanowhey-morango-studio.webp",
+    "spec": "900g • Whey Protein",
+    "tags": [
+      "Proteína",
+      "Recuperação Muscular"
+    ],
+    "indisponivel": true,
+    "descricao": "Suplemento de Whey Protein de alta qualidade para apoiar o ganho de massa muscular.",
+    "paraQueServe": "Auxilia na construção e recuperação muscular, fornecendo proteínas de alto valor biológico essenciais para o ganho de massa magra.",
+    "modoDeUso": "Consulte a embalagem.",
+    "porcao": "30g a 40g por dia, geralmente pós-treino",
+    "embalagem": "900g",
+    "doses": "22 a 30 por embalagem"
+  },
+  {
+    "id": "nutrata-n-pro-100%-whey-900g",
+    "nome": "Nutrata N Pro 100% Whey 900G",
+    "categoria": "whey",
+    "precoCentavos": 11900,
+    "imagem": "/img/whey/nutrata-n-pro-100%-whey-900g.webp",
+    "variacoes": [
+      {
+        "nome": "Baunilha",
+        "imagem": "/img/whey/nutrata-n-pro-100%-whey-900g--baunilha.webp"
+      },
+      {
+        "nome": "Chocolate",
+        "imagem": "/img/whey/nutrata-n-pro-100%-whey-900g--chocolate.webp"
+      },
+      {
+        "nome": "Morango",
+        "imagem": "/img/whey/nutrata-n-pro-100%-whey-900g--morango.webp"
+      }
+    ],
+    "spec": "900G • Whey Protein",
+    "tags": [
+      "Proteína",
+      "Recuperação Muscular"
+    ],
+    "descricao": "Suplemento de Whey Protein de alta qualidade para apoiar o ganho de massa muscular.",
+    "paraQueServe": "Auxilia na construção e recuperação muscular, fornecendo proteínas de alto valor biológico essenciais para o ganho de massa magra.",
+    "modoDeUso": "Consulte a embalagem.",
+    "marca": "Nutrata",
+    "porcao": "30g a 40g por dia, geralmente pós-treino",
+    "embalagem": "900g",
+    "doses": "22 a 30 por embalagem"
+  },
+  {
+    "id": "olympus-3w",
+    "nome": "Olympus 3W",
+    "categoria": "whey",
+    "precoCentavos": 17990,
+    "imagem": "/img/whey/olympus-3w.webp",
+    "variacoes": [
+      {
+        "nome": "Baunilha",
+        "imagem": "/img/whey/olympus-3w--baunilha.webp"
+      },
+      {
+        "nome": "Chocolate",
+        "imagem": "/img/whey/olympus-3w--chocolate.webp"
+      },
+      {
+        "nome": "Morango",
+        "imagem": "/img/whey/olympus-3w--morango.webp"
+      }
+    ],
+    "spec": "3kg • Whey Protein",
+    "tags": [
+      "Proteína",
+      "Recuperação Muscular"
+    ],
+    "descricao": "Suplemento de Whey Protein de alta qualidade para apoiar o ganho de massa muscular.",
+    "paraQueServe": "Auxilia na construção e recuperação muscular, fornecendo proteínas de alto valor biológico essenciais para o ganho de massa magra.",
+    "modoDeUso": "Consulte a embalagem.",
+    "marca": "Olympus",
+    "porcao": "30g a 40g por dia, geralmente pós-treino",
+    "embalagem": "3kg",
+    "doses": "75 a 100 por embalagem"
+  },
+  {
+    "id": "protein-complex-whey",
+    "nome": "Protein Complex Whey",
+    "categoria": "whey",
+    "precoCentavos": null,
+    "imagem": "/img/whey/protein-complex-whey.webp",
+    "spec": "900g • Whey Protein",
+    "tags": [
+      "Proteína",
+      "Recuperação Muscular"
+    ],
+    "indisponivel": true,
+    "descricao": "Suplemento de Whey Protein de alta qualidade para apoiar o ganho de massa muscular.",
+    "paraQueServe": "Auxilia na construção e recuperação muscular, fornecendo proteínas de alto valor biológico essenciais para o ganho de massa magra.",
+    "modoDeUso": "Consulte a embalagem.",
+    "porcao": "30g a 40g por dia, geralmente pós-treino",
+    "embalagem": "900g",
+    "doses": "22 a 30 por embalagem"
+  },
+  {
+    "id": "pure-complex-premium-900g",
+    "nome": "Pure Complex Premium 900G",
+    "categoria": "whey",
+    "precoCentavos": null,
+    "imagem": "/img/whey/pure-complex-premium-900g.webp",
+    "spec": "900G • Whey Protein",
+    "tags": [
+      "Proteína",
+      "Recuperação Muscular"
+    ],
+    "indisponivel": true,
+    "descricao": "Suplemento de Whey Protein de alta qualidade para apoiar o ganho de massa muscular.",
+    "paraQueServe": "Auxilia na construção e recuperação muscular, fornecendo proteínas de alto valor biológico essenciais para o ganho de massa magra.",
+    "modoDeUso": "Consulte a embalagem.",
+    "porcao": "30g a 40g por dia, geralmente pós-treino",
+    "embalagem": "900g",
+    "doses": "22 a 30 por embalagem"
+  },
+  {
+    "id": "pure-whey-2w-900g",
+    "nome": "Pure Whey 2W 900G",
+    "categoria": "whey",
+    "precoCentavos": null,
+    "imagem": "/img/whey/pure-whey-2w-900g.webp",
+    "spec": "900G • Whey Protein",
+    "tags": [
+      "Proteína",
+      "Recuperação Muscular"
+    ],
+    "indisponivel": true,
+    "descricao": "Suplemento de Whey Protein de alta qualidade para apoiar o ganho de massa muscular.",
+    "paraQueServe": "Auxilia na construção e recuperação muscular, fornecendo proteínas de alto valor biológico essenciais para o ganho de massa magra.",
+    "modoDeUso": "Consulte a embalagem.",
+    "porcao": "30g a 40g por dia, geralmente pós-treino",
+    "embalagem": "900g",
+    "doses": "22 a 30 por embalagem"
+  },
+  {
+    "id": "puretech-pure-protein-900g",
+    "nome": "Puretech Pure Protein 900g",
+    "categoria": "whey",
+    "precoCentavos": null,
+    "imagem": "/img/whey/puretech-pure-protein-900g.webp",
+    "variacoes": [
+      {
+        "nome": "Chocolate",
+        "imagem": "/img/whey/puretech-pure-protein-900g--chocolate.webp"
+      },
+      {
+        "nome": "Chocomaltine",
+        "imagem": "/img/whey/puretech-pure-protein-900g--chocomaltine.webp"
+      },
+      {
+        "nome": "Leite Ninho",
+        "imagem": "/img/whey/puretech-pure-protein-900g--leite-ninho.webp"
+      },
+      {
+        "nome": "Morango",
+        "imagem": "/img/whey/puretech-pure-protein-900g--morango.webp"
+      }
+    ],
+    "spec": "900g • Blend Proteico Concentrado",
+    "tags": [
+      "Puretech Quality",
+      "Sabores Selecionados"
+    ],
+    "badge": "Vários Sabores",
+    "indisponivel": true,
+    "descricao": "Fórmula de proteína de soro do leite com excelente balanço de aminoácidos essenciais.",
+    "paraQueServe": "Auxilia na construção e recuperação muscular, fornecendo proteínas de alto valor biológico essenciais para o ganho de massa magra.",
+    "modoDeUso": "Diluir 30g em água ou leite.",
+    "marca": "Puretech",
+    "porcao": "30g a 40g por dia, geralmente pós-treino",
+    "embalagem": "900g",
+    "doses": "22 a 30 por embalagem",
+    "extras": {
+      "Sabores": "Chocolate, Chocomaltine, Leite Ninho, Morango"
+    }
+  },
+  {
+    "id": "tastywhey-900g-adaptogenjpg",
+    "nome": "Tastywhey 900g Adaptogen",
+    "categoria": "whey",
+    "precoCentavos": 23500,
+    "imagem": "/img/whey/tastywhey-900g-adaptogenjpg.webp",
+    "variacoes": [
+      {
+        "nome": "Baunilha",
+        "imagem": "/img/whey/tastywhey-900g-adaptogenjpg--baunilha.webp"
+      },
+      {
+        "nome": "Brigadeiro",
+        "imagem": "/img/whey/tastywhey-900g-adaptogenjpg--brigadeiro.webp"
+      },
+      {
+        "nome": "Chocolate Maltado",
+        "imagem": "/img/whey/tastywhey-900g-adaptogenjpg--chocolate-maltado.webp"
+      },
+      {
+        "nome": "Chocomaltine",
+        "imagem": "/img/whey/tastywhey-900g-adaptogenjpg--chocomaltine.webp"
+      },
+      {
+        "nome": "Churros",
+        "imagem": "/img/whey/tastywhey-900g-adaptogenjpg--churros.webp"
+      },
+      {
+        "nome": "Coco",
+        "imagem": "/img/whey/tastywhey-900g-adaptogenjpg--coco.webp"
+      },
+      {
+        "nome": "Cookies 'n Cream",
+        "imagem": "/img/whey/tastywhey-900g-adaptogenjpg--cookies-n-cream.webp"
+      },
+      {
+        "nome": "Manga",
+        "imagem": "/img/whey/tastywhey-900g-adaptogenjpg--manga.webp"
+      },
+      {
+        "nome": "Morango",
+        "imagem": "/img/whey/tastywhey-900g-adaptogenjpg--morango.webp"
+      },
+      {
+        "nome": "Torta de Limão",
+        "imagem": "/img/whey/tastywhey-900g-adaptogenjpg--torta-de-limao.webp"
+      }
+    ],
+    "spec": "Unidade",
+    "tags": [],
+    "descricao": "Novo produto adicionado.",
+    "paraQueServe": "Auxilia na construção e recuperação muscular, fornecendo proteínas de alto valor biológico essenciais para o ganho de massa magra.",
+    "modoDeUso": "Consulte a tabela nutricional na embalagem.",
+    "marca": "Adaptogen",
+    "porcao": "30g a 40g por dia, geralmente pós-treino",
+    "embalagem": "900g",
+    "doses": "22 a 30 por embalagem"
+  },
+  {
+    "id": "top-whey-3w-max-titanium-900g-mais-performance",
+    "nome": "Top Whey 3w Max Titanium 900g Mais Performance",
+    "categoria": "whey",
+    "precoCentavos": 23500,
+    "imagem": "/img/whey/top-whey-3w-max-titanium-900g-mais-performance.webp",
+    "variacoes": [
+      {
+        "nome": "Baunilha",
+        "imagem": "/img/whey/top-whey-3w-max-titanium-900g-mais-performance--baunilha.webp"
+      },
+      {
+        "nome": "Chocolate",
+        "imagem": "/img/whey/top-whey-3w-max-titanium-900g-mais-performance--chocolate.webp"
+      },
+      {
+        "nome": "Fresh Lemon",
+        "imagem": "/img/whey/top-whey-3w-max-titanium-900g-mais-performance--fresh-lemon.webp"
+      },
+      {
+        "nome": "Morango",
+        "imagem": "/img/whey/top-whey-3w-max-titanium-900g-mais-performance--morango.webp"
+      },
+      {
+        "nome": "Vitaminas de Frutas",
+        "imagem": "/img/whey/top-whey-3w-max-titanium-900g-mais-performance--vitaminas-de-frutas.webp"
+      }
+    ],
+    "spec": "Unidade",
+    "tags": [],
+    "descricao": "Novo produto adicionado.",
+    "paraQueServe": "Auxilia na construção e recuperação muscular, fornecendo proteínas de alto valor biológico essenciais para o ganho de massa magra.",
+    "modoDeUso": "Consulte a tabela nutricional na embalagem.",
+    "marca": "Max Titanium",
+    "porcao": "30g a 40g por dia, geralmente pós-treino",
+    "embalagem": "900g",
+    "doses": "22 a 30 por embalagem"
+  },
+  {
+    "id": "top-whey-3w-max-titanium-900g-mais-sabor",
+    "nome": "Top Whey 3w Max Titanium 900g Mais Sabor",
+    "categoria": "whey",
+    "precoCentavos": 23500,
+    "imagem": "/img/whey/top-whey-3w-max-titanium-900g-mais-sabor.webp",
+    "variacoes": [
+      {
+        "nome": "Brigadeiro com Morango",
+        "imagem": "/img/whey/top-whey-3w-max-titanium-900g-mais-sabor--brigadeiro-com-morango.webp"
+      },
+      {
+        "nome": "Brigadeiro",
+        "imagem": "/img/whey/top-whey-3w-max-titanium-900g-mais-sabor--brigadeiro.webp"
+      },
+      {
+        "nome": "Cookies & Cream",
+        "imagem": "/img/whey/top-whey-3w-max-titanium-900g-mais-sabor--cookies-cream.webp"
+      },
+      {
+        "nome": "Iogurte Grego com Morango",
+        "imagem": "/img/whey/top-whey-3w-max-titanium-900g-mais-sabor--iogurte-grego-com-morango.webp"
+      },
+      {
+        "nome": "Leite",
+        "imagem": "/img/whey/top-whey-3w-max-titanium-900g-mais-sabor--leite.webp"
+      },
+      {
+        "nome": "Sorvete de Frutas",
+        "imagem": "/img/whey/top-whey-3w-max-titanium-900g-mais-sabor--sorvete-de-frutas.webp"
+      }
+    ],
+    "spec": "Unidade",
+    "tags": [],
+    "descricao": "Novo produto adicionado.",
+    "paraQueServe": "Auxilia na construção e recuperação muscular, fornecendo proteínas de alto valor biológico essenciais para o ganho de massa magra.",
+    "modoDeUso": "Consulte a tabela nutricional na embalagem.",
+    "marca": "Max Titanium",
+    "porcao": "30g a 40g por dia, geralmente pós-treino",
+    "embalagem": "900g",
+    "doses": "22 a 30 por embalagem"
+  },
+  {
+    "id": "whey-max-pote900g",
+    "nome": "Whey 100% 900g Double Tasty Max Titanium",
+    "categoria": "whey",
+    "precoCentavos": 14000,
+    "imagem": "/img/whey/whey-max-pote900g.webp",
+    "variacoes": [
+      {
+        "nome": "Baunilha",
+        "imagem": "/img/whey/whey-max-pote900g--baunilha.webp"
+      },
+      {
+        "nome": "Chocolate",
+        "imagem": "/img/whey/whey-max-pote900g--chocolate.webp"
+      },
+      {
+        "nome": "Cookies",
+        "imagem": "/img/whey/whey-max-pote900g--cookies.webp"
+      },
+      {
+        "nome": "Morango",
+        "imagem": "/img/whey/whey-max-pote900g--morango.webp"
+      }
+    ],
+    "spec": "900g • Proteínas",
+    "tags": [
+      "Max Titanium",
+      "Double Tasty"
+    ],
+    "badge": "Novo",
+    "descricao": "Whey Protein 100% Double Tasty da Max Titanium. Excelente para ganho e recuperação de massa muscular com muito mais sabor.",
+    "paraQueServe": "Auxilia na construção e recuperação muscular, fornecendo proteínas de alto valor biológico essenciais para o ganho de massa magra.",
+    "modoDeUso": "Diluir em 200ml de água ou bebida de preferência.",
+    "marca": "Max Titanium",
+    "porcao": "30g a 40g por dia, geralmente pós-treino",
+    "embalagem": "900g",
+    "doses": "22 a 30 por embalagem",
+    "extras": {
+      "Sabores": "Baunilha, Chocolate, Cookies, Morango"
+    }
+  },
+  {
+    "id": "whey-100-hd-3w-blackskull-900g-refil-cara-preta",
+    "nome": "Whey 100% Hd 3w Blackskull 900g Refil Cara Preta",
+    "categoria": "whey",
+    "precoCentavos": 13999,
+    "imagem": "/img/whey/whey-100-hd-3w-blackskull-900g-refil-cara-preta.webp",
+    "variacoes": [
+      {
+        "nome": "Baunilha",
+        "imagem": "/img/whey/whey-100-hd-3w-blackskull-900g-refil-cara-preta--baunilha.webp"
+      },
+      {
+        "nome": "Chocolate",
+        "imagem": "/img/whey/whey-100-hd-3w-blackskull-900g-refil-cara-preta--chocolate.webp"
+      },
+      {
+        "nome": "Cookies & Cream",
+        "imagem": "/img/whey/whey-100-hd-3w-blackskull-900g-refil-cara-preta--cookies-cream.webp"
+      }
+    ],
+    "spec": "Unidade",
+    "tags": [],
+    "descricao": "Novo produto adicionado.",
+    "paraQueServe": "Auxilia na construção e recuperação muscular, fornecendo proteínas de alto valor biológico essenciais para o ganho de massa magra.",
+    "modoDeUso": "Consulte a tabela nutricional na embalagem.",
+    "marca": "Black Skull",
+    "porcao": "30g a 40g por dia, geralmente pós-treino",
+    "embalagem": "900g",
+    "doses": "22 a 30 por embalagem"
+  },
+  {
+    "id": "whey-100-hd-3w-blackskull-900g-refil",
+    "nome": "Whey 100% Hd 3w Blackskull 900g Refil gourmet sem lactose",
+    "categoria": "whey",
+    "precoCentavos": 9999,
+    "imagem": "/img/whey/whey-100-hd-3w-blackskull-900g-refil.webp",
+    "variacoes": [
+      {
+        "nome": "Sorvete de Baunilha",
+        "imagem": "/img/whey/whey-100-hd-3w-blackskull-900g-refil--sorvete-de-baunilha.webp"
+      },
+      {
+        "nome": "Sorvete de Chocolate",
+        "imagem": "/img/whey/whey-100-hd-3w-blackskull-900g-refil--sorvete-de-chocolate.webp"
+      },
+      {
+        "nome": "Sorvete de Morango",
+        "imagem": "/img/whey/whey-100-hd-3w-blackskull-900g-refil--sorvete-de-morango.webp"
+      }
+    ],
+    "spec": "Unidade",
+    "tags": [],
+    "descricao": "Novo produto adicionado.",
+    "paraQueServe": "Auxilia na construção e recuperação muscular, fornecendo proteínas de alto valor biológico essenciais para o ganho de massa magra.",
+    "modoDeUso": "Consulte a tabela nutricional na embalagem.",
+    "marca": "Black Skull",
+    "porcao": "30g a 40g por dia, geralmente pós-treino",
+    "embalagem": "900g",
+    "doses": "22 a 30 por embalagem"
+  },
+  {
+    "id": "whey-hd2",
+    "nome": "Whey Hd2",
+    "categoria": "whey",
+    "precoCentavos": null,
+    "imagem": "/img/whey/whey-hd2.webp",
+    "spec": "900g • Whey Protein",
+    "tags": [
+      "Proteína",
+      "Recuperação Muscular"
+    ],
+    "indisponivel": true,
+    "descricao": "Suplemento de Whey Protein de alta qualidade para apoiar o ganho de massa muscular.",
+    "paraQueServe": "Auxilia na construção e recuperação muscular, fornecendo proteínas de alto valor biológico essenciais para o ganho de massa magra.",
+    "modoDeUso": "Consulte a embalagem.",
+    "marca": "Muscle HD",
+    "porcao": "30g a 40g por dia, geralmente pós-treino",
+    "embalagem": "900g",
+    "doses": "22 a 30 por embalagem"
+  },
+  {
+    "id": "whey-integralmedica-900g-refil-100",
+    "nome": "Whey Integralmedica 900g Refil 100%",
+    "categoria": "whey",
+    "precoCentavos": 16000,
+    "imagem": "/img/whey/whey-integralmedica-900g-refil-100.webp",
+    "variacoes": [
+      {
+        "nome": "Baunilha",
+        "imagem": "/img/whey/whey-integralmedica-900g-refil-100--baunilha.webp"
+      },
+      {
+        "nome": "Chocolate",
+        "imagem": "/img/whey/whey-integralmedica-900g-refil-100--chocolate.webp"
+      },
+      {
+        "nome": "Cookies & Cream",
+        "imagem": "/img/whey/whey-integralmedica-900g-refil-100--cookies-cream.webp"
+      },
+      {
+        "nome": "Gelato de Latte",
+        "imagem": "/img/whey/whey-integralmedica-900g-refil-100--gelato-de-latte.webp"
+      },
+      {
+        "nome": "Morango",
+        "imagem": "/img/whey/whey-integralmedica-900g-refil-100--morango.webp"
+      }
+    ],
+    "spec": "Unidade",
+    "tags": [],
+    "descricao": "Novo produto adicionado.",
+    "paraQueServe": "Auxilia na construção e recuperação muscular, fornecendo proteínas de alto valor biológico essenciais para o ganho de massa magra.",
+    "modoDeUso": "Consulte a tabela nutricional na embalagem.",
+    "marca": "Integralmédica",
+    "porcao": "30g a 40g por dia, geralmente pós-treino",
+    "embalagem": "900g",
+    "doses": "22 a 30 por embalagem"
+  },
+  {
+    "id": "whey-iso-premium-hop-1kg",
+    "nome": "Whey Iso Premium Hop! 1kg",
+    "categoria": "whey",
+    "precoCentavos": 14000,
+    "imagem": "/img/whey/whey-iso-premium-hop-1kg.webp",
+    "variacoes": [
+      {
+        "nome": "Açaí com Leite em Pó",
+        "imagem": "/img/whey/whey-iso-premium-hop-1kg--acai-com-leite-em-po.webp"
+      },
+      {
+        "nome": "Chocolate",
+        "imagem": "/img/whey/whey-iso-premium-hop-1kg--chocolate.webp"
+      },
+      {
+        "nome": "Frutas Tropicais",
+        "imagem": "/img/whey/whey-iso-premium-hop-1kg--frutas-tropicais.webp"
+      },
+      {
+        "nome": "Pistache",
+        "imagem": "/img/whey/whey-iso-premium-hop-1kg--pistache.webp"
+      }
+    ],
+    "spec": "Unidade",
+    "tags": [],
+    "descricao": "Novo produto adicionado.",
+    "paraQueServe": "Auxilia na construção e recuperação muscular, fornecendo proteínas de alto valor biológico essenciais para o ganho de massa magra.",
+    "modoDeUso": "Consulte a tabela nutricional na embalagem.",
+    "marca": "Hop Nutrition",
+    "porcao": "30g a 40g por dia, geralmente pós-treino",
+    "embalagem": "1kg",
+    "doses": "25 a 33 por embalagem"
+  },
+  {
+    "id": "whey-isolado-baunilha-zero-lactose-900g-hop",
+    "nome": "Whey Isolado Baunilha Zero Lactose 900g Hop!",
+    "categoria": "whey",
+    "precoCentavos": 22000,
+    "imagem": "/img/whey/whey-isolado-baunilha-zero-lactose-900g-hop.webp",
+    "variacoes": [
+      {
+        "nome": "Chocolate",
+        "imagem": "/img/whey/whey-isolado-baunilha-zero-lactose-900g-hop--chocolate.webp"
+      },
+      {
+        "nome": "Creme de Baunilha",
+        "imagem": "/img/whey/whey-isolado-baunilha-zero-lactose-900g-hop--creme-de-baunilha.webp"
+      }
+    ],
+    "spec": "Unidade",
+    "tags": [],
+    "descricao": "Novo produto adicionado.",
+    "paraQueServe": "Auxilia na construção e recuperação muscular, fornecendo proteínas de alto valor biológico essenciais para o ganho de massa magra.",
+    "modoDeUso": "Consulte a tabela nutricional na embalagem.",
+    "marca": "Hop Nutrition",
+    "porcao": "30g a 40g por dia, geralmente pós-treino",
+    "embalagem": "900g",
+    "doses": "22 a 30 por embalagem"
+  },
+  {
+    "id": "whey-joy-pro-900g-shark-pro",
+    "nome": "Whey Joy Pro 900g Shark Pro",
+    "categoria": "whey",
+    "precoCentavos": 12000,
+    "imagem": "/img/whey/whey-joy-pro-900g-shark-pro.webp",
+    "variacoes": [
+      {
+        "nome": "Brigadeiro",
+        "imagem": "/img/whey/whey-joy-pro-900g-shark-pro--brigadeiro.webp"
+      },
+      {
+        "nome": "Cookies, Banana e Canela",
+        "imagem": "/img/whey/whey-joy-pro-900g-shark-pro--cookies-banana-e-canela.webp"
+      },
+      {
+        "nome": "Morango",
+        "imagem": "/img/whey/whey-joy-pro-900g-shark-pro--morango.webp"
+      },
+      {
+        "nome": "Paçoca",
+        "imagem": "/img/whey/whey-joy-pro-900g-shark-pro--pacoca.webp"
+      }
+    ],
+    "spec": "Unidade",
+    "tags": [],
+    "descricao": "Novo produto adicionado.",
+    "paraQueServe": "Auxilia na construção e recuperação muscular, fornecendo proteínas de alto valor biológico essenciais para o ganho de massa magra.",
+    "modoDeUso": "Consulte a tabela nutricional na embalagem.",
+    "marca": "Shark Pro",
+    "porcao": "30g a 40g por dia, geralmente pós-treino",
+    "embalagem": "900g",
+    "doses": "22 a 30 por embalagem"
+  },
+  {
+    "id": "whey-max-100",
+    "nome": "Whey Max 100%",
+    "categoria": "whey",
+    "precoCentavos": 16000,
+    "imagem": "/img/whey/whey-max-100.webp",
+    "variacoes": [
+      {
+        "nome": "Baunilha",
+        "imagem": "/img/whey/whey-max-100--baunilha.webp"
+      },
+      {
+        "nome": "Cookies & Cream",
+        "imagem": "/img/whey/whey-max-100--cookies-cream.webp"
+      },
+      {
+        "nome": "Morango",
+        "imagem": "/img/whey/whey-max-100--morango.webp"
+      }
+    ],
+    "spec": "900g • Whey Protein",
+    "tags": [],
+    "descricao": "Novo produto adicionado.",
+    "paraQueServe": "Auxilia na construção e recuperação muscular, fornecendo proteínas de alto valor biológico essenciais para o ganho de massa magra.",
+    "modoDeUso": "Consulte a tabela nutricional na embalagem.",
+    "marca": "Max Titanium",
+    "porcao": "30g a 40g por dia, geralmente pós-treino",
+    "embalagem": "900g",
+    "doses": "22 a 30 por embalagem"
+  },
+  {
+    "id": "whey-xpro-2kg",
+    "nome": "Whey Xpro 2kg",
+    "categoria": "whey",
+    "precoCentavos": 12500,
+    "imagem": "/img/whey/whey-xpro-2kg.webp",
+    "spec": "Unidade",
+    "tags": [],
+    "descricao": "Novo produto adicionado.",
+    "paraQueServe": "Auxilia na construção e recuperação muscular, fornecendo proteínas de alto valor biológico essenciais para o ganho de massa magra.",
+    "modoDeUso": "Consulte a tabela nutricional na embalagem.",
+    "marca": "Xpro Nutrition",
+    "porcao": "30g a 40g por dia, geralmente pós-treino",
+    "embalagem": "2kg",
+    "doses": "50 a 66 por embalagem"
+  },
+  {
+    "id": "whey-xpro-900g",
+    "nome": "Whey Xpro 900g",
+    "categoria": "whey",
+    "precoCentavos": 6900,
+    "imagem": "/img/whey/whey-xpro-900g.webp",
+    "spec": "Unidade",
+    "tags": [],
+    "indisponivel": true,
+    "descricao": "Novo produto adicionado.",
+    "paraQueServe": "Auxilia na construção e recuperação muscular, fornecendo proteínas de alto valor biológico essenciais para o ganho de massa magra.",
+    "modoDeUso": "Consulte a tabela nutricional na embalagem.",
+    "marca": "Xpro Nutrition",
+    "porcao": "30g a 40g por dia, geralmente pós-treino",
+    "embalagem": "900g",
+    "doses": "22 a 30 por embalagem"
+  },
+  {
+    "id": "xpro-iso-x-protein-complex",
+    "nome": "Xpro Iso-X Protein Complex 900g",
+    "categoria": "whey",
+    "precoCentavos": 6900,
+    "imagem": "/img/whey/xpro-iso-x-protein-complex.webp",
+    "spec": "900g • Proteínas",
+    "tags": [
+      "Xpro"
+    ],
+    "badge": "Novo",
+    "descricao": "Iso-X Protein Complex da Xpro. Blend proteico para suporte no ganho e recuperação muscular.",
+    "paraQueServe": "Auxilia na construção e recuperação muscular, fornecendo proteínas de alto valor biológico essenciais para o ganho de massa magra.",
+    "modoDeUso": "Consulte a embalagem.",
+    "marca": "Xpro",
+    "porcao": "30g a 40g por dia, geralmente pós-treino",
+    "embalagem": "900g",
+    "doses": "22 a 30 por embalagem"
+  }
+]
