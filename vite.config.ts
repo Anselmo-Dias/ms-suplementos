@@ -6,8 +6,10 @@ import { defineConfig } from 'vite'
 export default defineConfig({
   plugins: [
     // Gera src/routeTree.gen.ts a partir dos arquivos de src/routes.
+    // As opções vêm de tsr.config.json, para que o plugin e o `tsr generate`
+    // do script de build usem exatamente a mesma configuração.
     // Precisa vir antes do plugin do React.
-    tanstackRouter({ target: 'react', autoCodeSplitting: true }),
+    tanstackRouter(),
     react(),
   ],
 })

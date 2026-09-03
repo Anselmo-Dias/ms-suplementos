@@ -23,5 +23,6 @@ dist-ssr
 *.sln
 *.sw?
 
-# TanStack Router
-src/routeTree.gen.ts
+# O routeTree.gen.ts do TanStack Router é gerado, mas fica versionado de
+# propósito: sem ele o `tsc` de um clone recém-baixado não conhece as rotas
+# e falha antes que o Vite tenha chance de gerá-lo.
