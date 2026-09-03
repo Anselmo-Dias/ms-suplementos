@@ -1,17 +1,12 @@
 import { Reveal } from '../../components/Reveal'
 import { SITE } from '../../config/site'
-import { partesHorario } from '../../lib/horario'
 
 export function Rodape() {
-  const [dias, horas] = partesHorario()
-
   return (
     <>
       <Reveal className="info">
-        <p>
-          <b>{dias} </b>
-          {horas && `• ${horas}`}
-        </p>
+        {/* O horário saiu daqui: cada unidade tem o seu, e uma linha única
+            seria imprecisa. Ele agora aparece por loja em "Onde estamos". */}
         <p>Entregamos em toda Aracaju e região</p>
         <p>Pix • Cartão • Dinheiro</p>
       </Reveal>

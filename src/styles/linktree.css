@@ -290,6 +290,59 @@
 .map__route:hover { border-color: var(--gold-line); transform: translateY(-1px); }
 .map__route svg { width: 14px; height: 14px; color: var(--gold); }
 
+/* --- Disponibilidade e horário da unidade ---------------------------------- */
+.unidade {
+  margin-top: 0.9rem;
+  padding-top: 0.9rem;
+  border-top: 1px solid var(--line-soft);
+  display: grid;
+  gap: 0.7rem;
+  justify-items: start;
+}
+
+/* Mesma pílula do topo, alinhada à esquerda dentro do bloco */
+.status--bloco {
+  margin-top: 0;
+}
+
+.horario {
+  width: 100%;
+  display: grid;
+  gap: 0.3rem;
+}
+
+.horario__linha {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.75rem;
+  font-size: 0.82rem;
+}
+
+.horario__linha dt {
+  color: var(--ink-soft);
+  font-weight: 600;
+  flex: none;
+}
+
+/* Pontilhado ligando o dia ao horário, como num cardápio */
+.horario__linha dt::after {
+  content: '';
+  display: inline-block;
+  width: 100%;
+}
+
+.horario__linha dd {
+  color: var(--ink-soft);
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+.horario__linha.is-fechado dt,
+.horario__linha.is-fechado dd {
+  color: var(--ink-faint);
+}
+
 /* --- Rodapé ---------------------------------------------------------------- */
 .info {
   margin-top: 1.75rem;

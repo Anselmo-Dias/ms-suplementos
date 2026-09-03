@@ -1,9 +1,12 @@
 import { useMemo } from 'react'
 import { SITE } from '../../config/site'
-import { statusAgora } from '../../lib/horario'
+import { statusGeral, textoDoStatus } from '../../lib/horario'
 
 export function Perfil() {
-  const status = useMemo(() => statusAgora(), [])
+  // As duas unidades têm horários diferentes; aqui no topo o que importa é
+  // se dá para comprar agora em alguma delas. O detalhe por loja fica na
+  // seção "Onde estamos".
+  const status = useMemo(() => statusGeral(), [])
 
   return (
     <section className="profile">
@@ -20,7 +23,7 @@ export function Perfil() {
       <p className="profile__bio">{SITE.bio}</p>
       <p className={`status ${status.aberto ? 'is-open' : ''}`}>
         <span className="status__dot" />
-        <span className="status__text">{status.texto}</span>
+        <span className="status__text">{textoDoStatus(status)}</span>
       </p>
     </section>
   )

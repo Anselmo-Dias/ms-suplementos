@@ -1,7 +1,8 @@
-import { useState } from 'react'
+import { useMemo, useState } from 'react'
 import { IconMapa, IconRota } from '../../components/icons'
 import { Reveal } from '../../components/Reveal'
 import { SITE } from '../../config/site'
+import { linhasDoHorario, statusDaLoja, textoDoStatus } from '../../lib/horario'
 import { mapaEmbedLink, rotaLink } from '../../lib/whatsapp'
 
 /**
@@ -13,6 +14,10 @@ export function Mapa() {
   const [carregado, setCarregado] = useState(false)
 
   const loja = SITE.lojas[atual]
+
+  // Cada unidade tem o seu horário, então status e tabela mudam com a aba.
+  const status = useMemo(() => statusDaLoja(loja), [loja])
+  const linhas = useMemo(() => linhasDoHorario(loja.horario), [loja])
 
   return (
     <section className="block">
@@ -80,6 +85,27 @@ export function Mapa() {
             <IconRota />
             Rota
           </a>
+        </div>
+
+        {/* Disponibilidade e horário da unidade selecionada.
+            `aria-live`: quem usa leitor de tela ouve a troca ao mudar de aba. */}
+        <div className="unidade" aria-live="polite">
+          <p className={`status status--bloco ${status.aberto ? 'is-open' : ''}`}>
+            <span className="status__dot" />
+            <span className="status__text">{textoDoStatus(status)}</span>
+          </p>
+
+          <dl className="horario">
+            {linhas.map((linha) => (
+              <div
+                className={`horario__linha ${linha.fechado ? 'is-fechado' : ''}`}
+                key={linha.dias}
+              >
+                <dt>{linha.dias}</dt>
+                <dd>{linha.turnos}</dd>
+              </div>
+            ))}
+          </dl>
         </div>
       </Reveal>
     </section>

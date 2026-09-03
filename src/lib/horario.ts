@@ -1,51 +1,151 @@
-import { SITE } from '../config/site'
+import { SITE, type Horario, type Loja, type Turno } from '../config/site'
 
 const DIAS = ['Dom', 'Seg', 'Ter', 'Qua', 'Qui', 'Sex', 'Sáb']
+const DIA_EM_MINUTOS = 24 * 60
 
-const hh = (h: number) => `${h < 10 ? '0' : ''}${h}h`
-
-/** Monta "Seg a Sáb • 08h às 18h" a partir dos dias abertos com a mesma faixa. */
-export function resumoHorario(): string {
-  const abertos: number[] = []
-  for (let d = 0; d <= 6; d++) if (SITE.horario[d]) abertos.push(d)
-  if (!abertos.length) return 'Consulte nosso horário'
-
-  const faixa = SITE.horario[abertos[0]]!
-  const mesmaFaixa = abertos.every((d) => {
-    const f = SITE.horario[d]!
-    return f[0] === faixa[0] && f[1] === faixa[1]
-  })
-  if (!mesmaFaixa) return 'Consulte nosso horário'
-
-  const horas = `${hh(faixa[0])} às ${hh(faixa[1])}`
-  if (abertos.length === 1) return `${DIAS[abertos[0]]} • ${horas}`
-
-  const seguidos = abertos[abertos.length - 1] - abertos[0] === abertos.length - 1
-  if (seguidos) return `${DIAS[abertos[0]]} a ${DIAS[abertos[abertos.length - 1]]} • ${horas}`
-  return `${abertos.map((d) => DIAS[d]).join(', ')} • ${horas}`
+/** '09:30' -> 570 (minutos desde a meia-noite) */
+function emMinutos(hora: string): number {
+  const [h, m] = hora.split(':').map(Number)
+  return h * 60 + (m || 0)
 }
 
-export type StatusAgora = { aberto: boolean; texto: string }
+/** '09:00' -> '09h' ; '09:30' -> '09h30' */
+export function formatarHora(hora: string): string {
+  const [h, m] = hora.split(':')
+  return m && m !== '00' ? `${h}h${m}` : `${h}h`
+}
 
-/** Diz se está aberto agora e o texto da pílula de status. */
-export function statusAgora(agora = new Date()): StatusAgora {
-  const resumo = resumoHorario()
-  const faixa = SITE.horario[agora.getDay()]
-  const aberto = !!faixa && agora.getHours() >= faixa[0] && agora.getHours() < faixa[1]
+/** [['09:00','12:00'], ['13:00','19:00']] -> '09h às 12h e 13h às 19h' */
+export function formatarTurnos(turnos: Turno[]): string {
+  if (!turnos.length) return 'Fechado'
+  return turnos
+    .map(([abre, fecha]) => `${formatarHora(abre)} às ${formatarHora(fecha)}`)
+    .join(' e ')
+}
 
-  return {
-    aberto,
-    texto: aberto
-      ? `Aberto agora • até ${hh(faixa![1])}`
-      : // evita dois bullets seguidos
-        `Fechado • ${resumo.replace(' • ', ', ')}`,
+const mesmaFaixa = (a: Turno[], b: Turno[]) =>
+  a.length === b.length && a.every((t, i) => t[0] === b[i][0] && t[1] === b[i][1])
+
+export type LinhaHorario = { dias: string; turnos: string; fechado: boolean }
+
+/**
+ * Agrupa dias seguidos com o mesmo atendimento numa linha só:
+ * [{ dias: 'Seg a Sex', turnos: '09h às 12h e 13h às 19h' }, …]
+ */
+export function linhasDoHorario(horario: Horario): LinhaHorario[] {
+  const linhas: LinhaHorario[] = []
+  // Começa na segunda e termina no domingo — é como se lê um horário de loja.
+  const ordem = [1, 2, 3, 4, 5, 6, 0]
+
+  let inicio = 0
+  while (inicio < ordem.length) {
+    const turnos = horario[ordem[inicio]] ?? []
+    let fim = inicio
+    while (fim + 1 < ordem.length && mesmaFaixa(horario[ordem[fim + 1]] ?? [], turnos)) {
+      fim++
+    }
+
+    const nomes =
+      inicio === fim
+        ? DIAS[ordem[inicio]]
+        : fim === inicio + 1
+          ? `${DIAS[ordem[inicio]]} e ${DIAS[ordem[fim]]}`
+          : `${DIAS[ordem[inicio]]} a ${DIAS[ordem[fim]]}`
+
+    linhas.push({
+      dias: nomes,
+      turnos: formatarTurnos(turnos),
+      fechado: turnos.length === 0,
+    })
+    inicio = fim + 1
   }
+
+  return linhas
 }
 
-/** Quebra "Seg a Sáb • 08h às 18h" em [rótulo, horas] para o rodapé. */
-export function partesHorario(): [string, string] {
-  const resumo = resumoHorario()
-  const i = resumo.indexOf('•')
-  if (i < 0) return [resumo, '']
-  return [resumo.slice(0, i).trim(), resumo.slice(i + 1).trim()]
+export type StatusLoja = {
+  aberto: boolean
+  /** Quando aberto: hora em que fecha o turno atual, já formatada. */
+  fechaAs?: string
+  /** Quando fechado: próxima abertura em texto ('hoje às 13h', 'amanhã às 09h'). */
+  abreEm?: string
+  /**
+   * Minutos a partir de agora até fechar (se aberto) ou até abrir (se fechado).
+   * É por aqui que se compara uma loja com a outra — o texto acima já está
+   * formatado e não serve para conta.
+   */
+  minutos?: number
+}
+
+/** Diz se a loja está aberta agora e o que vem a seguir. */
+export function statusDaLoja(loja: Loja, agora = new Date()): StatusLoja {
+  const minutosAgora = agora.getHours() * 60 + agora.getMinutes()
+  const hoje = agora.getDay()
+
+  for (const [abre, fecha] of loja.horario[hoje] ?? []) {
+    if (minutosAgora >= emMinutos(abre) && minutosAgora < emMinutos(fecha)) {
+      return {
+        aberto: true,
+        fechaAs: formatarHora(fecha),
+        minutos: emMinutos(fecha) - minutosAgora,
+      }
+    }
+  }
+
+  // Fechada: procura a próxima abertura, hoje ou nos dias seguintes.
+  const proximoHoje = (loja.horario[hoje] ?? []).find(
+    ([abre]) => emMinutos(abre) > minutosAgora,
+  )
+  if (proximoHoje) {
+    return {
+      aberto: false,
+      abreEm: `hoje às ${formatarHora(proximoHoje[0])}`,
+      minutos: emMinutos(proximoHoje[0]) - minutosAgora,
+    }
+  }
+
+  for (let d = 1; d <= 7; d++) {
+    const dia = (hoje + d) % 7
+    const turnos = loja.horario[dia] ?? []
+    if (turnos.length) {
+      const quando = d === 1 ? 'amanhã' : DIAS[dia]
+      return {
+        aberto: false,
+        abreEm: `${quando} às ${formatarHora(turnos[0][0])}`,
+        minutos: d * DIA_EM_MINUTOS - minutosAgora + emMinutos(turnos[0][0]),
+      }
+    }
+  }
+
+  return { aberto: false }
+}
+
+/** Texto curto para a pílula: 'Aberto agora • até 19h'. */
+export function textoDoStatus(status: StatusLoja): string {
+  if (status.aberto) {
+    return status.fechaAs ? `Aberto agora • até ${status.fechaAs}` : 'Aberto agora'
+  }
+  return status.abreEm ? `Fechado • abre ${status.abreEm}` : 'Fechado'
+}
+
+/**
+ * Status do topo da página: como as duas unidades têm horários diferentes,
+ * o que interessa ali é se dá para comprar agora em alguma delas.
+ */
+export function statusGeral(agora = new Date()): StatusLoja {
+  const todas = SITE.lojas.map((l) => statusDaLoja(l, agora))
+
+  // Aberta em alguma: mostra a que fica aberta por mais tempo.
+  const abertas = todas.filter((s) => s.aberto)
+  if (abertas.length) {
+    return abertas.reduce((a, b) => ((b.minutos ?? 0) > (a.minutos ?? 0) ? b : a))
+  }
+
+  // Todas fechadas: anuncia a que abre primeiro.
+  const proximas = todas.filter((s) => s.minutos !== undefined)
+  if (proximas.length) {
+    return proximas.reduce((a, b) => ((b.minutos ?? 0) < (a.minutos ?? 0) ? b : a))
+  }
+
+  return { aberto: false }
 }

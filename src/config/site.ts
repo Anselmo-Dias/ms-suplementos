@@ -1,41 +1,38 @@
 /* ==========================================================================
    MS Suplementos — configuração do link na bio
-   É só editar este arquivo: nomes, telefones, endereços e horário.
+   É só editar este arquivo: nomes, telefones, endereços e horários.
    ========================================================================== */
+
+/** Um turno de atendimento: ['09:00', '12:00']. */
+export type Turno = [abre: string, fecha: string]
+
+/**
+ * Turnos de cada dia da semana. 0 = domingo … 6 = sábado.
+ * Lista vazia = fechado naquele dia; duas entradas = fecha para o almoço.
+ */
+export type Horario = Record<number, Turno[]>
 
 export type Loja = {
   nome: string
   whatsapp: string // formato internacional, só dígitos: 55 + DDD + número
   telefone: string
-  /** Endereço em duas linhas (usa <br /> no meio) */
+  /** Endereço em duas linhas */
   endereco: [string, string]
   /** Texto de busca usado no Google Maps */
   query: string
+  horario: Horario
 }
-
-/** 0 = domingo … 6 = sábado. [abre, fecha] em horas. null = fechado. */
-export type Horario = Record<number, [number, number] | null>
 
 export const SITE = {
   nome: 'MS Suplementos',
   handle: '@mssuplementos12',
-  bio: 'Força, foco e resultado. Suplementos originais com preço justo em Aracaju — SE.',
+  bio: 'Força, foco e resultado. Suplementos originais com preço justo em Aracaju — SE.',
   instagram: 'https://www.instagram.com/mssuplementos12',
   logo: '/logo-ms.jpg',
   cidade: 'Aracaju/SE',
 
   /** Qual loja responde o botão flutuante. 0 = Centro, 1 = Orlando Dantas. */
   lojaPrincipal: 1,
-
-  horario: {
-    0: null,
-    1: [8, 18],
-    2: [8, 18],
-    3: [8, 18],
-    4: [8, 18],
-    5: [8, 18],
-    6: [8, 18],
-  } as Horario,
 
   lojas: [
     {
@@ -44,6 +41,15 @@ export const SITE = {
       telefone: '(79) 99993-3612',
       endereco: ['R. Capela, 167 — Centro', 'Aracaju/SE • 49010-370'],
       query: 'R. Capela, 167 - Centro, Aracaju - SE, 49010-370',
+      horario: {
+        0: [], // domingo
+        1: [['08:00', '18:00']],
+        2: [['08:00', '18:00']],
+        3: [['08:00', '18:00']],
+        4: [['08:00', '18:00']],
+        5: [['08:00', '18:00']],
+        6: [['08:00', '13:00']], // sábado
+      },
     },
     {
       nome: 'Loja Orlando Dantas',
@@ -55,6 +61,31 @@ export const SITE = {
       ],
       query:
         'R. Eduardo Dantas do Espírito Santo, 505 - São Conrado, Aracaju - SE, 49042-140',
+      horario: {
+        0: [], // domingo
+        // fecha para o almoço
+        1: [
+          ['09:00', '12:00'],
+          ['13:00', '19:00'],
+        ],
+        2: [
+          ['09:00', '12:00'],
+          ['13:00', '19:00'],
+        ],
+        3: [
+          ['09:00', '12:00'],
+          ['13:00', '19:00'],
+        ],
+        4: [
+          ['09:00', '12:00'],
+          ['13:00', '19:00'],
+        ],
+        5: [
+          ['09:00', '12:00'],
+          ['13:00', '19:00'],
+        ],
+        6: [['09:00', '13:00']], // sábado
+      },
     },
   ] as Loja[],
 } as const
