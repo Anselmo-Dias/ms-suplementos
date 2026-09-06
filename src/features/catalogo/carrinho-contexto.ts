@@ -1,5 +1,6 @@
 import { createContext, useContext } from 'react'
 import type { Produto } from '../../data/types'
+import type { Cupom, ResultadoCupom } from './cupons'
 
 export type ItemCarrinho = {
   id: string
@@ -22,7 +23,10 @@ export type CarrinhoContexto = {
   /** Itens com nome, imagem e preço já resolvidos do catálogo. */
   detalhados: ItemDetalhado[]
   quantidade: number
+  subtotalCentavos: number
+  descontoCentavos: number
   totalCentavos: number
+  cupom: Cupom | null
   adicionar: (p: Produto, sabor?: string | null) => void
   alterarQtd: (index: number, delta: number) => void
   remover: (index: number) => void
@@ -30,6 +34,8 @@ export type CarrinhoContexto = {
   abrir: () => void
   fechar: () => void
   alternarAtacado: () => void
+  aplicarCupom: (codigo: string) => ResultadoCupom
+  removerCupom: () => void
   mensagemWhatsApp: () => string
 }
 

@@ -1,5 +1,5 @@
 import { Link } from '@tanstack/react-router'
-import { Menu, Package, Search, ShoppingCart, X } from 'lucide-react'
+import { Package, Search, ShoppingCart } from 'lucide-react'
 import { useEffect, useRef } from 'react'
 import { FreeMode, Mousewheel } from 'swiper/modules'
 import { Swiper, SwiperSlide } from 'swiper/react'
@@ -15,16 +15,12 @@ type Props = {
   categoriaAtiva: FiltroCategoria
   busca: string
   onBusca: (termo: string) => void
-  menuAberto: boolean
-  onMenu: (aberto: boolean) => void
 }
 
 export function Cabecalho({
   categoriaAtiva,
   busca,
   onBusca,
-  menuAberto,
-  onMenu,
 }: Props) {
   const { quantidade, abrir, atacado, alternarAtacado } = useCarrinho()
   const trilho = useRef<SwiperClass | null>(null)
@@ -40,15 +36,6 @@ export function Cabecalho({
     <div className="site-header">
       <header className="header">
         <div className="container header-inner">
-          <button
-            type="button"
-            className="mobile-menu-trigger"
-            aria-label="Menu"
-            onClick={() => onMenu(true)}
-          >
-            <Menu className="ico" />
-          </button>
-
           <Link className="logo" to="/">
             <img src="/logo-ms.jpg" alt="MS Suplementos" className="logo-img" />
             <span>
@@ -106,34 +93,16 @@ export function Cabecalho({
         </div>
       </header>
 
-      <div
-        className={`mobile-menu-overlay ${menuAberto ? 'is-open' : ''}`}
-        onClick={() => onMenu(false)}
-      />
-
-      <nav className={`mainnav ${menuAberto ? 'is-open' : ''}`} aria-label="Categorias">
-        <div className="mainnav-header">
-          <span className="mainnav-title">Categorias</span>
-          <button
-            type="button"
-            className="mobile-menu-close"
-            aria-label="Fechar menu"
-            onClick={() => onMenu(false)}
-          >
-            <X className="ico" />
-          </button>
+      <nav className="mainnav" aria-label="Categorias de produtos">
+        <div className="container mainnav-eyebrow" aria-hidden="true">
+          Categorias
         </div>
         <div className="container mainnav-inner">
           <Swiper
             className="mainnav-swiper"
-            // `.mainnav-list` fica no wrapper: assim o layout em coluna do
-            // menu lateral no celular continua valendo sem regra nova.
+            // O wrapper recebe a classe visual da faixa de categorias.
             wrapperClass="swiper-wrapper mainnav-list"
             modules={[FreeMode, Mousewheel]}
-            // Abaixo de 768px esta nav vira um menu lateral vertical —
-            // arrastar na horizontal ali não faz sentido.
-            enabled={false}
-            breakpoints={{ 768: { enabled: true } }}
             slidesPerView="auto"
             spaceBetween={4}
             freeMode={{ enabled: true, momentumBounce: false }}
@@ -155,7 +124,6 @@ export function Cabecalho({
                     params={{ categoria: c.id }}
                     className={`mainnav-item ${ativo ? 'is-active' : ''}`}
                     aria-current={ativo ? 'true' : 'false'}
-                    onClick={() => onMenu(false)}
                     // Com o Swiper a barra anda por transform, e o navegador
                     // não consegue rolar sozinho até um link focado pelo Tab.
                     onFocus={() => trilho.current?.slideTo(i)}

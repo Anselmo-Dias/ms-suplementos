@@ -8,6 +8,7 @@ import {
   type ItemDetalhado,
 } from './carrinho-contexto'
 import { formatarCentavos, precoVigente, semCompra } from './lib/preco'
+import { calcularDesconto, validarCupom, type Cupom } from './cupons'
 
 const CHAVE_CARRINHO = 'ms_carrinho'
 const CHAVE_ATACADO = 'ms_atacado'
@@ -29,6 +30,7 @@ export function CarrinhoProvider({ children }: { children: ReactNode }) {
     () => lerStorage<string>(CHAVE_ATACADO, '0') === '1',
   )
   const [aberto, setAberto] = useState(false)
+  const [cupom, setCupom] = useState<Cupom | null>(null)
 
   useEffect(() => {
     try {
@@ -91,7 +93,10 @@ export function CarrinhoProvider({ children }: { children: ReactNode }) {
     setItens((atual) => atual.filter((_, i) => i !== index))
   }, [])
 
-  const esvaziar = useCallback(() => setItens([]), [])
+  const esvaziar = useCallback(() => {
+    setItens([])
+    setCupom(null)
+  }, [])
 
   // O preço nunca é guardado no storage: sai sempre do catálogo, já no modo
   // vigente. Assim uma mudança de preço ou de modo não deixa item defasado.
@@ -120,10 +125,31 @@ export function CarrinhoProvider({ children }: { children: ReactNode }) {
     () => detalhados.reduce((acc, i) => acc + i.qtd, 0),
     [detalhados],
   )
-  const totalCentavos = useMemo(
+  const subtotalCentavos = useMemo(
     () => detalhados.reduce((acc, i) => acc + i.subtotalCentavos, 0),
     [detalhados],
   )
+  const cupomAtivo = useMemo(() => {
+    if (!cupom) return null
+    const resultado = validarCupom(cupom.codigo, subtotalCentavos, atacado)
+    return resultado.sucesso ? resultado.cupom : null
+  }, [cupom, subtotalCentavos, atacado])
+  const descontoCentavos = useMemo(
+    () => calcularDesconto(cupomAtivo, subtotalCentavos),
+    [cupomAtivo, subtotalCentavos],
+  )
+  const totalCentavos = subtotalCentavos - descontoCentavos
+
+  const aplicarCupom = useCallback(
+    (codigo: string) => {
+      const resultado = validarCupom(codigo, subtotalCentavos, atacado)
+      if (resultado.sucesso) setCupom(resultado.cupom)
+      return resultado
+    },
+    [subtotalCentavos, atacado],
+  )
+
+  const removerCupom = useCallback(() => setCupom(null), [])
 
   const mensagemWhatsApp = useCallback(() => {
     const linhas = detalhados
@@ -144,11 +170,15 @@ export function CarrinhoProvider({ children }: { children: ReactNode }) {
       linhas,
       '',
       '--------------------------------',
+      `Subtotal: ${formatarCentavos(subtotalCentavos)}`,
+      ...(cupomAtivo
+        ? [`🎟️ Cupom *${cupomAtivo.codigo}* (${cupomAtivo.descricao})`, `Desconto: -${formatarCentavos(descontoCentavos)}`]
+        : []),
       `💰 *VALOR TOTAL:* ${formatarCentavos(totalCentavos)}${atacado ? '\n_(valores de atacado)_' : ''}`,
       '',
       'Olá! Gostaria de confirmar o pedido e combinar a entrega!',
     ].join('\n')
-  }, [detalhados, totalCentavos, atacado])
+  }, [detalhados, subtotalCentavos, descontoCentavos, totalCentavos, cupomAtivo, atacado])
 
   const valor = useMemo<CarrinhoContexto>(
     () => ({
@@ -157,7 +187,10 @@ export function CarrinhoProvider({ children }: { children: ReactNode }) {
       aberto,
       detalhados,
       quantidade,
+      subtotalCentavos,
+      descontoCentavos,
       totalCentavos,
+      cupom: cupomAtivo,
       adicionar,
       alterarQtd,
       remover,
@@ -165,6 +198,8 @@ export function CarrinhoProvider({ children }: { children: ReactNode }) {
       abrir: () => setAberto(true),
       fechar: () => setAberto(false),
       alternarAtacado: () => setAtacado((a) => !a),
+      aplicarCupom,
+      removerCupom,
       mensagemWhatsApp,
     }),
     [
@@ -173,11 +208,16 @@ export function CarrinhoProvider({ children }: { children: ReactNode }) {
       aberto,
       detalhados,
       quantidade,
+      subtotalCentavos,
+      descontoCentavos,
       totalCentavos,
+      cupomAtivo,
       adicionar,
       alterarQtd,
       remover,
       esvaziar,
+      aplicarCupom,
+      removerCupom,
       mensagemWhatsApp,
     ],
   )

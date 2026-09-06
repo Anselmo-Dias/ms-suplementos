@@ -1539,13 +1539,176 @@ i.ico {
   background: var(--surface-2);
 }
 
+.cart-coupon {
+  margin-bottom: 16px;
+}
+
+.cart-coupon-form label {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin-bottom: 8px;
+  font-family: var(--font-mono);
+  font-size: 0.74rem;
+  font-weight: 600;
+  color: var(--cream);
+}
+
+.cart-coupon-form label .ico {
+  width: 16px;
+  height: 16px;
+  color: var(--gold);
+}
+
+.cart-coupon-field {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  overflow: hidden;
+  min-height: 46px;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: var(--r-inner);
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.cart-coupon-field:focus-within {
+  border-color: var(--gold);
+  box-shadow: 0 0 0 3px rgba(163, 116, 30, 0.1);
+}
+
+.cart-coupon-field.has-error {
+  border-color: #c94d4d;
+}
+
+.cart-coupon-field input {
+  min-width: 0;
+  border: 0;
+  outline: 0;
+  padding: 0 13px;
+  background: transparent;
+  color: var(--text);
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.cart-coupon-field input::placeholder {
+  color: var(--dim);
+  font-weight: 400;
+  text-transform: none;
+}
+
+.cart-coupon-field button {
+  margin: 4px;
+  padding: 0 16px;
+  border: 0;
+  border-radius: 9px;
+  background: var(--gold);
+  color: #fff;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.cart-coupon-field button:disabled {
+  opacity: 0.42;
+  cursor: not-allowed;
+}
+
+.cart-coupon-error {
+  margin-top: 6px;
+  color: #b63b3b;
+  font-size: 0.72rem;
+  line-height: 1.35;
+}
+
+.cart-coupon-applied {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 12px;
+  border: 1px solid rgba(45, 135, 83, 0.25);
+  border-radius: var(--r-inner);
+  background: rgba(45, 135, 83, 0.08);
+}
+
+.cart-coupon-icon {
+  display: grid;
+  place-items: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: #2d8753;
+  color: #fff;
+}
+
+.cart-coupon-icon .ico {
+  width: 16px;
+  height: 16px;
+}
+
+.cart-coupon-copy {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  line-height: 1.25;
+}
+
+.cart-coupon-copy strong {
+  font-family: var(--font-mono);
+  font-size: 0.76rem;
+  color: var(--text);
+}
+
+.cart-coupon-copy small {
+  overflow: hidden;
+  color: var(--muted);
+  font-size: 0.68rem;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.cart-coupon-applied button {
+  border: 0;
+  background: none;
+  color: var(--muted);
+  font-family: var(--font-mono);
+  font-size: 0.66rem;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.cart-summary {
+  margin-bottom: 14px;
+}
+
+.cart-summary-line {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+  color: var(--muted);
+  font-family: var(--font-mono);
+  font-size: 0.74rem;
+}
+
+.cart-summary-line.is-discount {
+  color: #2d8753;
+  font-weight: 600;
+}
+
 .cart-summary-row {
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-family: var(--font-mono);
   font-size: 0.95rem;
-  margin-bottom: 16px;
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid var(--line);
   color: var(--cream);
 }
 
@@ -1694,116 +1857,90 @@ i.ico {
   .carousel-nav { display: none; }
 }
 
-/* --- Mobile Menu Drawer --- */
-.mobile-menu-trigger {
-  display: none; /* Hide on desktop */
-  background: none;
-  border: none;
-  color: var(--text);
-  cursor: pointer;
-  padding: 8px;
-}
-.mobile-menu-trigger .ico {
-  width: 24px;
-  height: 24px;
-}
-.mobile-menu-overlay {
+/* No desktop o rótulo seria redundante; no celular ele deixa explícito que
+   a faixa abaixo é a navegação do catálogo. */
+.mainnav-eyebrow {
   display: none;
 }
-.mainnav-header {
-  display: none; /* Hide on desktop */
+
+@media (max-width: 520px) {
+  .cart-box {
+    max-width: none;
+  }
+
+  .cart-header {
+    padding: 16px var(--gutter);
+  }
+
+  .cart-items {
+    padding: 12px var(--gutter);
+    gap: 12px;
+  }
+
+  .cart-footer {
+    padding: 14px var(--gutter) max(14px, env(safe-area-inset-bottom));
+  }
+
+  .cart-coupon {
+    margin-bottom: 12px;
+  }
+
+  .cart-summary {
+    margin-bottom: 10px;
+  }
+
+  .btn-whatsapp-checkout {
+    min-height: 50px;
+    padding: 13px;
+  }
 }
 
 @media (max-width: 767px) {
-  .mobile-menu-trigger {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  /* Transform mainnav into a sidebar */
   .mainnav {
-    position: fixed;
-    top: 0;
-    left: -100%;
-    width: 220px; /* Reduzido, minimalista */
-    height: 100vh;
-    background: #171614; /* Escuro sofisticado (var(--text)) */
-    z-index: 1000;
-    transition: left 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    flex-direction: column;
-    box-shadow: 4px 0 20px rgba(0,0,0,0.5);
-    overflow-y: auto;
-    border-top: none;
+    padding: 9px 0 11px;
+    background: var(--ink);
   }
-  .mainnav.is-open {
-    left: 0;
+
+  .mainnav-eyebrow {
+    display: block;
+    margin-bottom: 7px;
+    font-family: var(--font-mono);
+    font-size: 0.62rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--dim);
   }
-  
-  .mainnav-header {
+
+  .mainnav-inner {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .mainnav-item {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 20px 24px;
-    border-bottom: 1px solid rgba(180, 140, 60, 0.2); /* Linha sutil dourada */
-    background: #171614;
+    min-height: 40px;
+    padding: 8px 13px;
+    border: 1px solid var(--line);
+    border-radius: var(--r-pill);
+    font-size: 0.66rem;
+    letter-spacing: 0.045em;
   }
-  .mainnav-title {
-    font-size: 0.9rem;
-    font-weight: 400;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: #E5D9C5; /* Bege elegante */
-  }
-  .mobile-menu-close {
-    background: none;
-    border: none;
-    cursor: pointer;
-    color: #E5D9C5;
-    padding: 4px;
-  }
-  
-  .mainnav-inner {
-    padding: 10px 0;
-    width: 100%;
-  }
-  
-  .mainnav-list {
-    flex-direction: column;
-    width: 100%;
-    gap: 0;
-  }
-  
-  .mainnav-item {
-    width: 100%;
-    text-align: left;
-    padding: 14px 24px;
-    border-bottom: none;
-    color: #E5D9C5; /* Bege elegante */
-    font-size: 0.8rem;
-    font-weight: 300;
-    letter-spacing: 0.05em;
-    transition: all 0.2s ease;
-  }
-  .mainnav-item:hover, .mainnav-item.is-active {
-    background: transparent;
-    color: var(--gold);
-    padding-left: 30px; /* Efeito minimalista de deslocamento */
-  }
+
   .mainnav-item::after {
-    display: none; /* Hide the bottom underline */
-  }
-  
-  .mobile-menu-overlay {
     display: none;
-    position: fixed;
-    top: 0; left: 0; right: 0; bottom: 0;
-    background: rgba(0,0,0,0.6);
-    backdrop-filter: blur(2px);
-    z-index: 999;
   }
-  .mobile-menu-overlay.is-active {
-    display: block;
+
+  .mainnav-item.is-active {
+    background: var(--gold);
+    border-color: var(--gold);
+    color: #fff;
+  }
+
+  .mainnav-item.is-active .mainnav-count {
+    color: inherit;
+    opacity: 0.8;
   }
 }
 
@@ -2117,10 +2254,14 @@ i.ico {
 }
 
 /* --- Barra de categorias --- */
-/* O Swiper cuida do arrastar; no celular ele fica desligado e o menu
-   lateral continua sendo uma lista vertical comum. */
+/* O Swiper mantém a faixa arrastável em todas as larguras. */
 .mainnav-swiper {
   width: 100%;
+  cursor: grab;
+}
+
+.mainnav-swiper:active {
+  cursor: grabbing;
 }
 
 /* Dois seletores de propósito: o `.swiper-slide { width: 100% }` do Swiper
@@ -2138,33 +2279,6 @@ i.ico {
 .mainnav-swiper .mainnav-list {
   min-width: 0;
   gap: 0;
-}
-
-/* Só onde o arrastar existe — no menu lateral do celular é uma lista. */
-@media (min-width: 768px) {
-  .mainnav-swiper {
-    cursor: grab;
-  }
-  .mainnav-swiper:active {
-    cursor: grabbing;
-  }
-}
-
-@media (max-width: 767px) {
-  /* Swiper desligado: o wrapper volta a ser uma coluna e cada item ocupa
-     a largura toda do menu lateral. */
-  .mainnav-swiper .mainnav-list {
-    flex-direction: column;
-  }
-
-  .mainnav-swiper .mainnav-slide {
-    width: 100%;
-  }
-
-  .mainnav-slide .mainnav-item {
-    display: block;
-    width: 100%;
-  }
 }
 
 /* --- Galeria de sabores no modal --- */

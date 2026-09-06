@@ -30,7 +30,6 @@ export function Catalogo(props: Props) {
 
 function Conteudo({ categoria, produtoAberto, onAbrirProduto }: Props) {
   const [busca, setBusca] = useState('')
-  const [menuAberto, setMenuAberto] = useState(false)
 
   // Indisponíveis vão para o fim da grade — quem está comprando vê primeiro
   // o que dá para comprar.
@@ -50,8 +49,6 @@ function Conteudo({ categoria, produtoAberto, onAbrirProduto }: Props) {
         categoriaAtiva={categoria}
         busca={busca}
         onBusca={setBusca}
-        menuAberto={menuAberto}
-        onMenu={setMenuAberto}
       />
 
       <main>
