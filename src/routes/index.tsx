@@ -4,6 +4,6 @@ import { createFileRoute, redirect } from '@tanstack/react-router'
 // `features/linktree`, apenas sem rota apontando para ele por enquanto.
 export const Route = createFileRoute('/')({
   beforeLoad: () => {
-    throw redirect({ to: '/catalogo' })
+    throw redirect({ to: '/catalogo', replace: true })
   },
 })

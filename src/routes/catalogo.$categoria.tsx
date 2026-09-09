@@ -1,4 +1,4 @@
-import { createFileRoute, notFound } from '@tanstack/react-router'
+import { createFileRoute, redirect } from '@tanstack/react-router'
 import {
   ehCategoriaValida,
   nomeDaCategoria,
@@ -10,7 +10,10 @@ export const Route = createFileRoute('/catalogo/$categoria')({
   loaderDeps: ({ search }) => ({ produto: search.produto }),
 
   loader: async ({ params, deps }) => {
-    if (!ehCategoriaValida(params.categoria)) throw notFound()
+    // Categoria que não existe volta para o catálogo completo.
+    if (!ehCategoriaValida(params.categoria)) {
+      throw redirect({ to: '/catalogo', replace: true })
+    }
 
     // Import dinâmico de propósito: os ~200 KB de JSON do catálogo ficam
     // num chunk próprio em vez de entrar no bundle que o linktree carrega.

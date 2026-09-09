@@ -10,6 +10,7 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as SplatRouteImport } from './routes/$'
 import { Route as CatalogoRouteImport } from './routes/catalogo'
 import { Route as CatalogoIndexRouteImport } from './routes/catalogo.index'
 import { Route as CatalogoCategoriaRouteImport } from './routes/catalogo.$categoria'
@@ -17,6 +18,11 @@ import { Route as CatalogoCategoriaRouteImport } from './routes/catalogo.$catego
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SplatRoute = SplatRouteImport.update({
+  id: '/$',
+  path: '/$',
   getParentRoute: () => rootRouteImport,
 } as any)
 const CatalogoRoute = CatalogoRouteImport.update({
@@ -37,32 +43,42 @@ const CatalogoCategoriaRoute = CatalogoCategoriaRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/$': typeof SplatRoute
   '/catalogo': typeof CatalogoRouteWithChildren
   '/catalogo/$categoria': typeof CatalogoCategoriaRoute
   '/catalogo/': typeof CatalogoIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/$': typeof SplatRoute
   '/catalogo/$categoria': typeof CatalogoCategoriaRoute
   '/catalogo': typeof CatalogoIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/$': typeof SplatRoute
   '/catalogo': typeof CatalogoRouteWithChildren
   '/catalogo/$categoria': typeof CatalogoCategoriaRoute
   '/catalogo/': typeof CatalogoIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/catalogo' | '/catalogo/$categoria' | '/catalogo/'
+  fullPaths: '/' | '/$' | '/catalogo' | '/catalogo/$categoria' | '/catalogo/'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/catalogo/$categoria' | '/catalogo'
-  id: '__root__' | '/' | '/catalogo' | '/catalogo/$categoria' | '/catalogo/'
+  to: '/' | '/$' | '/catalogo/$categoria' | '/catalogo'
+  id:
+    | '__root__'
+    | '/'
+    | '/$'
+    | '/catalogo'
+    | '/catalogo/$categoria'
+    | '/catalogo/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  SplatRoute: typeof SplatRoute
   CatalogoRoute: typeof CatalogoRouteWithChildren
 }
 
@@ -73,6 +89,13 @@ declare module '@tanstack/react-router' {
       path: '/'
       fullPath: '/'
       preLoaderRoute: typeof IndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/$': {
+      id: '/$'
+      path: '/$'
+      fullPath: '/$'
+      preLoaderRoute: typeof SplatRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/catalogo': {
@@ -115,6 +138,7 @@ const CatalogoRouteWithChildren = CatalogoRoute._addFileChildren(
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  SplatRoute: SplatRoute,
   CatalogoRoute: CatalogoRouteWithChildren,
 }
 export const routeTree = rootRouteImport

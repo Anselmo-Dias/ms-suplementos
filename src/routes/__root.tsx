@@ -1,4 +1,9 @@
-import { createRootRoute, HeadContent, Link, Outlet } from '@tanstack/react-router'
+import {
+  createRootRoute,
+  HeadContent,
+  Navigate,
+  Outlet,
+} from '@tanstack/react-router'
 import { TanStackRouterDevtools } from '@tanstack/react-router-devtools'
 
 export const Route = createRootRoute({
@@ -17,18 +22,8 @@ function RootLayout() {
   )
 }
 
+// Rede de segurança: o curinga `$` já captura endereço desconhecido, mas um
+// `notFound()` lançado de dentro de uma rota também precisa voltar ao catálogo.
 function NaoEncontrado() {
-  return (
-    <main className="page" style={{ textAlign: 'center' }}>
-      <h1 style={{ fontSize: '1.5rem', letterSpacing: '-0.02em' }}>
-        Página não encontrada
-      </h1>
-      <p style={{ marginTop: '0.75rem', opacity: 0.7 }}>
-        O endereço que você abriu não existe (ou saiu do ar).
-      </p>
-      <p style={{ marginTop: '1.5rem' }}>
-        <Link to="/catalogo">Ver o catálogo</Link>
-      </p>
-    </main>
-  )
+  return <Navigate to="/catalogo" replace />
 }
