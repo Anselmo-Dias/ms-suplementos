@@ -1211,6 +1211,22 @@
       {
         "nome": "Special Edition",
         "imagem": "/img/pre-treino/v9-pump-shakpro-300g-cola--special-edition.webp"
+      },
+      {
+        "nome": "Uva",
+        "imagem": "/img/pre-treino/shark-pro-v9-pump-uva.webp"
+      },
+      {
+        "nome": "Maracujá",
+        "imagem": "/img/pre-treino/shark-pro-v9-pump-maracuja.webp"
+      },
+      {
+        "nome": "Tangerina",
+        "imagem": "/img/pre-treino/shark-pro-v9-pump-tangerina.webp"
+      },
+      {
+        "nome": "Limão",
+        "imagem": "/img/pre-treino/shark-pro-v9-pump-limao.webp"
       }
     ],
     "spec": "300G • Pré-Treino",
@@ -1247,5 +1263,26 @@
     "embalagem": "100g",
     "doses": "3 a 5 por embalagem",
     "indisponivel": true
+  },
+  {
+    "id": "insane-labz-psychotic-fruit-punch",
+    "nome": "Insane Labz Psychotic Fruit Punch",
+    "categoria": "pre-treino",
+    "precoCentavos": 28500,
+    "imagem": "/img/pre-treino/insane-labz-psychotic-fruit-punch.webp",
+    "spec": "216g • 35 doses",
+    "tags": [
+      "Energia",
+      "Foco",
+      "Resistência",
+      "Pre-workout"
+    ],
+    "descricao": "Pré-treino Insane Labz Psychotic sabor Fruit Punch",
+    "paraQueServe": "Fornece energia intensa, foco mental e resistência. Combate a fadiga e melhora o desempenho geral nos treinos.",
+    "modoDeUso": "Consulte a tabela nutricional na embalagem.",
+    "marca": "Insane Labz",
+    "porcao": "1 scoop 1h antes do treino",
+    "embalagem": "216g",
+    "doses": "35 por embalagem"
   }
 ]

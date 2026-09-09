@@ -1392,5 +1392,43 @@
     "porcao": "2 cápsulas ao dia",
     "embalagem": "60 cápsulas",
     "doses": "30 por embalagem (30 dias)"
+  },
+  {
+    "id": "qnutri-enzimas-digestivas",
+    "nome": "QNutri Enzimas Digestivas",
+    "categoria": "saude",
+    "precoCentavos": 4000,
+    "imagem": "/img/saude/qnutri-enzimas-digestivas.webp",
+    "spec": "60 cápsulas • 250mg por dose",
+    "tags": [
+      "Enzimas",
+      "Saúde"
+    ],
+    "descricao": "Enzimas Digestivas QNutri",
+    "paraQueServe": "Suplemento focado em melhorar a sua saúde geral, digestão e qualidade de vida.",
+    "modoDeUso": "Consulte a tabela nutricional na embalagem.",
+    "marca": "QNutri",
+    "porcao": "Consulte a embalagem",
+    "embalagem": "60 cápsulas"
+  },
+  {
+    "id": "supraervas-essencial-complex",
+    "nome": "Supraervas Essencial Complex Hair, Skin & Nails",
+    "categoria": "saude",
+    "precoCentavos": 3500,
+    "imagem": "/img/saude/supraervas-essencial-complex.webp",
+    "spec": "60 cápsulas • Blister de 500mg",
+    "tags": [
+      "Cabelo",
+      "Pele",
+      "Unha",
+      "Vitaminas"
+    ],
+    "descricao": "Essencial Complex Hair, Skin & Nails",
+    "paraQueServe": "Suplemento focado em melhorar a saúde do seu cabelo, pele e unhas.",
+    "modoDeUso": "Consulte a tabela nutricional na embalagem.",
+    "marca": "Supraervas",
+    "porcao": "Consulte a embalagem",
+    "embalagem": "60 cápsulas"
   }
 ]

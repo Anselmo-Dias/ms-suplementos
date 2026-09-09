@@ -411,5 +411,24 @@
     "porcao": "2 comprimidos ao dia",
     "embalagem": "60 comprimidos",
     "doses": "30 por embalagem (30 dias)"
+  },
+  {
+    "id": "red-skka-thermo-xploud-mix",
+    "nome": "Red S.kka Thermo Xploud Mix",
+    "categoria": "termogenico",
+    "precoCentavos": 4000,
+    "imagem": "/img/termogenico/red-skka-thermo-xploud-mix.webp",
+    "spec": "60 tabletes • 400mg de cafeína",
+    "tags": [
+      "Termogênico",
+      "Energia",
+      "Emagrecimento"
+    ],
+    "descricao": "Termogênico Red S.kka Thermo Xploud Mix com 400mg de Cafeína",
+    "paraQueServe": "Acelera o metabolismo e promove a queima de gordura.",
+    "modoDeUso": "Consulte a tabela nutricional na embalagem.",
+    "marca": "Red S.kka",
+    "porcao": "Consulte a embalagem",
+    "embalagem": "60 tabletes"
   }
 ]
