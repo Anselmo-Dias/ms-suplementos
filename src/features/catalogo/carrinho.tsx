@@ -172,9 +172,18 @@ export function CarrinhoProvider({ children }: { children: ReactNode }) {
       '--------------------------------',
       `Subtotal: ${formatarCentavos(subtotalCentavos)}`,
       ...(cupomAtivo
-        ? [`🎟️ Cupom *${cupomAtivo.codigo}* (${cupomAtivo.descricao})`, `Desconto: -${formatarCentavos(descontoCentavos)}`]
+        ? [
+            `🎟️ Cupom *${cupomAtivo.codigo}* (${cupomAtivo.descricao})`,
+            // O cupom informativo não entra no total: vira observação abaixo.
+            ...(cupomAtivo.informativo
+              ? []
+              : [`Desconto: -${formatarCentavos(descontoCentavos)}`]),
+          ]
         : []),
       `💰 *VALOR TOTAL:* ${formatarCentavos(totalCentavos)}${atacado ? '\n_(valores de atacado)_' : ''}`,
+      ...(cupomAtivo?.informativo && cupomAtivo.observacao
+        ? ['', `⚠️ ${cupomAtivo.observacao}`]
+        : []),
       '',
       'Olá! Gostaria de confirmar o pedido e combinar a entrega!',
     ].join('\n')

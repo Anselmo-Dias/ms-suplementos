@@ -1672,6 +1672,17 @@ i.ico {
   text-overflow: ellipsis;
 }
 
+/* Condição do cupom informativo: o desconto é combinado no atendimento. */
+.cart-coupon-note {
+  margin-top: 8px;
+  padding: 8px 10px;
+  border-radius: var(--r-inner);
+  background: rgba(45, 135, 83, 0.08);
+  color: var(--muted);
+  font-size: 0.7rem;
+  line-height: 1.4;
+}
+
 .cart-coupon-applied button {
   border: 0;
   background: none;

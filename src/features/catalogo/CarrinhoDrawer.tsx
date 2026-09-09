@@ -169,6 +169,9 @@ export function CarrinhoDrawer() {
                   {erroCupom && <p id="cart-coupon-error" className="cart-coupon-error" role="alert">{erroCupom}</p>}
                 </form>
               )}
+              {cupom?.observacao && (
+                <p className="cart-coupon-note">{cupom.observacao}</p>
+              )}
             </section>
           )}
 
@@ -177,7 +180,7 @@ export function CarrinhoDrawer() {
               <span>Subtotal</span>
               <span>{formatarCentavos(subtotalCentavos)}</span>
             </div>
-            {cupom && (
+            {cupom && descontoCentavos > 0 && (
               <div className="cart-summary-line is-discount">
                 <span>Desconto</span>
                 <span>− {formatarCentavos(descontoCentavos)}</span>

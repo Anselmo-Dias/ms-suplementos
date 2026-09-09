@@ -1,17 +1,9 @@
-import { createFileRoute } from '@tanstack/react-router'
-import { Linktree } from '../features/linktree/Linktree'
-import '../styles/linktree.css'
+import { createFileRoute, redirect } from '@tanstack/react-router'
 
+// A tela inicial passou a ser o catálogo. O linktree segue implementado em
+// `features/linktree`, apenas sem rota apontando para ele por enquanto.
 export const Route = createFileRoute('/')({
-  component: Linktree,
-  head: () => ({
-    meta: [
-      { title: 'MS Suplementos • Links' },
-      {
-        name: 'description',
-        content:
-          'Todos os canais da MS Suplementos: WhatsApp, catálogo completo, ofertas da semana e as duas lojas em Aracaju/SE.',
-      },
-    ],
-  }),
+  beforeLoad: () => {
+    throw redirect({ to: '/catalogo' })
+  },
 })

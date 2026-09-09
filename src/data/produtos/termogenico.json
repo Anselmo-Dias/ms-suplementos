@@ -314,7 +314,8 @@
     "marca": "Uni Ervas",
     "porcao": "2 cápsulas ao dia",
     "embalagem": "120 cápsulas",
-    "doses": "60 por embalagem (60 dias)"
+    "doses": "60 por embalagem (60 dias)",
+    "indisponivel": true
   },
   {
     "id": "suplemento-termog-nico-start-fire-60-c-psulas-hop-nutrition",
@@ -361,7 +362,8 @@
     "marca": "Nutrex",
     "porcao": "2 cápsulas ao dia",
     "embalagem": "60 cápsulas",
-    "doses": "30 por embalagem (30 dias)"
+    "doses": "30 por embalagem (30 dias)",
+    "indisponivel": true
   },
   {
     "id": "xpro-thermo-studio",

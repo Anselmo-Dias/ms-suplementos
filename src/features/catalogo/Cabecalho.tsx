@@ -36,7 +36,7 @@ export function Cabecalho({
     <div className="site-header">
       <header className="header">
         <div className="container header-inner">
-          <Link className="logo" to="/">
+          <Link className="logo" to="/catalogo">
             <img src="/logo-ms.jpg" alt="MS Suplementos" className="logo-img" />
             <span>
               MS<span className="logo-dot">.</span>Suplementos

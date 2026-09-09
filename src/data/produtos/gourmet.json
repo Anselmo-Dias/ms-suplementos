@@ -375,7 +375,8 @@
     "modoDeUso": "Consulte a embalagem.",
     "marca": "Integralmédica",
     "porcao": "1 barra",
-    "embalagem": "Caixa"
+    "embalagem": "Caixa",
+    "indisponivel": true
   },
   {
     "id": "snackthat-supley",

@@ -13,7 +13,8 @@
     "marca": "Actibio",
     "porcao": "2 cápsulas ao dia",
     "embalagem": "60 cápsulas",
-    "doses": "30 por embalagem (30 dias)"
+    "doses": "30 por embalagem (30 dias)",
+    "indisponivel": true
   },
   {
     "id": "actibio-actileve-90-caps",
@@ -45,7 +46,8 @@
     "marca": "Supraervas",
     "porcao": "2 cápsulas ao dia",
     "embalagem": "200 cápsulas",
-    "doses": "100 por embalagem (100 dias)"
+    "doses": "100 por embalagem (100 dias)",
+    "indisponivel": true
   },
   {
     "id": "amora-com-isoflavona-120caps-alphacaps",
@@ -271,7 +273,8 @@
     "marca": "Nature Floor",
     "porcao": "2 cápsulas ao dia",
     "embalagem": "60 cápsulas",
-    "doses": "30 por embalagem (30 dias)"
+    "doses": "30 por embalagem (30 dias)",
+    "indisponivel": true
   },
   {
     "id": "dolomix-supraervas-60-caps",
@@ -416,7 +419,8 @@
     "marca": "Uni Ervas",
     "porcao": "2 cápsulas ao dia",
     "embalagem": "120 cápsulas",
-    "doses": "60 por embalagem (60 dias)"
+    "doses": "60 por embalagem (60 dias)",
+    "indisponivel": true
   },
   {
     "id": "l-glutamina-qnutry-60caps",
@@ -501,7 +505,8 @@
     "marca": "Lauton",
     "porcao": "2 comprimidos ao dia",
     "embalagem": "60 comprimidos",
-    "doses": "30 por embalagem (30 dias)"
+    "doses": "30 por embalagem (30 dias)",
+    "indisponivel": true
   },
   {
     "id": "lavitan-a-z-original-60-caps",
@@ -752,7 +757,8 @@
     "marca": "Supraervas",
     "porcao": "2 cápsulas ao dia",
     "embalagem": "60 cápsulas",
-    "doses": "30 por embalagem (30 dias)"
+    "doses": "30 por embalagem (30 dias)",
+    "indisponivel": true
   },
   {
     "id": "oleo-de-semente-de-abobora-com-vitamina-e-60-caps-supraervas",
@@ -942,7 +948,8 @@
     "modoDeUso": "Tomar 2 cápsulas antes e 2 cápsulas após o treino.",
     "marca": "Puretech",
     "porcao": "2 a 3 cápsulas por dia",
-    "embalagem": "100 cápsulas"
+    "embalagem": "100 cápsulas",
+    "indisponivel": true
   },
   {
     "id": "qnutri-6mag-60-caps",
@@ -1252,7 +1259,8 @@
     "modoDeUso": "Tomar 1 dose dissolvida em água morna ou fria 30 a 60 minutos antes de dormir.",
     "marca": "NutriHealth",
     "porcao": "2 a 3 cápsulas por dia",
-    "embalagem": "250g"
+    "embalagem": "250g",
+    "indisponivel": true
   },
   {
     "id": "vitali-az-studio",
@@ -1285,7 +1293,8 @@
     "marca": "Uni Ervas",
     "porcao": "2 cápsulas ao dia",
     "embalagem": "120 cápsulas",
-    "doses": "60 por embalagem (60 dias)"
+    "doses": "60 por embalagem (60 dias)",
+    "indisponivel": true
   },
   {
     "id": "vitamina-b12-actibio-60caps",
@@ -1349,7 +1358,8 @@
     "marca": "Supralab",
     "porcao": "2 cápsulas ao dia",
     "embalagem": "60 cápsulas",
-    "doses": "30 por embalagem (30 dias)"
+    "doses": "30 por embalagem (30 dias)",
+    "indisponivel": true
   },
   {
     "id": "vitaminas-do-complexo-b-actibio-60caps",

@@ -9,6 +9,13 @@ export type Cupom = {
   permiteAtacado?: boolean
   ativo?: boolean
   validoAte?: string
+  /**
+   * Cupom que não mexe no total: o desconto é combinado no atendimento e só
+   * viaja como observação no pedido do WhatsApp.
+   */
+  informativo?: boolean
+  /** Condição de uso levada para a mensagem do WhatsApp. */
+  observacao?: string
 }
 
 export type ResultadoCupom =
@@ -20,7 +27,17 @@ export type ResultadoCupom =
  * { codigo: 'BEMVINDO10', descricao: '10% de desconto', tipo: 'percentual',
  *   valor: 10, minimoCentavos: 10000, descontoMaximoCentavos: 5000 }
  */
-export const CUPONS: Cupom[] = []
+export const CUPONS: Cupom[] = [
+  {
+    codigo: 'MEL10',
+    descricao: '10% de desconto no dinheiro ou Pix',
+    tipo: 'percentual',
+    valor: 10,
+    informativo: true,
+    observacao:
+      'O desconto de 10% do cupom MEL10 vale somente para pagamento em dinheiro ou Pix e é aplicado pelo atendente na confirmação do pedido.',
+  },
+]
 
 export function normalizarCodigoCupom(codigo: string): string {
   return codigo.trim().toLocaleUpperCase('pt-BR').replace(/\s+/g, '')
@@ -54,7 +71,7 @@ export function validarCupom(
 }
 
 export function calcularDesconto(cupom: Cupom | null, subtotalCentavos: number): number {
-  if (!cupom || subtotalCentavos <= 0) return 0
+  if (!cupom || cupom.informativo || subtotalCentavos <= 0) return 0
   const bruto =
     cupom.tipo === 'percentual'
       ? Math.round(subtotalCentavos * (cupom.valor / 100))

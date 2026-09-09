@@ -4,6 +4,7 @@ import { Links } from './Links'
 import { Mapa } from './Mapa'
 import { Perfil } from './Perfil'
 import { Rodape } from './Rodape'
+import '../../styles/linktree.css'
 
 export function Linktree() {
   // A unidade escolhida nas abas de "Onde estamos" também manda no badge de

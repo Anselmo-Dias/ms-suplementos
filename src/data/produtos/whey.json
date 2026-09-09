@@ -180,8 +180,24 @@
     "doses": "22 a 30 por embalagem"
   },
   {
+    "id": "albumina-uevo-1kg",
+    "nome": "Albumina Uevo 1kg",
+    "categoria": "whey",
+    "precoCentavos": 8500,
+    "imagem": "/img/whey/albumina-uevo-1kg.webp",
+    "spec": "Unidade",
+    "tags": [],
+    "descricao": "Novo produto adicionado.",
+    "paraQueServe": "Auxilia na construção e recuperação muscular, fornecendo proteínas de alto valor biológico essenciais para o ganho de massa magra.",
+    "modoDeUso": "Consulte a tabela nutricional na embalagem.",
+    "marca": "Uevo",
+    "porcao": "30g a 40g por dia, geralmente pós-treino",
+    "embalagem": "1kg",
+    "doses": "25 a 33 por embalagem"
+  },
+  {
     "id": "albomina-uevo-420g",
-    "nome": "Albomina Uevo 420g",
+    "nome": "Albumina Uevo 420g",
     "categoria": "whey",
     "precoCentavos": 3900,
     "imagem": "/img/whey/albomina-uevo-420g.webp",
@@ -228,6 +244,22 @@
     "porcao": "30g a 40g por dia, geralmente pós-treino",
     "embalagem": "420g",
     "doses": "10 a 14 por embalagem"
+  },
+  {
+    "id": "albumina-naturovos-1kg",
+    "nome": "Albumina Naturovos 1kg",
+    "categoria": "whey",
+    "precoCentavos": 8500,
+    "imagem": "/img/whey/albumina-naturovos-1kg.webp",
+    "spec": "Unidade",
+    "tags": [],
+    "descricao": "Novo produto adicionado.",
+    "paraQueServe": "Auxilia na construção e recuperação muscular, fornecendo proteínas de alto valor biológico essenciais para o ganho de massa magra.",
+    "modoDeUso": "Consulte a tabela nutricional na embalagem.",
+    "marca": "Naturovos",
+    "porcao": "30g a 40g por dia, geralmente pós-treino",
+    "embalagem": "1kg",
+    "doses": "25 a 33 por embalagem"
   },
   {
     "id": "albumina-naturovos-420g",

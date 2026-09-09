@@ -20,14 +20,14 @@ function RootLayout() {
 function NaoEncontrado() {
   return (
     <main className="page" style={{ textAlign: 'center' }}>
-      <h1 className="profile__name">Página não encontrada</h1>
-      <p className="profile__bio" style={{ marginInline: 'auto' }}>
+      <h1 style={{ fontSize: '1.5rem', letterSpacing: '-0.02em' }}>
+        Página não encontrada
+      </h1>
+      <p style={{ marginTop: '0.75rem', opacity: 0.7 }}>
         O endereço que você abriu não existe (ou saiu do ar).
       </p>
       <p style={{ marginTop: '1.5rem' }}>
-        <Link to="/" className="map__route">
-          Voltar ao início
-        </Link>
+        <Link to="/catalogo">Ver o catálogo</Link>
       </p>
     </main>
   )

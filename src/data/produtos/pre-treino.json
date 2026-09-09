@@ -587,7 +587,8 @@
     "marca": "Max Titanium",
     "porcao": "1 scoop (20g a 30g) 1h antes do treino",
     "embalagem": "300g",
-    "doses": "10 a 15 por embalagem"
+    "doses": "10 a 15 por embalagem",
+    "indisponivel": true
   },
   {
     "id": "megaton-pre-treino-300g-mk-supplements",
@@ -617,7 +618,8 @@
     "marca": "MK Supplements",
     "porcao": "1 scoop (20g a 30g) 1h antes do treino",
     "embalagem": "300g",
-    "doses": "10 a 15 por embalagem"
+    "doses": "10 a 15 por embalagem",
+    "indisponivel": true
   },
   {
     "id": "metamorfose-monster-body-night-training-sem-cafeina-300g",
@@ -861,7 +863,8 @@
     "marca": "Bio Sport USA",
     "porcao": "1 scoop (20g a 30g) 1h antes do treino",
     "embalagem": "300g",
-    "doses": "10 a 15 por embalagem"
+    "doses": "10 a 15 por embalagem",
+    "indisponivel": true
   },
   {
     "id": "pre-treino-xtreme-power-edition-xpro",
@@ -1242,6 +1245,7 @@
     "marca": "Xpro Nutrition",
     "porcao": "1 scoop (20g a 30g) 1h antes do treino",
     "embalagem": "100g",
-    "doses": "3 a 5 por embalagem"
+    "doses": "3 a 5 por embalagem",
+    "indisponivel": true
   }
 ]

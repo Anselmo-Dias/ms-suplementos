@@ -40,7 +40,8 @@
     "marca": "Shark Pro",
     "porcao": "3g",
     "embalagem": "300g",
-    "doses": "100 por embalagem"
+    "doses": "100 por embalagem",
+    "indisponivel": true
   },
   {
     "id": "creatina-integral-300g",
@@ -65,7 +66,8 @@
     "doses": "100 por embalagem",
     "extras": {
       "Ingredientes": "Creatina monohidratada em pó"
-    }
+    },
+    "indisponivel": true
   },
   {
     "id": "creatina-booster-300g",
@@ -176,7 +178,8 @@
     "marca": "AST Sports",
     "porcao": "1 scoop (3g a 4g) por dia",
     "embalagem": "300g",
-    "doses": "75 a 100 por embalagem"
+    "doses": "75 a 100 por embalagem",
+    "indisponivel": true
   },
   {
     "id": "creatina-monohidratada-100-pura-animal-universal-nutrition",
@@ -244,7 +247,8 @@
     "marca": "Probiótica",
     "porcao": "3g",
     "embalagem": "300g",
-    "doses": "100"
+    "doses": "100",
+    "indisponivel": true
   },
   {
     "id": "creatina-nutrytech-300g",
@@ -328,7 +332,8 @@
     "marca": "Vitafor",
     "porcao": "1 scoop (3g a 4g) por dia",
     "embalagem": "300g",
-    "doses": "75 a 100 por embalagem"
+    "doses": "75 a 100 por embalagem",
+    "indisponivel": true
   },
   {
     "id": "creatina-xpro-100g",
