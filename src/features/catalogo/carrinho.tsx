@@ -8,7 +8,12 @@ import {
   type ItemDetalhado,
 } from './carrinho-contexto'
 import { formatarCentavos, precoVigente, semCompra } from './lib/preco'
-import { calcularDesconto, validarCupom, type Cupom } from './cupons'
+import {
+  calcularDesconto,
+  calcularDescontoCondicional,
+  validarCupom,
+  type Cupom,
+} from './cupons'
 
 const CHAVE_CARRINHO = 'ms_carrinho'
 const CHAVE_ATACADO = 'ms_atacado'
@@ -139,6 +144,12 @@ export function CarrinhoProvider({ children }: { children: ReactNode }) {
     [cupomAtivo, subtotalCentavos],
   )
   const totalCentavos = subtotalCentavos - descontoCentavos
+  // Cupom informativo: não entra no total, mas o valor final já sai calculado.
+  const descontoCondicionalCentavos = useMemo(
+    () => calcularDescontoCondicional(cupomAtivo, subtotalCentavos),
+    [cupomAtivo, subtotalCentavos],
+  )
+  const totalCondicionalCentavos = totalCentavos - descontoCondicionalCentavos
 
   const aplicarCupom = useCallback(
     (codigo: string) => {
@@ -163,6 +174,12 @@ export function CarrinhoProvider({ children }: { children: ReactNode }) {
       ? '📦 *PEDIDO ATACADO — MS SUPLEMENTOS*'
       : '🛍️ *PEDIDO MS SUPLEMENTOS*'
 
+    const notaAtacado = atacado ? '\n_(valores de atacado)_' : ''
+    // Cupom condicional (ex.: MEL10): o total sai calculado nas duas hipóteses,
+    // para o cliente e o atendente já verem o valor final de cada forma de pagamento.
+    const condicional = descontoCondicionalCentavos > 0
+    const rotulo = cupomAtivo?.rotuloCondicao ?? 'na condição do cupom'
+
     return [
       titulo,
       '--------------------------------',
@@ -173,21 +190,37 @@ export function CarrinhoProvider({ children }: { children: ReactNode }) {
       `Subtotal: ${formatarCentavos(subtotalCentavos)}`,
       ...(cupomAtivo
         ? [
-            `🎟️ Cupom *${cupomAtivo.codigo}* (${cupomAtivo.descricao})`,
-            // O cupom informativo não entra no total: vira observação abaixo.
-            ...(cupomAtivo.informativo
-              ? []
-              : [`Desconto: -${formatarCentavos(descontoCentavos)}`]),
+            `\u{1F39F}️ Cupom *${cupomAtivo.codigo}* (${cupomAtivo.descricao})`,
+            ...(descontoCentavos > 0
+              ? [`Desconto: -${formatarCentavos(descontoCentavos)}`]
+              : []),
+            ...(condicional
+              ? [`Desconto ${rotulo}: -${formatarCentavos(descontoCondicionalCentavos)}`]
+              : []),
           ]
         : []),
-      `💰 *VALOR TOTAL:* ${formatarCentavos(totalCentavos)}${atacado ? '\n_(valores de atacado)_' : ''}`,
-      ...(cupomAtivo?.informativo && cupomAtivo.observacao
+      ...(condicional
+        ? [
+            `\u{1F4B0} *VALOR TOTAL ${rotulo.toLocaleUpperCase('pt-BR')}:* ${formatarCentavos(totalCondicionalCentavos)}${notaAtacado}`,
+            `\u{1F4B3} Outras formas de pagamento: ${formatarCentavos(totalCentavos)}`,
+          ]
+        : [`\u{1F4B0} *VALOR TOTAL:* ${formatarCentavos(totalCentavos)}${notaAtacado}`]),
+      ...(condicional && cupomAtivo?.observacao
         ? ['', `⚠️ ${cupomAtivo.observacao}`]
         : []),
       '',
       'Olá! Gostaria de confirmar o pedido e combinar a entrega!',
     ].join('\n')
-  }, [detalhados, subtotalCentavos, descontoCentavos, totalCentavos, cupomAtivo, atacado])
+  }, [
+    detalhados,
+    subtotalCentavos,
+    descontoCentavos,
+    totalCentavos,
+    descontoCondicionalCentavos,
+    totalCondicionalCentavos,
+    cupomAtivo,
+    atacado,
+  ])
 
   const valor = useMemo<CarrinhoContexto>(
     () => ({
@@ -199,6 +232,8 @@ export function CarrinhoProvider({ children }: { children: ReactNode }) {
       subtotalCentavos,
       descontoCentavos,
       totalCentavos,
+      descontoCondicionalCentavos,
+      totalCondicionalCentavos,
       cupom: cupomAtivo,
       adicionar,
       alterarQtd,
@@ -220,6 +255,8 @@ export function CarrinhoProvider({ children }: { children: ReactNode }) {
       subtotalCentavos,
       descontoCentavos,
       totalCentavos,
+      descontoCondicionalCentavos,
+      totalCondicionalCentavos,
       cupomAtivo,
       adicionar,
       alterarQtd,

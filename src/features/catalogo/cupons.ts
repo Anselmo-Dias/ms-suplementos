@@ -14,6 +14,8 @@ export type Cupom = {
    * viaja como observação no pedido do WhatsApp.
    */
   informativo?: boolean
+  /** Rótulo curto da condição, usado no resumo e na mensagem (ex.: "no dinheiro ou Pix"). */
+  rotuloCondicao?: string
   /** Condição de uso levada para a mensagem do WhatsApp. */
   observacao?: string
 }
@@ -34,6 +36,7 @@ export const CUPONS: Cupom[] = [
     tipo: 'percentual',
     valor: 10,
     informativo: true,
+    rotuloCondicao: 'no dinheiro ou Pix',
     observacao:
       'O desconto de 10% do cupom MEL10 vale somente para pagamento em dinheiro ou Pix e é aplicado pelo atendente na confirmação do pedido.',
   },
@@ -70,13 +73,32 @@ export function validarCupom(
   return { sucesso: true, cupom }
 }
 
-export function calcularDesconto(cupom: Cupom | null, subtotalCentavos: number): number {
-  if (!cupom || cupom.informativo || subtotalCentavos <= 0) return 0
+function descontoBruto(cupom: Cupom, subtotalCentavos: number): number {
+  if (subtotalCentavos <= 0) return 0
   const bruto =
     cupom.tipo === 'percentual'
       ? Math.round(subtotalCentavos * (cupom.valor / 100))
       : cupom.valor
   return Math.min(bruto, cupom.descontoMaximoCentavos ?? bruto, subtotalCentavos)
+}
+
+/** Desconto que já entra no total do pedido. */
+export function calcularDesconto(cupom: Cupom | null, subtotalCentavos: number): number {
+  if (!cupom || cupom.informativo) return 0
+  return descontoBruto(cupom, subtotalCentavos)
+}
+
+/**
+ * Desconto do cupom informativo: não mexe no total do pedido, mas o valor já
+ * sai calculado para o cliente ver quanto pagaria cumprindo a condição
+ * (ex.: dinheiro ou Pix).
+ */
+export function calcularDescontoCondicional(
+  cupom: Cupom | null,
+  subtotalCentavos: number,
+): number {
+  if (!cupom || !cupom.informativo) return 0
+  return descontoBruto(cupom, subtotalCentavos)
 }
 
 function formatarValor(centavos: number): string {

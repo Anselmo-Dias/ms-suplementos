@@ -1711,6 +1711,13 @@ i.ico {
   font-weight: 600;
 }
 
+/* Total alternativo do cupom condicional (fora do dinheiro/Pix). */
+.cart-summary-line.is-alt {
+  margin-top: 6px;
+  margin-bottom: 0;
+  opacity: 0.85;
+}
+
 .cart-summary-row {
   display: flex;
   justify-content: space-between;

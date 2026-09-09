@@ -14,6 +14,8 @@ export function CarrinhoDrawer() {
     subtotalCentavos,
     descontoCentavos,
     totalCentavos,
+    descontoCondicionalCentavos,
+    totalCondicionalCentavos,
     cupom,
     alterarQtd,
     remover,
@@ -23,6 +25,9 @@ export function CarrinhoDrawer() {
     removerCupom,
     mensagemWhatsApp,
   } = useCarrinho()
+
+  // Cupom informativo (ex.: MEL10): o resumo mostra o total nas duas hipóteses.
+  const rotuloCondicao = cupom?.rotuloCondicao ?? 'na condição do cupom'
 
   const [codigoCupom, setCodigoCupom] = useState('')
   const [erroCupom, setErroCupom] = useState('')
@@ -186,10 +191,31 @@ export function CarrinhoDrawer() {
                 <span>− {formatarCentavos(descontoCentavos)}</span>
               </div>
             )}
-            <div className="cart-summary-row">
-              <span>Total</span>
-              <span className="cart-summary-val">{formatarCentavos(totalCentavos)}</span>
-            </div>
+            {descontoCondicionalCentavos > 0 && (
+              <div className="cart-summary-line is-discount">
+                <span>Desconto {rotuloCondicao}</span>
+                <span>− {formatarCentavos(descontoCondicionalCentavos)}</span>
+              </div>
+            )}
+            {descontoCondicionalCentavos > 0 ? (
+              <>
+                <div className="cart-summary-row">
+                  <span>Total {rotuloCondicao}</span>
+                  <span className="cart-summary-val">
+                    {formatarCentavos(totalCondicionalCentavos)}
+                  </span>
+                </div>
+                <div className="cart-summary-line is-alt">
+                  <span>Outras formas de pagamento</span>
+                  <span>{formatarCentavos(totalCentavos)}</span>
+                </div>
+              </>
+            ) : (
+              <div className="cart-summary-row">
+                <span>Total</span>
+                <span className="cart-summary-val">{formatarCentavos(totalCentavos)}</span>
+              </div>
+            )}
           </div>
           <a
             className={`btn btn-whatsapp-checkout ${detalhados.length === 0 ? 'is-disabled' : ''}`}

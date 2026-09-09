@@ -26,6 +26,10 @@ export type CarrinhoContexto = {
   subtotalCentavos: number
   descontoCentavos: number
   totalCentavos: number
+  /** Desconto do cupom informativo (só vale cumprindo a condição do cupom). */
+  descontoCondicionalCentavos: number
+  /** Total já com o desconto condicional aplicado. */
+  totalCondicionalCentavos: number
   cupom: Cupom | null
   adicionar: (p: Produto, sabor?: string | null) => void
   alterarQtd: (index: number, delta: number) => void
