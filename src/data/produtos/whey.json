@@ -614,15 +614,43 @@
     "categoria": "whey",
     "subcategoria": "isolado",
     "precoCentavos": 17500,
-    "imagem": "/img/whey/isolate-protein-new-millen-900g.webp",
+    "imagem": "/img/whey/isolate-protein-new-millen-900g--chocolate.webp",
     "variacoes": [
+      {
+        "nome": "Abacaxi com Hortelã",
+        "imagem": "/img/whey/isolate-protein-new-millen-900g--abacaxi-com-hortela.webp"
+      },
+      {
+        "nome": "Baunilha",
+        "imagem": "/img/whey/isolate-protein-new-millen-900g--baunilha.webp"
+      },
       {
         "nome": "Chocolate",
         "imagem": "/img/whey/isolate-protein-new-millen-900g--chocolate.webp"
       },
       {
+        "nome": "Maçã Verde",
+        "imagem": "/img/whey/isolate-protein-new-millen-900g--maca-verde.webp"
+      },
+      {
+        "nome": "Maracujá",
+        "imagem": "/img/whey/isolate-protein-new-millen-900g--maracuja.webp"
+      },
+      {
         "nome": "Morango",
         "imagem": "/img/whey/isolate-protein-new-millen-900g--morango.webp"
+      },
+      {
+        "nome": "Orange Juice",
+        "imagem": "/img/whey/isolate-protein-new-millen-900g--orange-juice.webp"
+      },
+      {
+        "nome": "Pêssego e Manga",
+        "imagem": "/img/whey/isolate-protein-new-millen-900g--pessego-e-manga.webp"
+      },
+      {
+        "nome": "Tangerina com Morango",
+        "imagem": "/img/whey/isolate-protein-new-millen-900g--tangerina-com-morango.webp"
       }
     ],
     "spec": "Unidade",
