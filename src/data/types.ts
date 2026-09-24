@@ -26,7 +26,8 @@ export type SubcategoriaWhey = (typeof SUBCATEGORIAS_WHEY)[number]
 export type Variacao = {
   /** Sabor, cor ou tamanho — o que diferencia a variação. */
   nome: string
-  imagem: string
+  /** Sem imagem, o sabor usa a foto do produto (embalagem igual para todos). */
+  imagem?: string
   /** Só este sabor está fora de estoque; os outros continuam à venda. */
   indisponivel?: boolean
 }

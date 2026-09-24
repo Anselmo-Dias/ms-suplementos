@@ -25,6 +25,11 @@ export function ProdutoCard({ produto: p, onAbrir }: Props) {
   const variacoes = p.variacoes ?? []
   const variacaoAtual = variacoes[iVariacao]
   const imagem = variacaoAtual?.imagem ?? p.imagem
+  // Setas só fazem sentido se cada sabor tiver a sua foto.
+  const galeria = variacoes.length > 1 && variacoes.every((v) => v.imagem)
+  // Sem foto por sabor o card não mostra qual vai para o carrinho: o botão
+  // abre o modal, onde o sabor é escolhido.
+  const escolherNoModal = variacoes.length > 1 && !galeria
   const saborEsgotado = Boolean(variacaoAtual?.indisponivel)
   const esgotado = Boolean(p.indisponivel) || saborEsgotado
   const bloqueado = semCompra(p) || saborEsgotado
@@ -36,7 +41,9 @@ export function ProdutoCard({ produto: p, onAbrir }: Props) {
       ? 'Sabor indisponível'
       : preco === null
         ? 'Consultar preço'
-        : 'Adicionar'
+        : escolherNoModal
+          ? 'Escolher sabor'
+          : 'Adicionar'
 
   function girarVariacao(dir: number) {
     setIVariacao((i) => (i + dir + variacoes.length) % variacoes.length)
@@ -71,7 +78,7 @@ export function ProdutoCard({ produto: p, onAbrir }: Props) {
           <span className="placeholder">Sem imagem</span>
         )}
 
-        {variacoes.length > 1 && (
+        {galeria && (
           <>
             <button
               type="button"
@@ -123,13 +130,16 @@ export function ProdutoCard({ produto: p, onAbrir }: Props) {
           type="button"
           className={`btn-add-card ${confirmando ? 'is-added' : ''}`}
           disabled={bloqueado}
-          title={bloqueado ? textoAcao : 'Adicionar ao carrinho'}
+          title={bloqueado || escolherNoModal ? textoAcao : 'Adicionar ao carrinho'}
           aria-label={
-            bloqueado ? `${textoAcao}: ${p.nome}` : `Adicionar ${p.nome} ao carrinho`
+            bloqueado || escolherNoModal
+              ? `${textoAcao}: ${p.nome}`
+              : `Adicionar ${p.nome} ao carrinho`
           }
           onClick={(e) => {
             e.stopPropagation()
-            aoAdicionar()
+            if (escolherNoModal) onAbrir(p.id)
+            else aoAdicionar()
           }}
         >
           {esgotado ? (

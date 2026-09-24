@@ -36,6 +36,8 @@ export function ProdutoModal({ produto: p, onFechar }: Props) {
 
   const variacoes = p.variacoes ?? []
   const variacaoAtual = variacoes[iVariacao]
+  // Sabores sem foto própria só aparecem nos botões; a imagem fica fixa.
+  const galeria = variacoes.length > 1 && variacoes.every((v) => v.imagem)
   const { tamanho, dose } = partesDoSpec(p.spec)
   const saborEsgotado = Boolean(variacaoAtual?.indisponivel)
   const esgotado = Boolean(p.indisponivel) || saborEsgotado
@@ -105,7 +107,7 @@ export function ProdutoModal({ produto: p, onFechar }: Props) {
         <div className="modal-corpo">
           <div className="modal-grid">
             <div className={`modal-media ${esgotado ? 'is-esgotado' : ''}`}>
-              {variacoes.length > 1 ? (
+              {galeria ? (
                 <>
                   <Swiper
                     className="modal-galeria"

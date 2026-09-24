@@ -641,7 +641,7 @@
     "nome": "Whey 100% New Millen 900g",
     "categoria": "whey",
     "subcategoria": "concentrado",
-    "precoCentavos": null,
+    "precoCentavos": 17500,
     "imagem": "/img/whey/whey-100-new-millen-900g--baunilha.webp",
     "variacoes": [
       {
@@ -818,16 +818,37 @@
     "imagem": "/img/whey/olympus-3w.webp",
     "variacoes": [
       {
-        "nome": "Baunilha",
-        "imagem": "/img/whey/olympus-3w--baunilha.webp"
+        "nome": "Açaí com Banana"
       },
       {
-        "nome": "Chocolate",
-        "imagem": "/img/whey/olympus-3w--chocolate.webp"
+        "nome": "Baunilha"
       },
       {
-        "nome": "Morango",
-        "imagem": "/img/whey/olympus-3w--morango.webp"
+        "nome": "Cappuccino"
+      },
+      {
+        "nome": "Chocolate"
+      },
+      {
+        "nome": "Chocomaltine"
+      },
+      {
+        "nome": "Choconinho"
+      },
+      {
+        "nome": "Cookies"
+      },
+      {
+        "nome": "Creme de Avelã"
+      },
+      {
+        "nome": "Leitinho"
+      },
+      {
+        "nome": "Morango"
+      },
+      {
+        "nome": "Ninho com Morango"
       }
     ],
     "spec": "3kg • Whey Protein",
