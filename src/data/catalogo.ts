@@ -1,3 +1,4 @@
+import combos from './produtos/combos.json'
 import coqueteleira from './produtos/coqueteleira.json'
 import creatina from './produtos/creatina.json'
 import gourmet from './produtos/gourmet.json'
@@ -21,6 +22,7 @@ export const PRODUTOS_POR_CATEGORIA: Record<Categoria, Produto[]> = {
   'pre-hormonais': preHormonais,
   coqueteleira,
   gourmet,
+  combos,
 } as Record<Categoria, Produto[]>
 
 export const PRODUTOS: Produto[] = CATEGORIAS.flatMap(
@@ -35,7 +37,8 @@ export function produtoPorId(id: string): Produto | undefined {
 
 export function produtosDe(filtro: FiltroCategoria): Produto[] {
   if (filtro === 'todos') return PRODUTOS
-  if (filtro === 'mais-vendidos') return PRODUTOS.filter((p) => p.destaque)
+  // A aba "Combos do Mês" manteve o id antigo para não quebrar links.
+  if (filtro === 'mais-vendidos') return PRODUTOS_POR_CATEGORIA.combos
   return PRODUTOS_POR_CATEGORIA[filtro] ?? []
 }
 

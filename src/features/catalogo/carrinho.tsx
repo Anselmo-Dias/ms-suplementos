@@ -7,7 +7,12 @@ import {
   type ItemCarrinho,
   type ItemDetalhado,
 } from './carrinho-contexto'
-import { formatarCentavos, precoVigente, semCompra } from './lib/preco'
+import {
+  formatarCentavos,
+  precoVigente,
+  primeiraVariacaoDisponivel,
+  semCompra,
+} from './lib/preco'
 import {
   calcularDesconto,
   calcularDescontoCondicional,
@@ -66,7 +71,9 @@ export function CarrinhoProvider({ children }: { children: ReactNode }) {
   const adicionar = useCallback(
     (p: Produto, sabor: string | null = null) => {
       if (semCompra(p)) return
-      const saborFinal = sabor ?? p.variacoes?.[0]?.nome ?? null
+      const saborFinal =
+        sabor ?? p.variacoes?.[primeiraVariacaoDisponivel(p)]?.nome ?? null
+      if (p.variacoes?.find((v) => v.nome === saborFinal)?.indisponivel) return
 
       setItens((atual) => {
         const i = atual.findIndex(

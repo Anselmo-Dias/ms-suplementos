@@ -1,0 +1,21 @@
+[
+  {
+    "id": "combo-synthesize-whey-creatina",
+    "nome": "Combo Synthesize: 100% Whey 907g + Creatina 500g",
+    "categoria": "combos",
+    "precoCentavos": 13500,
+    "precoDeCentavos": 17000,
+    "imagem": "/img/combos/combo-synthesize-whey-creatina.webp",
+    "spec": "Whey 907g Chocolate + Creatina 500g",
+    "tags": [
+      "Combo",
+      "Synthesize"
+    ],
+    "badge": "Combo",
+    "descricao": "Combo com o 100% Whey Synthesize 907g sabor Chocolate e a Creatine Monohidratada Synthesize 500g (sem sabor).",
+    "paraQueServe": "O whey fornece 21g de proteína por porção para construção e recuperação muscular; a creatina, 5g por porção, ajuda no aumento de força e desempenho.",
+    "modoDeUso": "Consulte as instruções nas embalagens.",
+    "marca": "Synthesize",
+    "embalagem": "Whey 907g + Creatina 500g"
+  }
+]

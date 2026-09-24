@@ -56,8 +56,9 @@ Pontos que valem saber:
   consulta" e bloqueia o botão de adicionar ao carrinho.
 - **Modo atacado** aplica um desconto fixo de 15% (`lib/preco.ts`). Não existe
   preço de atacado por produto — se um dia existir, é ali que entra.
-- **"Mais Vendidos"** é o campo `destaque: true`. A aba mostra os 5 primeiros
-  de cada categoria, então ela não tem contador na barra de navegação.
+- **"Combos do Mês"** (id `mais-vendidos`, mantido por causa dos links) lista
+  `src/data/produtos/combos.json`. `precoDeCentavos` mostra o preço "De"
+  riscado, e combos não levam o desconto de atacado.
 - **Imagens** são caminhos absolutos (`/img/whey/...`), servidas de `public/`.
   Nunca são importadas — ficam fora do bundle.
 

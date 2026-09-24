@@ -1,15 +1,15 @@
 import { ShoppingCart } from 'lucide-react'
 import { useMemo, useState } from 'react'
 import { buscar, produtoPorId, produtosDe } from '../../data/catalogo'
-import type { FiltroCategoria } from '../../data/types'
-import { Banners } from './Banners'
+import type { FiltroCategoria, Produto, SubcategoriaWhey } from '../../data/types'
+// import { Banners } from './Banners'
 import { Cabecalho } from './Cabecalho'
 import { CarrosselProdutos } from './CarrosselProdutos'
 import { CarrinhoDrawer } from './CarrinhoDrawer'
 import { ProdutoCard } from './ProdutoCard'
 import { ProdutoModal } from './ProdutoModal'
 import { RodapeCatalogo } from './Rodape'
-import { CATEGORIAS_NAV, nomeDaCategoria } from './categorias'
+import { nomeDaCategoria } from './categorias'
 import { CarrinhoProvider } from './carrinho'
 import { useCarrinho } from './carrinho-contexto'
 import { formatarCentavos, semCompra } from './lib/preco'
@@ -41,7 +41,7 @@ function Conteudo({ categoria, produtoAberto, onAbrirProduto }: Props) {
   }, [categoria, busca])
 
   const aberto = produtoAberto ? produtoPorId(produtoAberto) : undefined
-  const vitrine = categoria === 'mais-vendidos' && !busca.trim()
+  const faixasWhey = categoria === 'whey' && !busca.trim()
 
   return (
     <div className="catalogo">
@@ -52,7 +52,8 @@ function Conteudo({ categoria, produtoAberto, onAbrirProduto }: Props) {
       />
 
       <main>
-        {categoria === 'todos' && !busca.trim() && <Banners />}
+        {/* Banners desativados — para voltar, descomente esta linha e o import.
+        {categoria === 'todos' && !busca.trim() && <Banners />} */}
 
         <section className="section" id="catalogo">
           <div className="container">
@@ -62,8 +63,8 @@ function Conteudo({ categoria, produtoAberto, onAbrirProduto }: Props) {
               </p>
             </div>
 
-            {vitrine ? (
-              <Vitrine onAbrir={onAbrirProduto} />
+            {faixasWhey ? (
+              <FaixasWhey produtos={lista} onAbrir={onAbrirProduto} />
             ) : lista.length === 0 ? (
               <p className="empty">Nenhum produto encontrado.</p>
             ) : (
@@ -89,33 +90,36 @@ function Conteudo({ categoria, produtoAberto, onAbrirProduto }: Props) {
   )
 }
 
-/** "Mais Vendidos" mostra os 5 primeiros de cada categoria, em carrosséis. */
-function Vitrine({ onAbrir }: { onAbrir: (id: string) => void }) {
-  const secoes = useMemo(
-    () =>
-      CATEGORIAS_NAV.slice(2)
-        .map((cat) => ({
-          ...cat,
-          produtos: produtosDe(cat.id)
-            .filter((p) => !p.indisponivel)
-            .slice(0, 5),
-        }))
-        .filter((s) => s.produtos.length > 0),
-    [],
-  )
+const FAIXAS_WHEY: Array<{ id: SubcategoriaWhey | undefined; nome: string }> = [
+  { id: 'isolado', nome: 'Whey Isolado' },
+  { id: 'concentrado', nome: 'Whey Concentrado' },
+  { id: 'blend', nome: 'Blends' },
+  // Albuminas, proteína da carne e veganas ficam na aba, mas não são whey.
+  { id: undefined, nome: 'Outras proteínas' },
+]
 
-  if (!secoes.length) return <p className="empty">Nenhum produto encontrado.</p>
-
+/** A aba Whey separada por tipo, uma faixa arrastável para cada. */
+function FaixasWhey({
+  produtos,
+  onAbrir,
+}: {
+  produtos: Produto[]
+  onAbrir: (id: string) => void
+}) {
   return (
     <>
-      {secoes.map((s) => (
-        <CarrosselProdutos
-          key={s.id}
-          titulo={s.nome}
-          produtos={s.produtos}
-          onAbrir={onAbrir}
-        />
-      ))}
+      {FAIXAS_WHEY.map((f) => {
+        const daFaixa = produtos.filter((p) => p.subcategoria === f.id)
+        if (!daFaixa.length) return null
+        return (
+          <CarrosselProdutos
+            key={f.nome}
+            titulo={f.nome}
+            produtos={daFaixa}
+            onAbrir={onAbrir}
+          />
+        )
+      })}
     </>
   )
 }

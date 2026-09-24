@@ -129,11 +129,7 @@ export function Cabecalho({
                     onFocus={() => trilho.current?.slideTo(i)}
                   >
                     {c.nome}
-                    {/* "Mais Vendidos" é uma vitrine (top 5 de cada categoria),
-                        não uma lista filtrada — um número ali enganaria. */}
-                    {c.id !== 'mais-vendidos' && (
-                      <span className="mainnav-count">{contarCategoria(c.id)}</span>
-                    )}
+                    <span className="mainnav-count">{contarCategoria(c.id)}</span>
                   </Link>
                 </SwiperSlide>
               )

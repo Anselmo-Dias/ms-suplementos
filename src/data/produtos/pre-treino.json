@@ -768,7 +768,7 @@
     "id": "pre-treino-metamorfose-light-taining-300g",
     "nome": "Pre Treino Metamorfose Light Training 300G",
     "categoria": "pre-treino",
-    "precoCentavos": 7500,
+    "precoCentavos": 6500,
     "imagem": "/img/pre-treino/pre-treino-metamorfose-light-taining-300g.webp",
     "variacoes": [
       {
@@ -995,7 +995,6 @@
       "Vasodilatação"
     ],
     "badge": "Mais Vendido",
-    "destaque": true,
     "descricao": "Hórus é o pré-treino campeão de vendas da Max Titanium. Com beta-alanina, cafeína, taurina e arginina para quem busca rendimento acima da média.",
     "paraQueServe": "Fornece energia intensa, foco mental e resistência. Combate a fadiga e melhora o desempenho geral nos treinos.",
     "modoDeUso": "Tomar 1 dose 20 a 30 minutos antes do treino.",

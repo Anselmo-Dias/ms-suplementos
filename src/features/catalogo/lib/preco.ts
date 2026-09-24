@@ -24,12 +24,20 @@ export function precoAtacado(centavos: number): number {
 /** Preço que o catálogo deve exibir e cobrar no modo atual. */
 export function precoVigente(p: Produto, atacado: boolean): number | null {
   if (p.precoCentavos === null) return null
+  // Combo já é preço promocional: não acumula com o desconto de atacado.
+  if (p.categoria === 'combos') return p.precoCentavos
   return atacado ? precoAtacado(p.precoCentavos) : p.precoCentavos
 }
 
 /** Produto que não pode ir para o carrinho: sem preço ou fora de estoque. */
 export function semCompra(p: Produto): boolean {
   return Boolean(p.indisponivel) || p.precoCentavos === null
+}
+
+/** Índice do primeiro sabor à venda — é o que o card e o modal mostram primeiro. */
+export function primeiraVariacaoDisponivel(p: Produto): number {
+  const i = (p.variacoes ?? []).findIndex((v) => !v.indisponivel)
+  return i >= 0 ? i : 0
 }
 
 /** "300g • 3g por dose" -> { tamanho: "300g", dose: "3g por dose" } */

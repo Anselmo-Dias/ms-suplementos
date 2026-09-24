@@ -951,6 +951,12 @@ i.ico {
   font-weight: 500;
 }
 
+/* Sabor fora de estoque: continua clicável para ver a foto, mas riscado. */
+.variacao-btn.is-esgotado {
+  text-decoration: line-through;
+  opacity: 0.55;
+}
+
 /* Painel de especificações — rótulo de suplemento, em bloco arredondado */
 .spec-list {
   background: var(--surface-2);

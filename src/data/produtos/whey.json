@@ -3,6 +3,7 @@
     "id": "100-whey-synther-size-refil-1-8kg",
     "nome": "100 isoblend Whey Synther Size Refil 1,8kg",
     "categoria": "whey",
+    "subcategoria": "blend",
     "precoCentavos": 11000,
     "imagem": "/img/whey/100-whey-synther-size-refil-1-8kg.webp",
     "variacoes": [
@@ -37,6 +38,7 @@
     "id": "100-energy-whey-euronutryjpg",
     "nome": "100% Energy Whey Euronutry",
     "categoria": "whey",
+    "subcategoria": "concentrado",
     "precoCentavos": 12900,
     "imagem": "/img/whey/100-energy-whey-euronutryjpg.webp",
     "variacoes": [
@@ -75,6 +77,7 @@
     "id": "100-pure-whey-pure-tech",
     "nome": "100% Pure Whey Pure Tech",
     "categoria": "whey",
+    "subcategoria": "concentrado",
     "precoCentavos": 10000,
     "imagem": "/img/whey/100-pure-whey-pure-tech.webp",
     "variacoes": [
@@ -109,6 +112,7 @@
     "id": "synthesize-100-whey-900g",
     "nome": "100% Whey Protein Synthesize 900g",
     "categoria": "whey",
+    "subcategoria": "concentrado",
     "precoCentavos": 13500,
     "imagem": "/img/whey/synthesize-100-whey-900g.webp",
     "variacoes": [
@@ -149,12 +153,14 @@
     "id": "3-whey-top-taste-900g-body-action",
     "nome": "3 Whey Top Taste 900g Body Action",
     "categoria": "whey",
+    "subcategoria": "blend",
     "precoCentavos": 17000,
     "imagem": "/img/whey/3-whey-top-taste-900g-body-action.webp",
     "variacoes": [
       {
         "nome": "Baunilha",
-        "imagem": "/img/whey/3-whey-top-taste-900g-body-action--baunilha.webp"
+        "imagem": "/img/whey/3-whey-top-taste-900g-body-action--baunilha.webp",
+        "indisponivel": true
       },
       {
         "nome": "Chocolate",
@@ -162,11 +168,13 @@
       },
       {
         "nome": "Leite Condensado",
-        "imagem": "/img/whey/3-whey-top-taste-900g-body-action--leite-condensado.webp"
+        "imagem": "/img/whey/3-whey-top-taste-900g-body-action--leite-condensado.webp",
+        "indisponivel": true
       },
       {
         "nome": "Morango",
-        "imagem": "/img/whey/3-whey-top-taste-900g-body-action--morango.webp"
+        "imagem": "/img/whey/3-whey-top-taste-900g-body-action--morango.webp",
+        "indisponivel": true
       }
     ],
     "spec": "Unidade",
@@ -361,6 +369,7 @@
     "id": "buck-whey-choko",
     "nome": "Buck Whey Choko",
     "categoria": "whey",
+    "subcategoria": "concentrado",
     "precoCentavos": null,
     "imagem": "/img/whey/buck-whey-choko.webp",
     "spec": "A definir • Whey Protein",
@@ -378,6 +387,7 @@
     "id": "canibol-900g-studio",
     "nome": "Canibol 900G Studio",
     "categoria": "whey",
+    "subcategoria": "blend",
     "precoCentavos": null,
     "imagem": "/img/whey/canibol-900g-studio.webp",
     "spec": "900G • Whey Protein",
@@ -423,6 +433,7 @@
     "id": "euronutry-whey-supreme-1kg-choconinho",
     "nome": "Euronutry Whey Supreme 1kg",
     "categoria": "whey",
+    "subcategoria": "concentrado",
     "precoCentavos": 8900,
     "imagem": "/img/whey/euronutry-whey-supreme-1kg-choconinho.webp",
     "variacoes": [
@@ -457,6 +468,7 @@
     "id": "hit-protein-chocolate-2",
     "nome": "Hit Protein adaptogen",
     "categoria": "whey",
+    "subcategoria": "blend",
     "precoCentavos": 11900,
     "imagem": "/img/whey/hit-protein-chocolate-2.webp",
     "variacoes": [
@@ -529,6 +541,7 @@
     "id": "iso-size-900g-studio",
     "nome": "Iso Size 900G Studio",
     "categoria": "whey",
+    "subcategoria": "isolado",
     "precoCentavos": null,
     "imagem": "/img/whey/iso-size-900g-studio.webp",
     "spec": "900G • Whey Protein",
@@ -548,6 +561,7 @@
     "id": "iso-whey-vitafor-900g-frutas-vermelhas",
     "nome": "Iso Whey Vitafor 900g Frutas Vermelhas",
     "categoria": "whey",
+    "subcategoria": "isolado",
     "precoCentavos": null,
     "imagem": "/img/whey/iso-whey-vitafor-900g-frutas-vermelhas.webp",
     "spec": "900g • Whey Protein",
@@ -568,6 +582,7 @@
     "id": "isolate-prime-whey-body-action-900g",
     "nome": "Isolate Prime Whey Body Action 900g",
     "categoria": "whey",
+    "subcategoria": "isolado",
     "precoCentavos": 23000,
     "imagem": "/img/whey/isolate-prime-whey-body-action-900g.webp",
     "variacoes": [
@@ -598,6 +613,7 @@
     "id": "isolate-protein-new-millen-900g",
     "nome": "Isolate Protein New Millen 900g",
     "categoria": "whey",
+    "subcategoria": "isolado",
     "precoCentavos": 17500,
     "imagem": "/img/whey/isolate-protein-new-millen-900g.webp",
     "variacoes": [
@@ -613,6 +629,48 @@
     "spec": "Unidade",
     "tags": [],
     "descricao": "Novo produto adicionado.",
+    "paraQueServe": "Auxilia na construção e recuperação muscular, fornecendo proteínas de alto valor biológico essenciais para o ganho de massa magra.",
+    "modoDeUso": "Consulte a tabela nutricional na embalagem.",
+    "marca": "New Millen",
+    "porcao": "30g a 40g por dia, geralmente pós-treino",
+    "embalagem": "900g",
+    "doses": "22 a 30 por embalagem"
+  },
+  {
+    "id": "whey-100-new-millen-900g",
+    "nome": "Whey 100% New Millen 900g",
+    "categoria": "whey",
+    "subcategoria": "concentrado",
+    "precoCentavos": null,
+    "imagem": "/img/whey/whey-100-new-millen-900g--baunilha.webp",
+    "variacoes": [
+      {
+        "nome": "Açaí com Banana",
+        "imagem": "/img/whey/whey-100-new-millen-900g--acai-com-banana.webp"
+      },
+      {
+        "nome": "Baunilha",
+        "imagem": "/img/whey/whey-100-new-millen-900g--baunilha.webp"
+      },
+      {
+        "nome": "Chiclete com Banana",
+        "imagem": "/img/whey/whey-100-new-millen-900g--chiclete-com-banana.webp"
+      },
+      {
+        "nome": "Cookies & Cream",
+        "imagem": "/img/whey/whey-100-new-millen-900g--cookies-and-cream.webp"
+      },
+      {
+        "nome": "Pêssego e Manga",
+        "imagem": "/img/whey/whey-100-new-millen-900g--pessego-e-manga.webp"
+      }
+    ],
+    "spec": "900g • 21g de proteína por dose",
+    "tags": [
+      "Proteína",
+      "Recuperação Muscular"
+    ],
+    "descricao": "Whey Protein 100% da New Millen, com 21g de proteína por porção e sem glúten.",
     "paraQueServe": "Auxilia na construção e recuperação muscular, fornecendo proteínas de alto valor biológico essenciais para o ganho de massa magra.",
     "modoDeUso": "Consulte a tabela nutricional na embalagem.",
     "marca": "New Millen",
@@ -654,6 +712,7 @@
     "id": "muscle-hd-100-whey-900g",
     "nome": "Muscle HD 100% Whey 900g",
     "categoria": "whey",
+    "subcategoria": "concentrado",
     "precoCentavos": 11500,
     "imagem": "/img/whey/muscle-hd-100-whey-900g.webp",
     "variacoes": [
@@ -680,6 +739,7 @@
     "id": "nano-protein-hydro-pure-chocolate-branco-900g",
     "nome": "Nano Protein Hydro Pure Chocolate Branco 900G",
     "categoria": "whey",
+    "subcategoria": "isolado",
     "precoCentavos": null,
     "imagem": "/img/whey/nano-protein-hydro-pure-chocolate-branco-900g.webp",
     "spec": "900G • Whey Protein",
@@ -699,6 +759,7 @@
     "id": "nanowhey-morango-studio",
     "nome": "Nanowhey Morango Studio",
     "categoria": "whey",
+    "subcategoria": "concentrado",
     "precoCentavos": null,
     "imagem": "/img/whey/nanowhey-morango-studio.webp",
     "spec": "900g • Whey Protein",
@@ -718,6 +779,7 @@
     "id": "nutrata-n-pro-100-whey-900g",
     "nome": "Nutrata N Pro 100% Whey 900G",
     "categoria": "whey",
+    "subcategoria": "concentrado",
     "precoCentavos": 11900,
     "imagem": "/img/whey/nutrata-n-pro-100-whey-900g.webp",
     "variacoes": [
@@ -751,6 +813,7 @@
     "id": "olympus-3w",
     "nome": "Olympus 3W",
     "categoria": "whey",
+    "subcategoria": "blend",
     "precoCentavos": 17990,
     "imagem": "/img/whey/olympus-3w.webp",
     "variacoes": [
@@ -784,6 +847,7 @@
     "id": "protein-complex-whey",
     "nome": "Protein Complex Whey",
     "categoria": "whey",
+    "subcategoria": "blend",
     "precoCentavos": null,
     "imagem": "/img/whey/protein-complex-whey.webp",
     "spec": "900g • Whey Protein",
@@ -803,6 +867,7 @@
     "id": "pure-complex-premium-900g",
     "nome": "Pure Complex Premium 900G",
     "categoria": "whey",
+    "subcategoria": "blend",
     "precoCentavos": null,
     "imagem": "/img/whey/pure-complex-premium-900g.webp",
     "spec": "900G • Whey Protein",
@@ -822,6 +887,7 @@
     "id": "pure-whey-2w-900g",
     "nome": "Pure Whey 2W 900G",
     "categoria": "whey",
+    "subcategoria": "blend",
     "precoCentavos": null,
     "imagem": "/img/whey/pure-whey-2w-900g.webp",
     "spec": "900G • Whey Protein",
@@ -841,6 +907,7 @@
     "id": "puretech-pure-protein-900g",
     "nome": "Puretech Pure Protein 900g",
     "categoria": "whey",
+    "subcategoria": "concentrado",
     "precoCentavos": null,
     "imagem": "/img/whey/puretech-pure-protein-900g.webp",
     "variacoes": [
@@ -883,6 +950,7 @@
     "id": "tastywhey-900g-adaptogenjpg",
     "nome": "Tastywhey 900g Adaptogen",
     "categoria": "whey",
+    "subcategoria": "blend",
     "precoCentavos": 23500,
     "imagem": "/img/whey/tastywhey-900g-adaptogenjpg.webp",
     "variacoes": [
@@ -941,6 +1009,7 @@
     "id": "top-whey-3w-max-titanium-900g-mais-performance",
     "nome": "Top Whey 3w Max Titanium 900g Mais Performance",
     "categoria": "whey",
+    "subcategoria": "blend",
     "precoCentavos": 23500,
     "imagem": "/img/whey/top-whey-3w-max-titanium-900g-mais-performance.webp",
     "variacoes": [
@@ -979,6 +1048,7 @@
     "id": "top-whey-3w-max-titanium-900g-mais-sabor",
     "nome": "Top Whey 3w Max Titanium 900g Mais Sabor",
     "categoria": "whey",
+    "subcategoria": "blend",
     "precoCentavos": 23500,
     "imagem": "/img/whey/top-whey-3w-max-titanium-900g-mais-sabor.webp",
     "variacoes": [
@@ -1021,6 +1091,7 @@
     "id": "whey-max-pote900g",
     "nome": "Whey 100% 900g Double Tasty Max Titanium",
     "categoria": "whey",
+    "subcategoria": "concentrado",
     "precoCentavos": 14000,
     "imagem": "/img/whey/whey-max-pote900g.webp",
     "variacoes": [
@@ -1062,6 +1133,7 @@
     "id": "whey-100-hd-3w-blackskull-900g-refil-cara-preta",
     "nome": "Whey 100% Hd 3w Blackskull 900g Refil Cara Preta",
     "categoria": "whey",
+    "subcategoria": "blend",
     "precoCentavos": 13999,
     "imagem": "/img/whey/whey-100-hd-3w-blackskull-900g-refil-cara-preta.webp",
     "variacoes": [
@@ -1092,6 +1164,7 @@
     "id": "whey-100-hd-3w-blackskull-900g-refil",
     "nome": "Whey 100% Hd 3w Blackskull 900g Refil gourmet sem lactose",
     "categoria": "whey",
+    "subcategoria": "blend",
     "precoCentavos": 9999,
     "imagem": "/img/whey/whey-100-hd-3w-blackskull-900g-refil.webp",
     "variacoes": [
@@ -1114,6 +1187,7 @@
     "id": "whey-hd2",
     "nome": "Whey Hd2",
     "categoria": "whey",
+    "subcategoria": "blend",
     "precoCentavos": null,
     "imagem": "/img/whey/whey-hd2.webp",
     "spec": "900g • Whey Protein",
@@ -1134,6 +1208,7 @@
     "id": "whey-integralmedica-900g-refil-100",
     "nome": "Whey Integralmedica 900g Refil 100%",
     "categoria": "whey",
+    "subcategoria": "concentrado",
     "precoCentavos": 16000,
     "imagem": "/img/whey/whey-integralmedica-900g-refil-100.webp",
     "variacoes": [
@@ -1172,6 +1247,7 @@
     "id": "whey-iso-premium-hop-1kg",
     "nome": "Whey Iso Premium Hop! 1kg",
     "categoria": "whey",
+    "subcategoria": "isolado",
     "precoCentavos": 14000,
     "imagem": "/img/whey/whey-iso-premium-hop-1kg.webp",
     "variacoes": [
@@ -1206,6 +1282,7 @@
     "id": "whey-isolado-baunilha-zero-lactose-900g-hop",
     "nome": "Whey Isolado Baunilha Zero Lactose 900g Hop!",
     "categoria": "whey",
+    "subcategoria": "isolado",
     "precoCentavos": 22000,
     "imagem": "/img/whey/whey-isolado-baunilha-zero-lactose-900g-hop.webp",
     "variacoes": [
@@ -1232,6 +1309,7 @@
     "id": "whey-joy-pro-900g-shark-pro",
     "nome": "Whey Joy Pro 900g Shark Pro",
     "categoria": "whey",
+    "subcategoria": "concentrado",
     "precoCentavos": 12000,
     "imagem": "/img/whey/whey-joy-pro-900g-shark-pro.webp",
     "variacoes": [
@@ -1242,6 +1320,10 @@
       {
         "nome": "Cookies, Banana e Canela",
         "imagem": "/img/whey/whey-joy-pro-900g-shark-pro--cookies-banana-e-canela.webp"
+      },
+      {
+        "nome": "Leitinho",
+        "imagem": "/img/whey/whey-joy-pro-900g-shark-pro--leitinho.webp"
       },
       {
         "nome": "Morango",
@@ -1266,6 +1348,7 @@
     "id": "whey-max-100",
     "nome": "Whey Max 100%",
     "categoria": "whey",
+    "subcategoria": "concentrado",
     "precoCentavos": 16000,
     "imagem": "/img/whey/whey-max-100.webp",
     "variacoes": [
@@ -1296,6 +1379,7 @@
     "id": "whey-xpro-2kg",
     "nome": "Whey Xpro 2kg",
     "categoria": "whey",
+    "subcategoria": "concentrado",
     "precoCentavos": 12500,
     "imagem": "/img/whey/whey-xpro-2kg.webp",
     "spec": "Unidade",
@@ -1312,6 +1396,7 @@
     "id": "whey-xpro-900g",
     "nome": "Whey Xpro 900g",
     "categoria": "whey",
+    "subcategoria": "concentrado",
     "precoCentavos": 6900,
     "imagem": "/img/whey/whey-xpro-900g.webp",
     "spec": "Unidade",
@@ -1329,6 +1414,7 @@
     "id": "xpro-iso-x-protein-complex",
     "nome": "Xpro Iso-X Protein Complex 900g",
     "categoria": "whey",
+    "subcategoria": "blend",
     "precoCentavos": 6900,
     "imagem": "/img/whey/xpro-iso-x-protein-complex.webp",
     "spec": "900g • Proteínas",

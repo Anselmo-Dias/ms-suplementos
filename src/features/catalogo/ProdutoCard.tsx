@@ -2,7 +2,12 @@ import { Check, ChevronLeft, ChevronRight, Eye, Plus, Slash } from 'lucide-react
 import { useEffect, useRef, useState } from 'react'
 import type { Produto } from '../../data/types'
 import { useCarrinho } from './carrinho-contexto'
-import { formatarCentavos, precoVigente, semCompra } from './lib/preco'
+import {
+  formatarCentavos,
+  precoVigente,
+  primeiraVariacaoDisponivel,
+  semCompra,
+} from './lib/preco'
 
 type Props = {
   produto: Produto
@@ -11,7 +16,7 @@ type Props = {
 
 export function ProdutoCard({ produto: p, onAbrir }: Props) {
   const { adicionar, atacado } = useCarrinho()
-  const [iVariacao, setIVariacao] = useState(0)
+  const [iVariacao, setIVariacao] = useState(() => primeiraVariacaoDisponivel(p))
   const [confirmando, setConfirmando] = useState(false)
   const timer = useRef<number | undefined>(undefined)
 
@@ -20,14 +25,18 @@ export function ProdutoCard({ produto: p, onAbrir }: Props) {
   const variacoes = p.variacoes ?? []
   const variacaoAtual = variacoes[iVariacao]
   const imagem = variacaoAtual?.imagem ?? p.imagem
-  const bloqueado = semCompra(p)
+  const saborEsgotado = Boolean(variacaoAtual?.indisponivel)
+  const esgotado = Boolean(p.indisponivel) || saborEsgotado
+  const bloqueado = semCompra(p) || saborEsgotado
   const preco = precoVigente(p, atacado)
 
   const textoAcao = p.indisponivel
     ? 'Indisponível'
-    : preco === null
-      ? 'Consultar preço'
-      : 'Adicionar'
+    : saborEsgotado
+      ? 'Sabor indisponível'
+      : preco === null
+        ? 'Consultar preço'
+        : 'Adicionar'
 
   function girarVariacao(dir: number) {
     setIVariacao((i) => (i + dir + variacoes.length) % variacoes.length)
@@ -55,7 +64,7 @@ export function ProdutoCard({ produto: p, onAbrir }: Props) {
         }
       }}
     >
-      <div className={`card-media ${p.indisponivel ? 'is-esgotado' : ''}`}>
+      <div className={`card-media ${esgotado ? 'is-esgotado' : ''}`}>
         {imagem ? (
           <img src={imagem} alt={p.nome} loading="lazy" decoding="async" />
         ) : (
@@ -123,7 +132,7 @@ export function ProdutoCard({ produto: p, onAbrir }: Props) {
             aoAdicionar()
           }}
         >
-          {p.indisponivel ? (
+          {esgotado ? (
             <Slash className="ico" />
           ) : confirmando ? (
             <Check className="ico" />
@@ -157,6 +166,18 @@ export function BlocoPreco({
   }
 
   const vigente = precoVigente(p, atacado)!
+
+  if (p.precoDeCentavos) {
+    return (
+      <>
+        <span className="preco-antigo">De {formatarCentavos(p.precoDeCentavos)}</span>
+        <span className="card-price">{formatarCentavos(vigente)}</span>
+        <span className="card-installment preco-nota">
+          Economize {formatarCentavos(p.precoDeCentavos - vigente)}
+        </span>
+      </>
+    )
+  }
 
   if (atacado) {
     return (

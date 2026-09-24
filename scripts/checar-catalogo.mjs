@@ -30,6 +30,9 @@ const ids = new Set()
 for (const arquivo of fs.readdirSync(dirDados)) {
   for (const p of JSON.parse(fs.readFileSync(path.join(dirDados, arquivo), 'utf8'))) {
     if (ids.has(p.id)) problemas.push(`id repetido: ${p.id}`)
+    if (p.subcategoria && !['isolado', 'concentrado', 'blend'].includes(p.subcategoria)) {
+      problemas.push(`subcategoria desconhecida: ${p.subcategoria} (${p.id})`)
+    }
     ids.add(p.id)
 
     if (INSEGURO.test(p.id)) {

@@ -14,7 +14,7 @@ type Props = {
   onAbrir: (id: string) => void
 }
 
-/** Uma faixa de produtos arrastável — usada na vitrine "Mais Vendidos". */
+/** Uma faixa de produtos arrastável — usada nas faixas da aba Whey. */
 export function CarrosselProdutos({ titulo, produtos, onAbrir }: Props) {
   // Cada faixa tem seus próprios botões; sem isso as setas de uma
   // controlariam todas as outras.

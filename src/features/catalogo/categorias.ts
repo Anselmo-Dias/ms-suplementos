@@ -3,11 +3,12 @@ import type { FiltroCategoria } from '../../data/types'
 /**
  * Ordem e rótulos da barra de categorias.
  * "todos" e "mais-vendidos" são virtuais: não existem no campo `categoria`
- * de nenhum produto, são derivadas na hora de filtrar.
+ * de nenhum produto. "mais-vendidos" (rótulo "Combos do Mês") lista a
+ * categoria `combos`, que não tem aba própria.
  */
 export const CATEGORIAS_NAV: Array<{ id: FiltroCategoria; nome: string }> = [
   { id: 'todos', nome: 'Todos os Produtos' },
-  { id: 'mais-vendidos', nome: 'Mais Vendidos' },
+  { id: 'mais-vendidos', nome: 'Combos do Mês' },
   { id: 'whey', nome: 'Whey Protein' },
   { id: 'creatina', nome: 'Creatina' },
   { id: 'pre-treino', nome: 'Pré-Treino' },

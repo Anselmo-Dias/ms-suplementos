@@ -13,7 +13,13 @@ import type { Swiper as SwiperClass } from 'swiper/types'
 import type { Produto } from '../../data/types'
 import { BlocoPreco } from './ProdutoCard'
 import { useCarrinho } from './carrinho-contexto'
-import { partesDoSpec, precoVigente, semCompra, semDado } from './lib/preco'
+import {
+  partesDoSpec,
+  precoVigente,
+  primeiraVariacaoDisponivel,
+  semCompra,
+  semDado,
+} from './lib/preco'
 import 'swiper/css'
 import 'swiper/css/navigation'
 
@@ -24,20 +30,24 @@ type Props = {
 
 export function ProdutoModal({ produto: p, onFechar }: Props) {
   const { adicionar, atacado } = useCarrinho()
-  const [iVariacao, setIVariacao] = useState(0)
+  const [iVariacao, setIVariacao] = useState(() => primeiraVariacaoDisponivel(p))
   const swiper = useRef<SwiperClass | null>(null)
   const fechar = useRef<HTMLButtonElement>(null)
 
   const variacoes = p.variacoes ?? []
   const variacaoAtual = variacoes[iVariacao]
   const { tamanho, dose } = partesDoSpec(p.spec)
-  const bloqueado = semCompra(p)
+  const saborEsgotado = Boolean(variacaoAtual?.indisponivel)
+  const esgotado = Boolean(p.indisponivel) || saborEsgotado
+  const bloqueado = semCompra(p) || saborEsgotado
 
   const textoAcao = p.indisponivel
     ? 'Indisponível'
-    : precoVigente(p, atacado) === null
-      ? 'Consultar preço'
-      : 'Adicionar ao Carrinho'
+    : saborEsgotado
+      ? 'Sabor indisponível'
+      : precoVigente(p, atacado) === null
+        ? 'Consultar preço'
+        : 'Adicionar ao Carrinho'
 
   useEffect(() => {
     const anterior = document.body.style.overflow
@@ -94,13 +104,14 @@ export function ProdutoModal({ produto: p, onFechar }: Props) {
         {/* Só esta faixa rola: o rodapé de ação fica sempre à vista. */}
         <div className="modal-corpo">
           <div className="modal-grid">
-            <div className={`modal-media ${p.indisponivel ? 'is-esgotado' : ''}`}>
+            <div className={`modal-media ${esgotado ? 'is-esgotado' : ''}`}>
               {variacoes.length > 1 ? (
                 <>
                   <Swiper
                     className="modal-galeria"
                     modules={[Navigation, Keyboard, A11y]}
                     slidesPerView={1}
+                    initialSlide={iVariacao}
                     speed={300}
                     keyboard={{ enabled: true }}
                     navigation={{
@@ -170,11 +181,13 @@ export function ProdutoModal({ produto: p, onFechar }: Props) {
                       <button
                         key={v.nome}
                         type="button"
-                        className={`variacao-btn ${i === iVariacao ? 'is-active' : ''}`}
+                        className={`variacao-btn ${i === iVariacao ? 'is-active' : ''} ${v.indisponivel ? 'is-esgotado' : ''}`}
                         aria-pressed={i === iVariacao}
+                        title={v.indisponivel ? 'Sabor indisponível' : undefined}
                         onClick={() => escolherVariacao(i)}
                       >
                         {v.nome}
+                        {v.indisponivel && <span className="sr-only"> (indisponível)</span>}
                       </button>
                     ))}
                   </div>
@@ -208,7 +221,7 @@ export function ProdutoModal({ produto: p, onFechar }: Props) {
               onFechar()
             }}
           >
-            {p.indisponivel ? (
+            {esgotado ? (
               <Slash className="ico" />
             ) : bloqueado ? (
               <MessageCircle className="ico" />
