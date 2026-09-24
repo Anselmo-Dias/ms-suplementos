@@ -75,7 +75,8 @@
     "paraQueServe": "Fornece energia intensa, foco mental e resistência. Combate a fadiga e melhora o desempenho geral nos treinos.",
     "modoDeUso": "Consulte a tabela nutricional na embalagem.",
     "porcao": "1 a 2 cápsulas",
-    "embalagem": "Unidade"
+    "embalagem": "Unidade",
+    "indisponivel": true
   },
   {
     "id": "touro-power-120caps",
@@ -122,6 +123,7 @@
     "marca": "Vitagenus",
     "porcao": "2 cápsulas ao dia",
     "embalagem": "120 cápsulas",
-    "doses": "60 por embalagem (60 dias)"
+    "doses": "60 por embalagem (60 dias)",
+    "indisponivel": true
   }
 ]

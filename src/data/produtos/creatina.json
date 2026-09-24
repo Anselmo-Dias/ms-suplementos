@@ -21,7 +21,8 @@
     "doses": "100 por embalagem",
     "extras": {
       "Sabor": "Neutro"
-    }
+    },
+    "indisponivel": true
   },
   {
     "id": "creatina-shark-pro-300g",
@@ -83,7 +84,8 @@
     "marca": "Booster Nutrition",
     "porcao": "1 scoop (3g a 4g) por dia",
     "embalagem": "300g",
-    "doses": "75 a 100 por embalagem"
+    "doses": "75 a 100 por embalagem",
+    "indisponivel": true
   },
   {
     "id": "creatina-bull-pharma-300g",
@@ -228,7 +230,8 @@
     "marca": "Nanogem",
     "porcao": "3g",
     "embalagem": "300g",
-    "doses": "100 por embalagem"
+    "doses": "100 por embalagem",
+    "indisponivel": true
   },
   {
     "id": "creatina-monohidratada-pura-300g-probiotica",
@@ -546,6 +549,7 @@
     "marca": "Puretech",
     "porcao": "3g",
     "embalagem": "96g",
-    "doses": "32 por embalagem"
+    "doses": "32 por embalagem",
+    "indisponivel": true
   }
 ]

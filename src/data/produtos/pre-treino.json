@@ -31,7 +31,8 @@
     "marca": "Adaptogen",
     "porcao": "1 scoop (20g a 30g) 1h antes do treino",
     "embalagem": "300g",
-    "doses": "10 a 15 por embalagem"
+    "doses": "10 a 15 por embalagem",
+    "indisponivel": true
   },
   {
     "id": "agent-orange-pre-workout-studio",
@@ -48,7 +49,8 @@
     "descricao": "Suplemento pré-treino para máxima energia, foco e desempenho nos seus treinos.",
     "paraQueServe": "Fornece energia intensa, foco mental e resistência. Combate a fadiga e melhora o desempenho geral nos treinos.",
     "modoDeUso": "Consulte a embalagem.",
-    "porcao": "15g a 30g"
+    "porcao": "15g a 30g",
+    "indisponivel": true
   },
   {
     "id": "armagedom-studio",
@@ -174,7 +176,8 @@
     "marca": "Darkness",
     "porcao": "1 scoop (20g a 30g) 1h antes do treino",
     "embalagem": "300g",
-    "doses": "10 a 15 por embalagem"
+    "doses": "10 a 15 por embalagem",
+    "indisponivel": true
   },
   {
     "id": "dcx-nutrition-apocalypse-450g",
@@ -487,7 +490,8 @@
     "modoDeUso": "Consulte a embalagem.",
     "porcao": "1 scoop (20g a 30g) 1h antes do treino",
     "embalagem": "350g",
-    "doses": "11 a 17 por embalagem"
+    "doses": "11 a 17 por embalagem",
+    "indisponivel": true
   },
   {
     "id": "integral-prime-300g",
@@ -949,7 +953,8 @@
     "marca": "Max Titanium",
     "porcao": "1 scoop (20g a 30g) 1h antes do treino",
     "embalagem": "150g",
-    "doses": "5 a 7 por embalagem"
+    "doses": "5 a 7 por embalagem",
+    "indisponivel": true
   },
   {
     "id": "pre-treino-horus-300g",
@@ -1050,7 +1055,8 @@
     "paraQueServe": "Fornece energia intensa, foco mental e resistência. Combate a fadiga e melhora o desempenho geral nos treinos.",
     "modoDeUso": "Consulte a embalagem.",
     "marca": "Euronutry",
-    "porcao": "15g a 30g"
+    "porcao": "15g a 30g",
+    "indisponivel": true
   },
   {
     "id": "pure-pre-workout",

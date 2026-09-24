@@ -522,7 +522,8 @@
     "marca": "Lavitan",
     "porcao": "2 cápsulas ao dia",
     "embalagem": "60 cápsulas",
-    "doses": "30 por embalagem (30 dias)"
+    "doses": "30 por embalagem (30 dias)",
+    "indisponivel": true
   },
   {
     "id": "lavitan-a-z-mulher-60-caps",
@@ -538,7 +539,8 @@
     "marca": "Lavitan",
     "porcao": "2 cápsulas ao dia",
     "embalagem": "60 cápsulas",
-    "doses": "30 por embalagem (30 dias)"
+    "doses": "30 por embalagem (30 dias)",
+    "indisponivel": true
   },
   {
     "id": "lavitan-carmed-cabelos-e-unhas",
@@ -553,7 +555,8 @@
     "modoDeUso": "Consulte a tabela nutricional na embalagem.",
     "marca": "Lavitan",
     "porcao": "1 a 2 cápsulas por dia",
-    "embalagem": "Unidade"
+    "embalagem": "Unidade",
+    "indisponivel": true
   },
   {
     "id": "lavitan-melatonina-90-caps",
@@ -569,7 +572,8 @@
     "marca": "Lavitan",
     "porcao": "2 cápsulas ao dia",
     "embalagem": "90 cápsulas",
-    "doses": "45 por embalagem (45 dias)"
+    "doses": "45 por embalagem (45 dias)",
+    "indisponivel": true
   },
   {
     "id": "levedo-de-cerveja-200g-actibio",
@@ -790,7 +794,8 @@
     "marca": "Qualynutri",
     "porcao": "1 a 2 cápsulas ao dia (250mg a 500mg de EPA e DHA)",
     "embalagem": "120 cápsulas",
-    "doses": "60 a 120 por embalagem"
+    "doses": "60 a 120 por embalagem",
+    "indisponivel": true
   },
   {
     "id": "omega-3-dux",
@@ -1375,7 +1380,8 @@
     "marca": "Actibio",
     "porcao": "2 cápsulas ao dia",
     "embalagem": "60 cápsulas",
-    "doses": "30 por embalagem (30 dias)"
+    "doses": "30 por embalagem (30 dias)",
+    "indisponivel": true
   },
   {
     "id": "zinco-maximus-60-caps-actibio",

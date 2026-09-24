@@ -238,7 +238,8 @@
     "paraQueServe": "Acelera o metabolismo e estimula a queima de gordura. Fornece mais energia e disposição para o dia a dia e para os treinos.",
     "modoDeUso": "Consulte a tabela nutricional na embalagem.",
     "porcao": "1 a 2 cápsulas",
-    "embalagem": "Unidade"
+    "embalagem": "Unidade",
+    "indisponivel": true
   },
   {
     "id": "qnutri-complexo-termogenico-studio",

@@ -109,7 +109,7 @@
     "id": "synthesize-100-whey-900g",
     "nome": "100% Whey Protein Synthesize 900g",
     "categoria": "whey",
-    "precoCentavos": 11000,
+    "precoCentavos": 13500,
     "imagem": "/img/whey/synthesize-100-whey-900g.webp",
     "variacoes": [
       {
@@ -1096,16 +1096,8 @@
     "imagem": "/img/whey/whey-100-hd-3w-blackskull-900g-refil.webp",
     "variacoes": [
       {
-        "nome": "Sorvete de Baunilha",
-        "imagem": "/img/whey/whey-100-hd-3w-blackskull-900g-refil--sorvete-de-baunilha.webp"
-      },
-      {
         "nome": "Sorvete de Chocolate",
         "imagem": "/img/whey/whey-100-hd-3w-blackskull-900g-refil--sorvete-de-chocolate.webp"
-      },
-      {
-        "nome": "Sorvete de Morango",
-        "imagem": "/img/whey/whey-100-hd-3w-blackskull-900g-refil--sorvete-de-morango.webp"
       }
     ],
     "spec": "Unidade",
@@ -1350,6 +1342,7 @@
     "marca": "Xpro",
     "porcao": "30g a 40g por dia, geralmente pós-treino",
     "embalagem": "900g",
-    "doses": "22 a 30 por embalagem"
+    "doses": "22 a 30 por embalagem",
+    "indisponivel": true
   }
 ]

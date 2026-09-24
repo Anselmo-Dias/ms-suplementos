@@ -35,7 +35,8 @@
     "marca": "Integralmédica",
     "porcao": "1 barra",
     "embalagem": "Unidade",
-    "doses": "1 por embalagem"
+    "doses": "1 por embalagem",
+    "indisponivel": true
   },
   {
     "id": "barra-de-proteina-nutrata-uni",
