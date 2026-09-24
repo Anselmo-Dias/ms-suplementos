@@ -385,23 +385,22 @@
   },
   {
     "id": "canibol-900g-studio",
-    "nome": "Canibol 900G Studio",
+    "nome": "Carnibol 900g Darkness",
     "categoria": "whey",
-    "subcategoria": "blend",
     "precoCentavos": null,
     "imagem": "/img/whey/canibol-900g-studio.webp",
-    "spec": "900G • Whey Protein",
+    "spec": "900g • Proteína da Carne",
     "tags": [
-      "Proteína",
-      "Recuperação Muscular"
+      "Proteína da Carne"
     ],
     "indisponivel": true,
-    "descricao": "Suplemento de Whey Protein de alta qualidade para apoiar o ganho de massa muscular.",
+    "descricao": "Proteína da carne ultraconcentrada (beef protein) da Darkness.",
     "paraQueServe": "Auxilia na construção e recuperação muscular, fornecendo proteínas de alto valor biológico essenciais para o ganho de massa magra.",
     "modoDeUso": "Consulte a embalagem.",
     "porcao": "30g a 40g por dia, geralmente pós-treino",
     "embalagem": "900g",
-    "doses": "22 a 30 por embalagem"
+    "doses": "22 a 30 por embalagem",
+    "marca": "Darkness"
   },
   {
     "id": "euronutry-beef-protein-isolate-pink-lemonade-900g",
@@ -884,9 +883,9 @@
   },
   {
     "id": "puretech-pure-protein-900g",
-    "nome": "Puretech Pure Protein 900g",
+    "nome": "Pure Protein MK Supplements 900g",
     "categoria": "whey",
-    "subcategoria": "concentrado",
+    "subcategoria": "blend",
     "precoCentavos": null,
     "imagem": "/img/whey/puretech-pure-protein-900g.webp",
     "variacoes": [
@@ -909,15 +908,15 @@
     ],
     "spec": "900g • Blend Proteico Concentrado",
     "tags": [
-      "Puretech Quality",
-      "Sabores Selecionados"
+      "Proteína",
+      "Recuperação Muscular"
     ],
     "badge": "Vários Sabores",
     "indisponivel": true,
     "descricao": "Fórmula de proteína de soro do leite com excelente balanço de aminoácidos essenciais.",
     "paraQueServe": "Auxilia na construção e recuperação muscular, fornecendo proteínas de alto valor biológico essenciais para o ganho de massa magra.",
     "modoDeUso": "Diluir 30g em água ou leite.",
-    "marca": "Puretech",
+    "marca": "MK Supplements",
     "porcao": "30g a 40g por dia, geralmente pós-treino",
     "embalagem": "900g",
     "doses": "22 a 30 por embalagem",
@@ -1288,7 +1287,7 @@
     "id": "whey-joy-pro-900g-shark-pro",
     "nome": "Whey Joy Pro 900g Shark Pro",
     "categoria": "whey",
-    "subcategoria": "concentrado",
+    "subcategoria": "blend",
     "precoCentavos": 12000,
     "imagem": "/img/whey/whey-joy-pro-900g-shark-pro.webp",
     "variacoes": [
@@ -1356,9 +1355,9 @@
   },
   {
     "id": "whey-xpro-2kg",
-    "nome": "Whey Xpro 2kg",
+    "nome": "Xpro Iso-X Protein Complex 2kg",
     "categoria": "whey",
-    "subcategoria": "concentrado",
+    "subcategoria": "blend",
     "precoCentavos": 12500,
     "imagem": "/img/whey/whey-xpro-2kg.webp",
     "spec": "Unidade",
@@ -1373,9 +1372,9 @@
   },
   {
     "id": "whey-xpro-900g",
-    "nome": "Whey Xpro 900g",
+    "nome": "Xpro Muscle Whey Protein 900g",
     "categoria": "whey",
-    "subcategoria": "concentrado",
+    "subcategoria": "blend",
     "precoCentavos": 6900,
     "imagem": "/img/whey/whey-xpro-900g.webp",
     "spec": "Unidade",
