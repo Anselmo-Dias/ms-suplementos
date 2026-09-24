@@ -637,48 +637,6 @@
     "doses": "22 a 30 por embalagem"
   },
   {
-    "id": "whey-100-new-millen-900g",
-    "nome": "Whey 100% New Millen 900g",
-    "categoria": "whey",
-    "subcategoria": "concentrado",
-    "precoCentavos": 17500,
-    "imagem": "/img/whey/whey-100-new-millen-900g--baunilha.webp",
-    "variacoes": [
-      {
-        "nome": "Açaí com Banana",
-        "imagem": "/img/whey/whey-100-new-millen-900g--acai-com-banana.webp"
-      },
-      {
-        "nome": "Baunilha",
-        "imagem": "/img/whey/whey-100-new-millen-900g--baunilha.webp"
-      },
-      {
-        "nome": "Chiclete com Banana",
-        "imagem": "/img/whey/whey-100-new-millen-900g--chiclete-com-banana.webp"
-      },
-      {
-        "nome": "Cookies & Cream",
-        "imagem": "/img/whey/whey-100-new-millen-900g--cookies-and-cream.webp"
-      },
-      {
-        "nome": "Pêssego e Manga",
-        "imagem": "/img/whey/whey-100-new-millen-900g--pessego-e-manga.webp"
-      }
-    ],
-    "spec": "900g • 21g de proteína por dose",
-    "tags": [
-      "Proteína",
-      "Recuperação Muscular"
-    ],
-    "descricao": "Whey Protein 100% da New Millen, com 21g de proteína por porção e sem glúten.",
-    "paraQueServe": "Auxilia na construção e recuperação muscular, fornecendo proteínas de alto valor biológico essenciais para o ganho de massa magra.",
-    "modoDeUso": "Consulte a tabela nutricional na embalagem.",
-    "marca": "New Millen",
-    "porcao": "30g a 40g por dia, geralmente pós-treino",
-    "embalagem": "900g",
-    "doses": "22 a 30 por embalagem"
-  },
-  {
     "id": "mk-pure-beef-900g",
     "nome": "MK Pure Beef 900g",
     "categoria": "whey",
