@@ -19,7 +19,7 @@ export type Categoria = (typeof CATEGORIAS)[number]
 export type FiltroCategoria = Categoria | 'todos' | 'mais-vendidos'
 
 /** Divisão da aba Whey em faixas. Sem subcategoria = "Outras proteínas". */
-export const SUBCATEGORIAS_WHEY = ['isolado', 'concentrado', 'blend'] as const
+export const SUBCATEGORIAS_WHEY = ['isolado', 'concentrado', 'isoconcentrado', 'blend'] as const
 
 export type SubcategoriaWhey = (typeof SUBCATEGORIAS_WHEY)[number]
 

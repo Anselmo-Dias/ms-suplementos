@@ -32,7 +32,8 @@
     "marca": "Synthesize",
     "porcao": "30g a 40g por dia, geralmente pós-treino",
     "embalagem": "1,8kg",
-    "doses": "45 a 60 por embalagem"
+    "doses": "45 a 60 por embalagem",
+    "indisponivel": true
   },
   {
     "id": "100-energy-whey-euronutryjpg",
@@ -153,7 +154,7 @@
     "id": "3-whey-top-taste-900g-body-action",
     "nome": "3 Whey Top Taste 900g Body Action",
     "categoria": "whey",
-    "subcategoria": "blend",
+    "subcategoria": "isoconcentrado",
     "precoCentavos": 17000,
     "imagem": "/img/whey/3-whey-top-taste-900g-body-action.webp",
     "variacoes": [
@@ -467,7 +468,7 @@
     "id": "hit-protein-chocolate-2",
     "nome": "Hit Protein adaptogen",
     "categoria": "whey",
-    "subcategoria": "blend",
+    "subcategoria": "concentrado",
     "precoCentavos": 11900,
     "imagem": "/img/whey/hit-protein-chocolate-2.webp",
     "variacoes": [
@@ -798,7 +799,7 @@
     "id": "olympus-3w",
     "nome": "Olympus 3W",
     "categoria": "whey",
-    "subcategoria": "blend",
+    "subcategoria": "isoconcentrado",
     "precoCentavos": 17990,
     "imagem": "/img/whey/olympus-3w.webp",
     "variacoes": [
@@ -956,7 +957,7 @@
     "id": "tastywhey-900g-adaptogenjpg",
     "nome": "Tastywhey 900g Adaptogen",
     "categoria": "whey",
-    "subcategoria": "blend",
+    "subcategoria": "concentrado",
     "precoCentavos": 23500,
     "imagem": "/img/whey/tastywhey-900g-adaptogenjpg.webp",
     "variacoes": [
@@ -1015,7 +1016,7 @@
     "id": "top-whey-3w-max-titanium-900g-mais-performance",
     "nome": "Top Whey 3w Max Titanium 900g Mais Performance",
     "categoria": "whey",
-    "subcategoria": "blend",
+    "subcategoria": "concentrado",
     "precoCentavos": 23500,
     "imagem": "/img/whey/top-whey-3w-max-titanium-900g-mais-performance.webp",
     "variacoes": [
@@ -1054,7 +1055,7 @@
     "id": "top-whey-3w-max-titanium-900g-mais-sabor",
     "nome": "Top Whey 3w Max Titanium 900g Mais Sabor",
     "categoria": "whey",
-    "subcategoria": "blend",
+    "subcategoria": "concentrado",
     "precoCentavos": 23500,
     "imagem": "/img/whey/top-whey-3w-max-titanium-900g-mais-sabor.webp",
     "variacoes": [
@@ -1139,7 +1140,7 @@
     "id": "whey-100-hd-3w-blackskull-900g-refil-cara-preta",
     "nome": "Whey 100% Hd 3w Blackskull 900g Refil Cara Preta",
     "categoria": "whey",
-    "subcategoria": "blend",
+    "subcategoria": "concentrado",
     "precoCentavos": 13999,
     "imagem": "/img/whey/whey-100-hd-3w-blackskull-900g-refil-cara-preta.webp",
     "variacoes": [
@@ -1170,7 +1171,7 @@
     "id": "whey-100-hd-3w-blackskull-900g-refil",
     "nome": "Whey 100% Hd 3w Blackskull 900g Refil gourmet sem lactose",
     "categoria": "whey",
-    "subcategoria": "blend",
+    "subcategoria": "concentrado",
     "precoCentavos": 9999,
     "imagem": "/img/whey/whey-100-hd-3w-blackskull-900g-refil.webp",
     "variacoes": [
@@ -1253,7 +1254,7 @@
     "id": "whey-iso-premium-hop-1kg",
     "nome": "Whey Iso Premium Hop! 1kg",
     "categoria": "whey",
-    "subcategoria": "isolado",
+    "subcategoria": "concentrado",
     "precoCentavos": 14000,
     "imagem": "/img/whey/whey-iso-premium-hop-1kg.webp",
     "variacoes": [
@@ -1315,7 +1316,7 @@
     "id": "whey-joy-pro-900g-shark-pro",
     "nome": "Whey Joy Pro 900g Shark Pro",
     "categoria": "whey",
-    "subcategoria": "blend",
+    "subcategoria": "concentrado",
     "precoCentavos": 12000,
     "imagem": "/img/whey/whey-joy-pro-900g-shark-pro.webp",
     "variacoes": [
