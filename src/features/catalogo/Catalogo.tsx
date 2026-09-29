@@ -91,8 +91,9 @@ function Conteudo({ categoria, produtoAberto, onAbrirProduto }: Props) {
 }
 
 const FAIXAS_WHEY: Array<{ id: SubcategoriaWhey | undefined; nome: string }> = [
-  { id: 'isolado', nome: 'Whey Isolado' },
-  { id: 'concentrado', nome: 'Whey Concentrado' },
+  { id: 'isolado', nome: 'Isolado' },
+  { id: 'concentrado', nome: 'Concentrado' },
+  { id: 'isoconcentrado', nome: 'Isolado, Concentrado e Hidrolisado' },
   { id: 'blend', nome: 'Blends' },
   // Albuminas, proteína da carne e veganas ficam na aba, mas não são whey.
   { id: undefined, nome: 'Outras proteínas' },
