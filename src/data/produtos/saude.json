@@ -1436,5 +1436,59 @@
     "marca": "Supraervas",
     "porcao": "Consulte a embalagem",
     "embalagem": "60 cápsulas"
+  },
+  {
+    "id": "vitamina-b12-nutrye-60-pastilhas",
+    "nome": "Vitamina B12 Nutrye 60 Pastilhas Mastigáveis Morango",
+    "categoria": "saude",
+    "precoCentavos": 2399,
+    "imagem": "/img/saude/vitamina-b12-nutrye-60-pastilhas.webp",
+    "spec": "60 pastilhas • Vitamina B12",
+    "tags": [
+      "Vitamina B12",
+      "Vegano",
+      "Energia"
+    ],
+    "descricao": "Vitamina B12 metilcobalamina (alta absorção) em pastilhas mastigáveis sabor morango. Produto vegano.",
+    "paraQueServe": "Auxilia na formação das células vermelhas do sangue, no funcionamento do sistema nervoso, no metabolismo energético e na função normal do sistema imunológico.",
+    "modoDeUso": "Consulte a embalagem.",
+    "marca": "Nutrye",
+    "embalagem": "60 pastilhas"
+  },
+  {
+    "id": "magne-3-nutrye-90-comprimidos",
+    "nome": "Magne 3 Nutrye 90 Comprimidos",
+    "categoria": "saude",
+    "precoCentavos": 3499,
+    "imagem": "/img/saude/magne-3-nutrye-90-comprimidos.webp",
+    "spec": "90 comprimidos • Magnésio",
+    "tags": [
+      "Magnésio",
+      "Vegano",
+      "Sono"
+    ],
+    "descricao": "Suplemento com tripla fonte de magnésio: quelato, citrato, malato e bisglicinato. Produto vegano.",
+    "paraQueServe": "O magnésio auxilia no funcionamento muscular e neuromuscular, no processo de divisão celular e na formação de ossos e dentes.",
+    "modoDeUso": "Consulte a embalagem.",
+    "marca": "Nutrye",
+    "embalagem": "90 comprimidos"
+  },
+  {
+    "id": "osteolig-nutrye-60-comprimidos",
+    "nome": "Osteolig Nutrye 60 Comprimidos",
+    "categoria": "saude",
+    "precoCentavos": 4499,
+    "imagem": "/img/saude/osteolig-nutrye-60-comprimidos.webp",
+    "spec": "60 comprimidos • Articulações e ossos",
+    "tags": [
+      "Colágeno Tipo II",
+      "Articulações",
+      "Ossos"
+    ],
+    "descricao": "Suplemento de colágeno tipo II com condroitina, vitamina K2, magnésio malato e glucosamina.",
+    "paraQueServe": "Auxilia na manutenção articular e contribui para o fortalecimento dos ossos.",
+    "modoDeUso": "Consulte a embalagem.",
+    "marca": "Nutrye",
+    "embalagem": "60 comprimidos"
   }
 ]
