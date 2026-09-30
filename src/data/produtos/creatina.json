@@ -550,5 +550,27 @@
     "embalagem": "96g",
     "doses": "32 por embalagem",
     "indisponivel": true
+  },
+  {
+    "id": "creatina-universal-monohydrate-300g",
+    "nome": "Creatina Universal Monohydrate 300g",
+    "categoria": "creatina",
+    "precoCentavos": 5999,
+    "imagem": "/img/creatina/creatina-universal-monohydrate-300g.webp",
+    "spec": "300g • Monohidratada",
+    "tags": [
+      "Monohidratada",
+      "100% Pura",
+      "Sem Sabor"
+    ],
+    "descricao": "Creatina monohidratada 100% pura da linha Classic Series da Universal, sem aditivos, sabor neutro.",
+    "paraQueServe": "Aumenta a força, explosão muscular e auxilia no ganho de massa magra. Age fornecendo energia rápida para os músculos durante os exercícios.",
+    "modoDeUso": "Consulte a embalagem.",
+    "marca": "Universal",
+    "porcao": "3g",
+    "embalagem": "300g",
+    "extras": {
+      "Sabor": "Neutro"
+    }
   }
 ]
