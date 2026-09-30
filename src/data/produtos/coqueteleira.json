@@ -46,5 +46,19 @@
     "extras": {
       "Cor": "Preta"
     }
+  },
+  {
+    "id": "luvas-de-academia-coyote-fit",
+    "nome": "Luvas de Academia Coyote Fit",
+    "categoria": "coqueteleira",
+    "precoCentavos": null,
+    "imagem": "/img/coqueteleira/luvas-de-academia-coyote-fit.webp",
+    "spec": "Unidade",
+    "tags": [],
+    "descricao": "Luvas de academia com palma antiderrapante, material resistente e durável, conforto e ajuste perfeito.",
+    "paraQueServe": "Protege as mãos e dá mais firmeza e segurança nos treinos, com liberdade de movimento.",
+    "modoDeUso": "Consulte a embalagem.",
+    "marca": "Coyote Fit",
+    "embalagem": "Unidade"
   }
 ]
