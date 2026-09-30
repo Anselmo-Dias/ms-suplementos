@@ -1288,5 +1288,48 @@
     "porcao": "1 scoop 1h antes do treino",
     "embalagem": "216g",
     "doses": "35 por embalagem"
+  },
+  {
+    "id": "bcaa-stack-universal-301g",
+    "nome": "BCAA Stack Universal 301g Laranja",
+    "categoria": "pre-treino",
+    "precoCentavos": 7500,
+    "imagem": "/img/pre-treino/bcaa-stack-universal-301g.webp",
+    "spec": "301g • BCAA + Glutamina",
+    "tags": [
+      "BCAA",
+      "Glutamina",
+      "Recuperação"
+    ],
+    "descricao": "BCAA em pó com glutamina, 8g por porção, alta solubilidade, para pré e pós-treino. Sabor laranja.",
+    "paraQueServe": "Auxilia na recuperação e na preservação da massa muscular, sendo indicado para qualquer fase do treino.",
+    "modoDeUso": "Consulte a embalagem.",
+    "marca": "Universal",
+    "embalagem": "301g",
+    "extras": {
+      "Sabor": "Laranja"
+    }
+  },
+  {
+    "id": "hemo-rage-unleashed-nutrex-180g",
+    "nome": "Hemo-Rage Unleashed Nutrex 180g Fruit Punch",
+    "categoria": "pre-treino",
+    "precoCentavos": 7500,
+    "imagem": "/img/pre-treino/hemo-rage-unleashed-nutrex-180g.webp",
+    "spec": "180g • Pré-Treino",
+    "tags": [
+      "Energia",
+      "Foco",
+      "Pump"
+    ],
+    "descricao": "Pré-treino high stim da Nutrex Research para energia explosiva, foco total, mais resistência e pump intenso. Sabor fruit punch.",
+    "paraQueServe": "Fornece energia intensa, foco mental e resistência. Combate a fadiga e melhora o desempenho geral nos treinos.",
+    "modoDeUso": "Consulte a embalagem.",
+    "marca": "Nutrex",
+    "embalagem": "180g",
+    "doses": "30 por embalagem",
+    "extras": {
+      "Sabor": "Fruit Punch"
+    }
   }
 ]
