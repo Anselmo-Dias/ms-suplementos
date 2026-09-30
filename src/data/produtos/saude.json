@@ -1490,5 +1490,26 @@
     "modoDeUso": "Consulte a embalagem.",
     "marca": "Nutrye",
     "embalagem": "60 comprimidos"
+  },
+  {
+    "id": "bcaa-stack-universal-301g",
+    "nome": "BCAA Stack Universal 301g Laranja",
+    "categoria": "saude",
+    "precoCentavos": 7500,
+    "imagem": "/img/saude/bcaa-stack-universal-301g.webp",
+    "spec": "301g • BCAA + Glutamina",
+    "tags": [
+      "BCAA",
+      "Glutamina",
+      "Recuperação"
+    ],
+    "descricao": "BCAA em pó com glutamina, 8g por porção, alta solubilidade, para pré e pós-treino. Sabor laranja.",
+    "paraQueServe": "Auxilia na recuperação e na preservação da massa muscular, sendo indicado para qualquer fase do treino.",
+    "modoDeUso": "Consulte a embalagem.",
+    "marca": "Universal",
+    "embalagem": "301g",
+    "extras": {
+      "Sabor": "Laranja"
+    }
   }
 ]
