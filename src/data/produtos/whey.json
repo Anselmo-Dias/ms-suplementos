@@ -1477,5 +1477,93 @@
     "marca": "Xpro Nutrition",
     "embalagem": "1kg + 100g",
     "doses": "36 por embalagem"
+  },
+  {
+    "id": "leader-100-whey-concentrate-900g",
+    "nome": "100% Whey Concentrate Leader Nutrition 900g Morango",
+    "categoria": "whey",
+    "subcategoria": "concentrado",
+    "precoCentavos": 12499,
+    "imagem": "/img/whey/leader-100-whey-concentrate-900g.webp",
+    "spec": "900g • Whey Concentrado",
+    "tags": [
+      "20g de Proteína",
+      "BCAA",
+      "Glutamina"
+    ],
+    "descricao": "Whey protein concentrado com 20g de proteína por porção, 3000mg de BCAA, 3000mg de ácido glutâmico, 1200mg de glutamina e 900mg de arginina. Sabor morango.",
+    "paraQueServe": "Auxilia na construção e recuperação muscular, fornecendo proteínas de alto valor biológico essenciais para o ganho de massa magra.",
+    "modoDeUso": "Consulte a embalagem.",
+    "marca": "Leader Nutrition",
+    "embalagem": "900g",
+    "extras": {
+      "Sabor": "Morango"
+    }
+  },
+  {
+    "id": "leader-hi-blend-protein-900g",
+    "nome": "Hi Blend Protein Leader Nutrition 900g Cookies & Cream",
+    "categoria": "whey",
+    "subcategoria": "blend",
+    "precoCentavos": 9999,
+    "imagem": "/img/whey/leader-hi-blend-protein-900g.webp",
+    "spec": "900g • Blend WPC + WPH + WPI",
+    "tags": [
+      "24g de Proteína",
+      "Sugar Free",
+      "Soy Free"
+    ],
+    "descricao": "Blend de whey protein concentrado, hidrolisado e isolado com 24g de proteína por porção, sem açúcar e sem soja. Sabor cookies & cream.",
+    "paraQueServe": "Auxilia na construção e recuperação muscular, fornecendo proteínas de alto valor biológico essenciais para o ganho de massa magra.",
+    "modoDeUso": "Consulte a embalagem.",
+    "marca": "Leader Nutrition",
+    "embalagem": "900g",
+    "extras": {
+      "Sabor": "Cookies & Cream"
+    }
+  },
+  {
+    "id": "leader-hi-blend-protein-1-8kg",
+    "nome": "Hi Blend Protein Leader Nutrition 1,8kg Leite Cremoso",
+    "categoria": "whey",
+    "subcategoria": "blend",
+    "precoCentavos": 17599,
+    "imagem": "/img/whey/leader-hi-blend-protein-1-8kg.webp",
+    "spec": "1,8kg • Blend WPC + WPH + WPI",
+    "tags": [
+      "24g de Proteína",
+      "Sugar Free",
+      "Soy Free"
+    ],
+    "descricao": "Blend de whey protein concentrado, hidrolisado e isolado com 24g de proteína por porção, sem açúcar e sem soja. Sabor leite cremoso.",
+    "paraQueServe": "Auxilia na construção e recuperação muscular, fornecendo proteínas de alto valor biológico essenciais para o ganho de massa magra.",
+    "modoDeUso": "Consulte a embalagem.",
+    "marca": "Leader Nutrition",
+    "embalagem": "1,8kg",
+    "extras": {
+      "Sabor": "Leite Cremoso"
+    }
+  },
+  {
+    "id": "nutrex-100-whey-protein-900g",
+    "nome": "100% Whey Protein Nutrex 900g Chocolate",
+    "categoria": "whey",
+    "subcategoria": "concentrado",
+    "precoCentavos": 16999,
+    "imagem": "/img/whey/nutrex-100-whey-protein-900g.webp",
+    "spec": "900g • Whey Concentrado",
+    "tags": [
+      "27g de Proteína",
+      "5g de Glutamina",
+      "Low Carb"
+    ],
+    "descricao": "Whey protein com até 27g de proteína e 5g de glutamina por porção, baixo em carboidratos. Sabor chocolate.",
+    "paraQueServe": "Auxilia na construção e recuperação muscular, fornecendo proteínas de alto valor biológico essenciais para o ganho de massa magra.",
+    "modoDeUso": "Consulte a embalagem.",
+    "marca": "Nutrex",
+    "embalagem": "900g",
+    "extras": {
+      "Sabor": "Chocolate"
+    }
   }
 ]
