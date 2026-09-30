@@ -1440,5 +1440,42 @@
     "embalagem": "900g",
     "doses": "22 a 30 por embalagem",
     "indisponivel": true
+  },
+  {
+    "id": "xpro-hydro-beef-protein-900g",
+    "nome": "Xpro Hydro Beef Protein 900g Choco Brownie",
+    "categoria": "whey",
+    "subcategoria": "concentrado",
+    "precoCentavos": null,
+    "imagem": "/img/whey/xpro-hydro-beef-protein-900g.webp",
+    "spec": "900g • Proteína da Carne",
+    "tags": [
+      "Proteína da Carne",
+      "Zero Lactose"
+    ],
+    "descricao": "Proteína da carne hidrolisada 100% Prime Beef, zero lactose, com 30g de proteína por dose e 85% de concentração.",
+    "paraQueServe": "Auxilia na construção e recuperação muscular, fornecendo proteínas de alto valor biológico essenciais para o ganho de massa magra.",
+    "modoDeUso": "Consulte a embalagem.",
+    "marca": "Xpro Nutrition",
+    "embalagem": "900g"
+  },
+  {
+    "id": "xpro-iso-protein-blend-complex-1kg",
+    "nome": "Xpro Iso Protein Blend Complex 1kg + 100g Grátis",
+    "categoria": "whey",
+    "subcategoria": "blend",
+    "precoCentavos": null,
+    "imagem": "/img/whey/xpro-iso-protein-blend-complex-1kg.webp",
+    "spec": "1kg + 100g • Whey Isolate",
+    "tags": [
+      "Whey Isolate",
+      "Sem Açúcar"
+    ],
+    "descricao": "Blend complex de whey isolate com 25g de proteína por dose e 83% de concentração. Embalagem de 1kg + 100g grátis (1,1kg), 36 doses.",
+    "paraQueServe": "Auxilia na construção e recuperação muscular, fornecendo proteínas de alto valor biológico essenciais para o ganho de massa magra.",
+    "modoDeUso": "Consulte a embalagem.",
+    "marca": "Xpro Nutrition",
+    "embalagem": "1kg + 100g",
+    "doses": "36 por embalagem"
   }
 ]
