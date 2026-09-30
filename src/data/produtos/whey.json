@@ -304,6 +304,7 @@
     "id": "beef-protein-crush-910g-underlabzjpg",
     "nome": "Beef Protein Crush 910g Underlabz",
     "categoria": "whey",
+    "subcategoria": "concentrado",
     "precoCentavos": 17500,
     "imagem": "/img/whey/beef-protein-crush-910g-underlabzjpg.webp",
     "variacoes": [
@@ -388,13 +389,12 @@
     "id": "canibol-900g-studio",
     "nome": "Carnibol 900g Darkness",
     "categoria": "whey",
-    "precoCentavos": null,
+    "precoCentavos": 14000,
     "imagem": "/img/whey/canibol-900g-studio.webp",
     "spec": "900g • Proteína da Carne",
     "tags": [
       "Proteína da Carne"
     ],
-    "indisponivel": true,
     "descricao": "Proteína da carne ultraconcentrada (beef protein) da Darkness.",
     "paraQueServe": "Auxilia na construção e recuperação muscular, fornecendo proteínas de alto valor biológico essenciais para o ganho de massa magra.",
     "modoDeUso": "Consulte a embalagem.",
@@ -407,6 +407,7 @@
     "id": "euronutry-beef-protein-isolate-pink-lemonade-900g",
     "nome": "Euronutry Beef Protein Isolated 900g",
     "categoria": "whey",
+    "subcategoria": "concentrado",
     "precoCentavos": 16000,
     "imagem": "/img/whey/euronutry-beef-protein-isolate-pink-lemonade-900g.webp",
     "variacoes": [
@@ -668,6 +669,7 @@
     "id": "mk-pure-beef-900g",
     "nome": "MK Pure Beef 900g",
     "categoria": "whey",
+    "subcategoria": "concentrado",
     "precoCentavos": 17500,
     "imagem": "/img/whey/mk-pure-beef-900g.webp",
     "variacoes": [
