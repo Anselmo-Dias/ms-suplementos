@@ -74,5 +74,47 @@
     "modoDeUso": "Consulte a embalagem.",
     "marca": "Coyote Fit",
     "embalagem": "Unidade"
+  },
+  {
+    "id": "coqueteleira-synthesize-700ml",
+    "nome": "Coqueteleira Synthesize 700ml",
+    "categoria": "coqueteleira",
+    "precoCentavos": null,
+    "imagem": "/img/coqueteleira/coqueteleira-synthesize-700ml.webp",
+    "spec": "700ml",
+    "tags": [],
+    "descricao": "Coqueteleira de 700ml com material resistente, tampa com vedação anti-vazamento e livre de BPA.",
+    "paraQueServe": "Acessório prático e resistente para misturar e transportar seus suplementos com facilidade para qualquer lugar.",
+    "modoDeUso": "Consulte a embalagem.",
+    "marca": "Synthesize",
+    "embalagem": "700ml"
+  },
+  {
+    "id": "coqueteleira-underlabz-700ml",
+    "nome": "Coqueteleira Underlabz 700ml",
+    "categoria": "coqueteleira",
+    "precoCentavos": null,
+    "imagem": "/img/coqueteleira/coqueteleira-underlabz-700ml.webp",
+    "spec": "700ml",
+    "tags": [],
+    "descricao": "Coqueteleira de 700ml com material resistente, tampa com vedação anti-vazamento e livre de BPA.",
+    "paraQueServe": "Acessório prático e resistente para misturar e transportar seus suplementos com facilidade para qualquer lugar.",
+    "modoDeUso": "Consulte a embalagem.",
+    "marca": "Underlabz",
+    "embalagem": "700ml"
+  },
+  {
+    "id": "coqueteleira-absoluto-pre-workout-700ml",
+    "nome": "Coqueteleira Absoluto Pre-Workout 700ml",
+    "categoria": "coqueteleira",
+    "precoCentavos": null,
+    "imagem": "/img/coqueteleira/coqueteleira-absoluto-pre-workout-700ml.webp",
+    "spec": "700ml",
+    "tags": [],
+    "descricao": "Coqueteleira de 700ml com material resistente, tampa antivazamento e fácil de transportar.",
+    "paraQueServe": "Acessório prático e resistente para misturar e transportar seus suplementos com facilidade para qualquer lugar.",
+    "modoDeUso": "Consulte a embalagem.",
+    "marca": "Absoluto",
+    "embalagem": "700ml"
   }
 ]
