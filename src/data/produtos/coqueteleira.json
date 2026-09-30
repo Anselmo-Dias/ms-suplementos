@@ -53,6 +53,20 @@
     "categoria": "coqueteleira",
     "precoCentavos": 2799,
     "imagem": "/img/coqueteleira/luvas-de-academia-coyote-fit.webp",
+    "variacoes": [
+      {
+        "nome": "Rosa",
+        "imagem": "/img/coqueteleira/luvas-de-academia-coyote-fit.webp"
+      },
+      {
+        "nome": "Mulher Maravilha",
+        "imagem": "/img/coqueteleira/luvas-de-academia-coyote-fit--mulher-maravilha.webp"
+      },
+      {
+        "nome": "Azul",
+        "imagem": "/img/coqueteleira/luvas-de-academia-coyote-fit--azul.webp"
+      }
+    ],
     "spec": "Unidade",
     "tags": [],
     "descricao": "Luvas de academia com palma antiderrapante, material resistente e durável, conforto e ajuste perfeito.",
