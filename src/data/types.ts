@@ -9,7 +9,7 @@ export const CATEGORIAS = [
   'pre-hormonais',
   'coqueteleira',
   'gourmet',
-  // Não tem aba própria: é o conteúdo de "Combos do Mês" (id `mais-vendidos`).
+  // Não tem aba própria: é o conteúdo de "Ofertas do Mês" (id `mais-vendidos`).
   'combos',
 ] as const
 

@@ -37,7 +37,7 @@ export function produtoPorId(id: string): Produto | undefined {
 
 export function produtosDe(filtro: FiltroCategoria): Produto[] {
   if (filtro === 'todos') return PRODUTOS
-  // A aba "Combos do Mês" manteve o id antigo para não quebrar links.
+  // A aba "Ofertas do Mês" manteve o id antigo para não quebrar links.
   if (filtro === 'mais-vendidos') return PRODUTOS_POR_CATEGORIA.combos
   return PRODUTOS_POR_CATEGORIA[filtro] ?? []
 }
