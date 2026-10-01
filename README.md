@@ -56,7 +56,7 @@ Pontos que valem saber:
   consulta" e bloqueia o botão de adicionar ao carrinho.
 - **Modo atacado** aplica um desconto fixo de 15% (`lib/preco.ts`). Não existe
   preço de atacado por produto — se um dia existir, é ali que entra.
-- **"Combos do Mês"** (id `mais-vendidos`, mantido por causa dos links) lista
+- **"Ofertas do Mês"** (id `mais-vendidos`, mantido por causa dos links) lista
   `src/data/produtos/combos.json`. `precoDeCentavos` mostra o preço "De"
   riscado, e combos não levam o desconto de atacado.
 - **Imagens** são caminhos absolutos (`/img/whey/...`), servidas de `public/`.
